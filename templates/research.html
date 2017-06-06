@@ -1,0 +1,48 @@
+{% include "header.html" %}
+<div align="center">
+    <p style="padding-top:30px"><font size="100">Research</font></p>
+    <p style="padding-bottom:10px">This page includes some of my past academic research I conducted at San Jose State University and University of Michigan.</p>
+    <hr>
+</div>
+<div>
+    <div class="column1">
+        <img src="{{ url_for('static', filename='PasswordStudy.png') }}" alt="Image Unavailable" style="padding-top:30px">
+        <a href="{{ url_for('static', filename='FinalThesisDraft.pdf') }}" download><button style="height:30px;width:300px">Download Paper</button></a>
+    </div>
+    <div class="column2">
+        <p><b>Title:</b> Investigating Criteria and Techniques for Increasing Password Security and Memorability for Users</p>
+        <P><b>Abstract:</b> Today, passwords are a commonly used strategy for protecting online accounts. These
+accounts may include sensitive personal information such as financial statements in a
+bank account, or may include nearly no identifying information such as that in a gaming
+application on a phone. Yet, to increase the security of such accounts, users are often
+required to create passwords that comply with strict criteria (e.g., a minimum of one
+upper case, one lower case, one special character, one number, and a minimum character
+length). Using a self-reported questionnaire, Shay et al. (2010) found that when users
+were required to create passwords under such strict requirements, they often reused old
+passwords with little or no modifications. Users also reported to be more likely to forget
+passwords created under such restrictions because of the uncommon combinations used
+for "high security" passwords. With a memory recall test and a self-reported
+questionnaire, this study investigated the effect of three different password composition
+requirements on users' recall of the passwords they generated, their general attitudes, self-predicted
+memorability, and perceived security for the requirements. Results indicated
+that actual memorability was not affected by the choice of password composition
+requirement, but participants perceived each requirement differently. This study also
+explored other areas of interest, such as password composition strategies.</P>
+        <p><b>Citation:</b> Wong, N. (2017). <i>Investigating Criteria and Techniques for Increasing Password Security and Memorability for Users.</i> (Honors thesis).</p>
+    </div>
+</div>
+
+<div class="clear"></div>
+<hr>
+<div>
+    <div class="column1">
+        <img src="" alt="Image Unavailable" style="padding-top:30px">
+        <a href="{{ url_for('static', filename='') }}" download><button style="height:30px;width=300px">Download</button></a>
+    </div>
+    <div class="column2">
+        <p><b>Title:</b></p>
+        <p><b>Abstract:</b></p>
+        <p><b>Citation:</b></p>
+    </div>
+</div>
+{% include "footer.html" %}

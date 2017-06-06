@@ -1,0 +1,125 @@
+/*Navigation Bar*/
+#navigation {
+  background-color: #cce6ff;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+  text-align: right;
+}
+
+#navigation a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  padding: 15px 30px 15px 30px;
+}
+
+#navigation li {
+  position: relative;
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  font-size: 125%;
+}
+
+#navigation a:hover {
+  background-color: #004080;
+  color: white;
+}
+
+#navigation ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  padding: 0px;
+}
+
+#navigation ul li {
+  background-color: #cce6ff;
+  display: block;
+  text-align: left;
+  width: 200px;
+  font-size: 20px;
+}
+
+#navigation li:hover ul {
+  display: block;
+}
+
+#navigation active {
+  text-decoration: underline;
+}
+
+/*.description {
+  text-align: center;
+  font-size: 500%;
+  background-color: #cce6ff;
+  margin: 5px;
+}
+
+.test a {
+  font-size: 400%;
+}
+
+.img-circle-menu {
+  float: left;
+  display: inline-block;
+  padding: auto;
+  margin: auto;
+}*/
+
+/*Home Page*/
+
+.profilepic {
+  display:inline;
+  align: center;
+  margin: 15px;
+}
+
+/*.content {
+  display: inline;
+  margin: auto;
+  font-family: "Trebuchet MS";
+  font-size: 100%;
+  text-align: center;
+}*/
+
+.column1 {
+  width: 30%;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  padding-top:65px;
+  padding-bottom:30px;
+}
+
+.column2 {
+  width: 60%;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 100%;
+  font-family: "Arial";
+  text-align: left;
+  padding-top:65px;
+  padding-bottom: 30px;
+}
+
+.clear {
+  clear: both;
+}
+
+/*.test_column3 {
+  width: 30%;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}*/
+

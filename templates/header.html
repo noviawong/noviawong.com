@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Novia Wong</title>
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+        <!--this is the navigation menu-->
+       <div>
+           <ul id=navigation>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('research') }}">Research</a></li>
+                <li><a href="{{ url_for('project') }}">Project</a>
+                    <ul class="submenu">
+                        <li><a href="{{ url_for('classprojects') }}">Class Projects</a></li>
+                        <li><a href="{{ url_for('independent') }}">Independent Projects</a></li>
+                    </ul>
+               </li>
+                <li><a href="mailto:novia0925@gmail.com">Contact</a></li>
+            </ul>
+        </div>
