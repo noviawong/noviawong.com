@@ -13,6 +13,7 @@ def index():
 def project():
     return render_template('project.html')
 
+
 @app.route('/research')
 def research():
     return render_template('research.html')
