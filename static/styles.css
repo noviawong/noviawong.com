@@ -3,11 +3,9 @@
   background-color: #cce6ff;
   padding: 0px;
   margin: 0px;
-  float: right;
-  list-style-type: none;
-  position: relative;
-  width: 100%;
   text-align: right;
+  list-style-type: none;
+  width: 100%;
 }
 
 #navigation a {
@@ -20,7 +18,7 @@
 
 #navigation li {
   position: relative;
-  float: left;
+  display: inline-block;
   padding: 0px;
   margin: 0px;
   font-size: 125%;
