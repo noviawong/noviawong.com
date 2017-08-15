@@ -16,6 +16,10 @@
   padding: 15px 30px 15px 30px;
 }
 
+#navigation a.current {
+  text-decoration: underline black;
+}
+
 #navigation li {
   position: relative;
   display: inline-block;

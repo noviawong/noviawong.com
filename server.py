@@ -4,31 +4,47 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
+def render_temp(name):
+
+    def pageclass(pgname):
+        if pgname == name:
+            return 'current'
+        else:
+            return 'other'
+
+    return render_template(
+        name + '.html',
+        page=name,
+        pageclass=pageclass
+    )
+
+
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_temp('index')
 
 
 @app.route('/project')
 def project():
-    return render_template('project.html')
+    return render_temp('project')
 
 
 @app.route('/research')
 def research():
-    return render_template('research.html')
+    return render_temp('research')
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html')
+    return render_temp('contact')
 
-@app.route('/classprojects')
+@app.route('/project/class')
 def classprojects():
-    return render_template('classprojects.html')
+    return render_temp('classprojects')
 
-@app.route('/independent')
+@app.route('/project/independent')
 def independent():
-    return render_template('independent.html')
+    return render_temp('independent')
 
 if __name__ == '__main__':
     app.run(debug=True)
