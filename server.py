@@ -4,7 +4,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
 def render_temp(name):
 
     def pageclass(pgname):
@@ -18,7 +17,6 @@ def render_temp(name):
         page=name,
         pageclass=pageclass
     )
-
 
 @app.route('/')
 def index():
@@ -45,6 +43,10 @@ def classprojects():
 @app.route('/project/independent')
 def independent():
     return render_temp('independent')
+
+@app.route('/about')
+def about():
+    return render_temp('aboutwebsite')
 
 if __name__ == '__main__':
     app.run(debug=True)
