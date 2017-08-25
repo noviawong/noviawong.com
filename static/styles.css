@@ -127,11 +127,11 @@
 
 /*Footer */
 #footer {
-  position: fixed;
+  position: relative;
   left: 0px;
   bottom: 20px;
   height: 40px;
-  width: 100%;
+  width: 97%;
   list-style-type: none;
   margin: 0px;
   text-align: center;

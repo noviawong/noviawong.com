@@ -1,4 +1,5 @@
 {% include "header.html" %}
+
 <div align="center">
     <p style="padding-top:30px"><font size="100">Research</font></p>
     <p style="padding-bottom:10px">This page includes some of my past academic research I conducted at San Jose State University and University of Michigan.</p>
@@ -31,18 +32,51 @@ explored other areas of interest, such as password composition strategies.</P>
         <p><b>Citation:</b> Wong, N. (2017). <i>Investigating Criteria and Techniques for Increasing Password Security and Memorability for Users.</i> (Honors thesis).</p>
     </div>
 </div>
-
 <div class="clear"></div>
 <hr>
-<!--<<div>
+<div>
     <div class="column1">
-        <img src="" alt="Image Unavailable" style="padding-top:30px">
-        <a href="{{ url_for('static', filename='') }}" download><button style="height:30px;width=300px">Download</button></a>
+        <img src="{{ url_for('static', filename='VM Screenshot 1.PNG') }}" alt="Image Unavailable" style="padding-top:30px" width="95%">
+        <br><br>
+        <a href="{{ url_for('static', filename='SPARC_Poster_2016.pdf') }}" download><button style="height:30px;width=300px">Download Poster</button></a>
     </div>
     <div class="column2">
-        <p><b>Title:</b></p>
-        <p><b>Abstract:</b></p>
-        <p><b>Citation:</b></p>
+        <p><b>Title:</b> The Use of Virtual Machines in Learning About Humans Behaviors on Cyber Security</p>
+        <p><b>Abstract:</b> Cyber security is often thought to be a topic in the computer science field.
+            However, it involves more than just the codes and the framework; a secured network also requires
+            users to be aware of the security situation and to take action. A common example is when the system
+            alerts the users of firewall expiration through a popup notification. However, it is often difficult
+            to know whether these alerts are influential in users’ decision-making regarding cyber security. One
+            way to explore the extent they are influenced is to observe their behaviors when these alerts are presented
+            to them. By using tools such as virtual machines, researchers can perform a study without harming the host
+            system (the computer’s physical hard drive) while documenting users’ behaviors. These tools will also provide
+            a virtual environment that stimulates a real computer setup. Virtual machines can also help researchers to
+            understand more about how different factors (e.g., cost, time, cognitive capacity) affect users’ decisions
+            in making cyber security choices. While this presentation focuses on how virtual machine technology can support
+            research on human decision-making in cyber security, future studies can also utilize this technology to further
+            improve the functionality of technology by incorporating human physical needs and their psychological needs.</p>
+        <p><b>Citation:</b> Wong, N., & Schuster, D. (2016, April). <i>The use of virtual machines in learning about human behavior in cyber security. </i>Poster session presented at the Spartan Psychological Association Research Conference, San Jose, CA.</p>
     </div>
-</div> -->
+</div>
+<div class="clear"></div>
+<hr>
+<div>
+    <div class="column1">
+        <img src="{{ url_for('static', filename='vectr200r.png') }}" alt="Image Unavailable" width="80%">
+        <br><br>
+        <a href="https://www.vectrlab.net/research.php?area=cybersecurity"><button style="height:30px;width=300px">Visit Website</button></a>
+    </div>
+    <div class="column2">
+        <br><br>
+        <p><b>Title:</b> Understanding Human Cognition in Computer Network Defense </p>
+        <p><b>Description:</b> This is an ongoing NSF funded research study at San Jose State University, which I participated
+            as a research assistant when I was an undergraduate student at the university. This study is led by Dr. David Schuster
+            and his lab: Virtual Environments, Cognition, & Training Research Laboratory (VECTR). The current research focuses
+            on developing solution for problems in the cyber security field through the perspective of human factors. The funded study
+        particularly focuses on cyber network defense professionals and the relationship between human decision making models and their
+        daily work. </p>
+    </div>
+</div>
+<div class="clear"></div>
+
 {% include "footer.html" %}
