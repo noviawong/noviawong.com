@@ -11,12 +11,13 @@
            <ul id=navigation>
                 <li><a href="{{ url_for('index') }}" class="{{pageclass('index')}}">Home</a></li>
                 <li><a href="{{ url_for('research') }}" class="{{pageclass('research')}}">Research</a></li>
-                <li><a href="{{ url_for('project') }}" class="{{pageclass('project')}}">Project</a>
+                <li><a href="{{ url_for('project') }}" class="{{pageclass('project')}}">Projects</a>
                     <ul class="submenu">
                         <li><a href="{{ url_for('classprojects') }}">Class Projects</a></li>
                         <li><a href="{{ url_for('independent') }}">Independent Projects</a></li>
                     </ul>
                </li>
+               <li><a href="{{ url_for('static', filename='Resume_Novia Wong.pdf') }}" target="_blank">Resume</a></li>
                 <li><a href="mailto:novia0925@gmail.com" class="{{pageclass('contact')}}">Contact</a></li>
             </ul>
         </div>

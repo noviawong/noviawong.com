@@ -149,8 +149,14 @@
   position: relative;
   display: inline-block;
 }
+
+#footer .GitHub {
+  align: right;
+  padding-top: 5px;
+  padding-left: 40px;
+}
+
 #footer .LinkedIn {
   align: right;
-  padding-left: 50px;
   padding-top: 5px;
 }
