@@ -29,7 +29,7 @@ def project():
 
 
 @app.route('/paper')
-def research():
+def paper():
     return render_temp('paper')
 
 @app.route('/contact')
