@@ -28,9 +28,9 @@ def project():
     return render_temp('project')
 
 
-@app.route('/research')
+@app.route('/paper')
 def research():
-    return render_temp('research')
+    return render_temp('paper')
 
 @app.route('/contact')
 def contact():
