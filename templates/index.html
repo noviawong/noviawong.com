@@ -6,18 +6,54 @@
     </div>
     <div class="column2">
         <br>
-        <div><p align="left"><font size="300" face="Trebuchet MS">Hello!</font></p></div>
-        <p class="content">My name is Novia Wong. I am passionate about finding new ways to incorporate technology into everyday life,
-            especially in areas of learning technology and robotics. My goal is to incorporate technology into everyday classroom for
-            students with special needs and in therapy sessions. My areas of interest include:</p>
+        <div><p align="left"><font size="7" face="Trebuchet MS" color=#004080>Hello!</font></p></div>
+        <p>My name is Novia Wong. I am passionate about finding new ways to incorporate technology into everyday life,
+            especially in areas of learning technology and robotics. My areas of interest include:</p>
         <ul>
             <li>Psychology</li>
             <li>Statistics</li>
             <li>Human-Computer Interaction</li>
-            <li>UX Design and Research</li>
+            <li>UX Research</li>
         </ul>
-        <p>I am currently a student in the master’s program of Science of Information at University of Michigan, Ann Arbor.
+        <p>I am currently a student in the program of Master in Science of Information at the University of Michigan, Ann Arbor.
             I graduated with a Psychology B.S. degree and a Mathematics minor from San Jose State University.</p>
     </div>
 </div>
+<div class="clear"></div>
+<hr color=#DDEAEE>
+<br>
+<!--this marks the beginning of projects highlights-->
+<p align="center"><font size="6" face="Trebuchet MS" color=#004080>Project Highlights</font></p>
+<div>
+    <div class="prohi1"><a href="{{ url_for('mealspace') }}">
+        <img src="{{ url_for('static', filename='MealSpace.png') }}" alt="Image Unavailable">
+        <p>MealSpace is a team-based self-initiated project for 2018 CHI Student Design Competition. It is a solution aimed to solve
+        the problem of college students lacking healthy eating habits. The process of user research and design iteration took place
+            over the course of 4 months.</p></a>
+        <br>
+        <div>
+            <a href="{{ url_for('mealspace') }}"><button class="button">Read More</button></a>
+        </div>
+    </div>
+    <div class="prohi2"><a href="{{ url_for('somethingblue') }}">
+        <img src="{{ url_for('static', filename='SomethingBlue.png') }}" alt="Image Unavailable" width="80%">
+        <p>Something Blue Consulting was a course project at the University of Michigan, where I worked in a team of 4 to assess existing
+            problems of our client, develop interview protocols and conduct interviews with stakeholders, as well as analyze interview
+            results using affinity wall.</p></a>
+        <br>
+        <div>
+            <a href="{{ url_for('somethingblue') }}"><button class="button">Read More</button></a>
+        </div>
+    </div>
+    <div class="prohi3"><a href="{{ url_for('thesis') }}">
+        <img src="{{ url_for('static', filename='PasswordStudy.png') }}" alt="Image Unavailable" width="84%">
+        <p>Inspired by the flaws and constant frustrations of some of the modern account authentication systems, this study explored users'
+            problems with password management and usage. A final written report detailed study findings and result analysis.</p></a>
+        <br>
+        <div>
+            <a href="{{ url_for('thesis') }}"><button class="button">Read More</button></a>
+        </div>
+    </div>
+</div>
+
 {% include "footer.html" %}

@@ -1,22 +1,29 @@
 /*Navigation Bar*/
 #navigation {
-  background-color: #cce6ff;
+  /*background-color: #cce6ff;*/
+  background-color: #004080;
   padding: 0px;
   margin: 0px;
   text-align: right;
   list-style-type: none;
   width: 100%;
+  font-size: 75%;
+  font-family:"Verdana";
 }
 
 #navigation a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   text-align: left;
-  color: black;
-  padding: 15px 30px 15px 30px;
+  color: white;
+  padding: 15px 47px 15px 47px;
 }
 
 #navigation a.current {
+  text-decoration: underline white;
+}
+
+#navigation a.current:hover {
   text-decoration: underline black;
 }
 
@@ -29,33 +36,37 @@
 }
 
 #navigation a:hover {
-  background-color: #004080;
-  color: white;
-}
-
-#navigation ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0%;
-  padding: 0px;
-}
-
-#navigation ul li {
-  background-color: #cce6ff;
-  display: block;
-  text-align: left;
-  width: 200px;
-  font-size: 20px;
+  /*background-color: #004080;*/
+  /*background-color: #6FAFFF;*/
+  background-color: #DDEAEE;
+  color: black;
 }
 
 #navigation li:hover ul {
   display: block;
 }
 
-#navigation active {
-  text-decoration: underline;
+#navigation ul {
+  display: none;
+  position: absolute;
+  /*top: 100%;*/
+  /*left: 0%;*/
+  padding: 0px;
+  width: 100%;
+  text-align: left;
 }
+
+#navigation ul li {
+  background-color: #6FAFFF;
+  display: block;
+  font-size: 90%;
+  font-family:"Verdana";
+}
+
+/*#navigation active {
+  text-decoration: underline;
+  text-decoration-color: white;
+}*/
 
 /*.description {
   text-align: center;
@@ -97,8 +108,8 @@
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
-  padding-top:65px;
-  padding-bottom:30px;
+  padding-top:45px;
+  padding-bottom: 15px;
 }
 
 .column2 {
@@ -106,11 +117,11 @@
   float: left;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 100%;
-  font-family: "Arial";
+  font-size: 90%;
+  font-family: "Verdana";
   text-align: left;
-  padding-top:65px;
-  padding-bottom: 30px;
+  padding-top:45px;
+  padding-bottom: 15px;
 }
 
 .clear {
@@ -125,6 +136,93 @@
   text-align: center;
 }*/
 
+.prohi1 {
+  width: 30%;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  padding-top:40px;
+  padding-bottom:30px;
+}
+
+.prohi1 a {
+  font-family: "Verdana";
+  font-size: 90%;
+  text-decoration: none;
+  color: black;
+  /*  background-color: #76A246;*/
+}
+
+.prohi2 {
+  width: 30%;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  padding-top:40px;
+  padding-bottom:30px;
+  font-family: "Verdana"
+  font-size: 90%;
+  text-decoration: none;
+  color: black;
+}
+
+.prohi2 a {
+  font-family: "Verdana";
+  font-size: 90%;
+  text-decoration: none;
+  color: black;
+}
+
+.prohi3 {
+  width: 30%;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  padding-top:40px;
+  padding-bottom:30px;
+  font-family: "Verdana"
+  font-size: 90%;
+  text-decoration: none;
+  color: black;
+}
+
+.prohi3 a {
+  font-family: "Verdana";
+  font-size: 90%;
+  text-decoration: none;
+  color: black;
+}
+
+/*Projects*/
+.projecttitle {
+  padding-left:40px;
+  padding-right:40px;
+  padding-top:30px;
+}
+
+.projectcontent {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Verdana";
+  font-size: 85%;
+}
+
+.button {
+  padding: 10px 100px;
+  background-color: white;
+  border: 2px solid #004080;
+  font-size:90%;
+  font-family:"Verdana";
+}
+
+.button:hover {
+   background-color: #004080;
+   color: white;
+}
+
 /*Footer */
 #footer {
   position: relative;
@@ -135,7 +233,9 @@
   list-style-type: none;
   margin: 0px;
   text-align: center;
-  background-color: #eaeded;
+  /*background-color: #eaeded;*/
+  font-family: "Verdana";
+  font-size: 90%;
 }
 
 #footer a {
@@ -143,6 +243,11 @@
   text-decoration: none;
   color: black;
   padding-bottom: 20px;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  color: #004080;
 }
 
 #footer li {
@@ -160,3 +265,11 @@
   align: right;
   padding-top: 5px;
 }
+
+/*Misc.
+.pagetitle {
+  font-size: 200%;
+  font-family: "Trebuchet MS";
+  color: #004080;
+  padding-top:20px;
+}*/

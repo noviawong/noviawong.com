@@ -44,6 +44,22 @@ def classprojects():
 def independent():
     return render_temp('independent')
 
+@app.route('/project/independent/thesis')
+def thesis():
+    return render_temp('thesis')
+
+@app.route('/project/independent/mealspace')
+def mealspace():
+    return render_temp('mealspace')
+
+@app.route('/project/independent/somethingblue')
+def somethingblue():
+    return render_temp('somethingblue')
+
+@app.route('/project/independent/RHCA')
+def RHCA():
+    return render_temp('RHCA')
+
 @app.route('/about')
 def about():
     return render_temp('aboutwebsite')
