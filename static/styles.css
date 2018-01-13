@@ -7,8 +7,8 @@
   text-align: right;
   list-style-type: none;
   width: 100%;
-  font-size: 75%;
-  font-family:"Verdana";
+  font-size: 85%;
+  font-family:"Candara";
 }
 
 #navigation a {
@@ -60,7 +60,7 @@
   background-color: #6FAFFF;
   display: block;
   font-size: 90%;
-  font-family:"Verdana";
+  font-family:"Candara";
 }
 
 /*#navigation active {
@@ -108,8 +108,16 @@
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
-  padding-top:45px;
+  padding-top:70px;
   padding-bottom: 15px;
+}
+
+.intro {
+  text-align: center;
+  font-family: "Candara";
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #004080;
 }
 
 .column2 {
@@ -117,10 +125,10 @@
   float: left;
   margin-left: 20px;
   margin-right: 20px;
-  font-size: 90%;
-  font-family: "Verdana";
+  font-size: 100%;
+  font-family: "Candara";
   text-align: left;
-  padding-top:45px;
+  padding-top: 10px;
   padding-bottom: 15px;
 }
 
@@ -143,12 +151,13 @@
   margin-right: 20px;
   text-align: center;
   padding-top:40px;
-  padding-bottom:30px;
+  font-family: "Candara";
+  font-size: 100%;
 }
 
 .prohi1 a {
-  font-family: "Verdana";
-  font-size: 90%;
+  font-family: "Candara";
+  font-size: 100%;
   text-decoration: none;
   color: black;
   /*  background-color: #76A246;*/
@@ -161,16 +170,13 @@
   margin-right: 20px;
   text-align: center;
   padding-top:40px;
-  padding-bottom:30px;
-  font-family: "Verdana"
-  font-size: 90%;
-  text-decoration: none;
-  color: black;
+  font-family: "Candara"
+  font-size: 100%;
 }
 
 .prohi2 a {
-  font-family: "Verdana";
-  font-size: 90%;
+  font-family: "Candara";
+  font-size: 100%;
   text-decoration: none;
   color: black;
 }
@@ -182,16 +188,13 @@
   margin-right: 20px;
   text-align: center;
   padding-top:40px;
-  padding-bottom:30px;
-  font-family: "Verdana"
-  font-size: 90%;
-  text-decoration: none;
-  color: black;
+  font-family: "Candara"
+  font-size: 100%;
 }
 
 .prohi3 a {
-  font-family: "Verdana";
-  font-size: 90%;
+  font-family: "Candara";
+  font-size: 100%;
   text-decoration: none;
   color: black;
 }
@@ -201,21 +204,22 @@
   padding-left:40px;
   padding-right:40px;
   padding-top:30px;
+  padding-bottom:10px;
 }
 
 .projectcontent {
-  padding-left: 40px;
-  padding-right: 40px;
-  font-family: "Verdana";
-  font-size: 85%;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-family: "Candara";
+  font-size: 100%;
 }
 
 .button {
   padding: 10px 100px;
   background-color: white;
   border: 2px solid #004080;
-  font-size:90%;
-  font-family:"Verdana";
+  font-size:100%;
+  font-family:"Candara";
 }
 
 .button:hover {
@@ -234,8 +238,8 @@
   margin: 0px;
   text-align: center;
   /*background-color: #eaeded;*/
-  font-family: "Verdana";
-  font-size: 90%;
+  font-family: "Candara";
+  font-size: 100%;
 }
 
 #footer a {
@@ -273,3 +277,7 @@
   color: #004080;
   padding-top:20px;
 }*/
+
+.expand {
+  display: block;
+}

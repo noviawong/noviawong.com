@@ -3,56 +3,70 @@
 <div>
     <div class="column1">
         <img class="profilepic" src="{{ url_for('static', filename='PsiChiSuit.png') }}" alt="Image Unavailable" width="70%">
+        <p class="intro"> Current Master Student at the </br> University of Michigan School of Information</p>
+        <br>
+        <p class="intro"> Studied psychology and mathematics at </br> San Jose State University </p>
     </div>
     <div class="column2">
         <br>
-        <div><p align="left"><font size="7" face="Trebuchet MS" color=#004080>Hello!</font></p></div>
-        <p>My name is Novia Wong. I am passionate about finding new ways to incorporate technology into everyday life,
-            especially in areas of learning technology and robotics. My areas of interest include:</p>
-        <ul>
+        <div><p align="left"><font size="7" face="Avenir" color=#004080>Hello, I am Novia Wong!</font></p></div>
+        <p> I am passionate about finding new ways to incorporate technology into everyday life,
+            especially in areas of learning technology and robotics.</p>
+        <p> My areas of interest include: <b>(1) Psychology, (2) Statistics, (3) Human-Computer Interaction, and (4) UX Research.</b></p>
+        <p> My journey to become a UX researcher began when I was in my first year of college, when I wondered if there was a
+        way to merge technology and psychology together:</p>
+        <!--<p align="center"> Engineering Psychology <b>-></b> Human Factors <b>-></b> Human-Computer Interactions <b>-></b> UX Research</p>-->
+        <img src="{{ url_for('static', filename='journey.png') }}" alt="Image Unavailable" width="100%">
+        <!--<ul>
             <li>Psychology</li>
             <li>Statistics</li>
             <li>Human-Computer Interaction</li>
             <li>UX Research</li>
-        </ul>
-        <p>I am currently a student in the program of Master in Science of Information at the University of Michigan, Ann Arbor.
-            I graduated with a Psychology B.S. degree and a Mathematics minor from San Jose State University.</p>
+        </ul>-->
+        <p>In my free time, I enjoy doing the following activities:</p>
+        <!--<div align="center">
+            <img src="{{ url_for('static', filename='piano.png') }}" alt="Image Unavailable" width="20%">
+            <img src="{{ url_for('static', filename='baking.png') }}" alt="Image Unavailable" width="20%">
+            <img src="{{ url_for('static', filename='photo.png') }}" alt="Image Unavailable" width="20%">
+            <img src="{{ url_for('static', filename='robot.png') }}" alt="Image Unavailable" width="20%">-->
+        <div align="center"><img src="{{ url_for('static', filename='hobbies.png') }}" alt="Image Unavailable" width="70%"></div>
+        </div>
     </div>
 </div>
 <div class="clear"></div>
 <hr color=#DDEAEE>
 <br>
 <!--this marks the beginning of projects highlights-->
-<p align="center"><font size="6" face="Trebuchet MS" color=#004080>Project Highlights</font></p>
+<p align="center"><font size="6" face="Avenir" color=#004080>Project Highlights</font></p>
 <div>
     <div class="prohi1"><a href="{{ url_for('mealspace') }}">
         <img src="{{ url_for('static', filename='MealSpace.png') }}" alt="Image Unavailable">
         <p>MealSpace is a team-based self-initiated project for 2018 CHI Student Design Competition. It is a solution aimed to solve
         the problem of college students lacking healthy eating habits. The process of user research and design iteration took place
             over the course of 4 months.</p></a>
-        <br>
-        <div>
-            <a href="{{ url_for('mealspace') }}"><button class="button">Read More</button></a>
-        </div>
     </div>
     <div class="prohi2"><a href="{{ url_for('somethingblue') }}">
         <img src="{{ url_for('static', filename='SomethingBlue.png') }}" alt="Image Unavailable" width="80%">
         <p>Something Blue Consulting was a course project at the University of Michigan, where I worked in a team of 4 to assess existing
             problems of our client, develop interview protocols and conduct interviews with stakeholders, as well as analyze interview
             results using affinity wall.</p></a>
-        <br>
-        <div>
-            <a href="{{ url_for('somethingblue') }}"><button class="button">Read More</button></a>
-        </div>
     </div>
     <div class="prohi3"><a href="{{ url_for('thesis') }}">
         <img src="{{ url_for('static', filename='PasswordStudy.png') }}" alt="Image Unavailable" width="84%">
         <p>Inspired by the flaws and constant frustrations of some of the modern account authentication systems, this study explored users'
             problems with password management and usage. A final written report detailed study findings and result analysis.</p></a>
-        <br>
-        <div>
-            <a href="{{ url_for('thesis') }}"><button class="button">Read More</button></a>
-        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<div>
+    <div class="prohi1">
+        <a href="{{ url_for('mealspace') }}"><button class="button">Read More</button></a>
+    </div>
+    <div class="prohi2">
+        <a href="{{ url_for('somethingblue') }}"><button class="button">Read More</button></a>
+    </div>
+    <div class="prohi3">
+        <a href="{{ url_for('thesis') }}"><button class="button">Read More</button></a>
     </div>
 </div>
 
