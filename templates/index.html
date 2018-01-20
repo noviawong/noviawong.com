@@ -3,41 +3,48 @@
 <div>
     <div class="column1">
         <img class="profilepic" src="{{ url_for('static', filename='PsiChiSuit.png') }}" alt="Image Unavailable" width="70%">
-        <p class="intro"> Current Master Student at the </br> University of Michigan School of Information</p>
+        <!--<p class="intro"> Current Master Student at the </br> University of Michigan School of Information</p>
         <br>
-        <p class="intro"> Studied psychology and mathematics at </br> San Jose State University </p>
+        <p class="intro"> Studied psychology and mathematics at </br> San Jose State University </p>-->
     </div>
     <div class="column2">
         <br>
-        <div><p align="left"><font size="7" face="Avenir" color=#004080>Hello, I am Novia Wong!</font></p></div>
+        <div>
+            <p align="left"><font size="7" face="Trebuchet MS" color=#004080>Hello, I am Novia Wong!</font></p>
+        </div>
+        <p><font color="#93AED4">Current Master Student at the University of Michigan School of Information  |  Studied Psychology and Mathematics
+            at San Jose State University</font></p>
         <p> I am passionate about finding new ways to incorporate technology into everyday life,
-            especially in areas of learning technology and robotics.</p>
-        <p> My areas of interest include: <b>(1) Psychology, (2) Statistics, (3) Human-Computer Interaction, and (4) UX Research.</b></p>
-        <p> My journey to become a UX researcher began when I was in my first year of college, when I wondered if there was a
-        way to merge technology and psychology together:</p>
-        <!--<p align="center"> Engineering Psychology <b>-></b> Human Factors <b>-></b> Human-Computer Interactions <b>-></b> UX Research</p>-->
-        <img src="{{ url_for('static', filename='journey.png') }}" alt="Image Unavailable" width="100%">
+            especially in areas of learning technology and robotics. And in my free time, I enjoy doing the following activities:</p>
+        <!--<div align="center">
+            <img src="{{ url_for('static', filename='piano.png') }}" alt="Image Unavailable" width="20%">
+            <img src="{{ url_for('static', filename='baking.png') }}" alt="Image Unavailable" width="20%">
+            <img src="{{ url_for('static', filename='photo.png') }}" alt="Image Unavailable" width="20%">
+            <img src="{{ url_for('static', filename='robot.png') }}" alt="Image Unavailable" width="20%">-->
+        <div align="center"><img src="{{ url_for('static', filename='hobbies.png') }}" alt="Image Unavailable" width="65%"></div>
+        <p> Professionally, my areas of interest include:</br>
+            <div align="center"><b>(1) Psychology, (2) Statistics, (3) Human-Computer Interaction, and (4) UX Research.</b></div></p>
         <!--<ul>
             <li>Psychology</li>
             <li>Statistics</li>
             <li>Human-Computer Interaction</li>
             <li>UX Research</li>
         </ul>-->
-        <p>In my free time, I enjoy doing the following activities:</p>
-        <!--<div align="center">
-            <img src="{{ url_for('static', filename='piano.png') }}" alt="Image Unavailable" width="20%">
-            <img src="{{ url_for('static', filename='baking.png') }}" alt="Image Unavailable" width="20%">
-            <img src="{{ url_for('static', filename='photo.png') }}" alt="Image Unavailable" width="20%">
-            <img src="{{ url_for('static', filename='robot.png') }}" alt="Image Unavailable" width="20%">-->
-        <div align="center"><img src="{{ url_for('static', filename='hobbies.png') }}" alt="Image Unavailable" width="70%"></div>
-        </div>
     </div>
 </div>
 <div class="clear"></div>
-<hr color=#DDEAEE>
+<hr color=#AEC0D9>
+<div align="center">
+    <p class="projectcontent"> My journey to become a UX researcher began when I was in my first year of college, when I wondered if there was a
+        way to merge technology and psychology:</p>
+        <!--<p align="center"> Engineering Psychology <b>-></b> Human Factors <b>-></b> Human-Computer Interactions <b>-></b> UX Research</p>-->
+        <img src="{{ url_for('static', filename='journey.png') }}" alt="Image Unavailable" width="65%">
+</div>
+<div class="clear"></div>
+<hr color=#AEC0D9>
 <br>
 <!--this marks the beginning of projects highlights-->
-<p align="center"><font size="6" face="Avenir" color=#004080>Project Highlights</font></p>
+<p align="center"><font size="6" face="Trebuchet MS" color=#004080>Project Highlights</font></p>
 <div>
     <div class="prohi1"><a href="{{ url_for('mealspace') }}">
         <img src="{{ url_for('static', filename='MealSpace.png') }}" alt="Image Unavailable">

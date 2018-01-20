@@ -1,6 +1,7 @@
 /*Navigation Bar*/
 #navigation {
   /*background-color: #cce6ff;*/
+  /*background-color: #004080;*/
   background-color: #004080;
   padding: 0px;
   margin: 0px;
@@ -38,7 +39,8 @@
 #navigation a:hover {
   /*background-color: #004080;*/
   /*background-color: #6FAFFF;*/
-  background-color: #DDEAEE;
+  /*background-color: #DDEAEE;*/
+  background-color: #AEC0D9;
   color: black;
 }
 
@@ -57,7 +59,8 @@
 }
 
 #navigation ul li {
-  background-color: #6FAFFF;
+  /*background-color: #6FAFFF;*/
+  background-color: #719DD9;
   display: block;
   font-size: 90%;
   font-family:"Candara";

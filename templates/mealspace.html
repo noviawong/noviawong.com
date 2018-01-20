@@ -2,10 +2,14 @@
 
 <div align="center">
     <p class="projecttitle"><font size="5" face="Trebuchet MS" color=#004080>MealSpace: A New Way To Eat And Cook Nutritious Meals With Friends</font></p>
-    <hr color=#DDEAEE>
+    <hr color=#AEC0D9>
 </div>
-<div>
-    <P class="projectcontent"><b>Summary:</b> MealSpace is a solution that engages the student community that is new to a university campus
+<div class="projectcontent">
+    <br>
+    <p><b>Role:</b> UX Researcher and Designer</p>
+    <p><b>Skills Used:</b></br>Online and Paper Surveys</br>Diary Studies</br>User and Stakeholder Interviews</br>Competitive Analysis</br>Design Matrix</br>
+        Axure</br>Invision</br>Google Drive</p>
+    <p><b>Summary:</b> MealSpace is a solution that engages the student community that is new to a university campus
         by providing a physical space for students to cook together to encourage healthy eating. This space provides ingredients for
         tailored recipes, along with step-by-step guidance for preparing the meal. Drawing inspiration from maker spaces across the nation,
         MealSpace is conceptualized from studying student habits, responses, and working with the University of Michigan Health Services.
@@ -13,9 +17,155 @@
         since the drastic change of setting can push students to not prioritize healthy eating. Using various methods such as surveys,
         contextual inquiry, and diary studies, MealSpace was created. The technical intervention focuses on a website for registration of
         cooking sessions and a tablet interface for recipes. The main focus of MealSpace resides in engaging students to create a meal
-        with each other.</P>
-    <p><b></b></p>
+        with each other.</p>
+    <br>
+    <hr color=#AEC0D9>
+    <br>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_poster.jpg') }}" alt="Image Unavailable" width="70%">
     </div>
+    <p><b></b></p>
+    <hr color=#AEC0D9>
+    <p><b>Research Process</b></p>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_process.png') }}" alt="Image Unavailable" width="75%">
+    </div>
+    <!--Beginning of first stage of research process-->
+    <p>
+        <b>1.</b> Identifying Problem Scope </br></p>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_problem.jpg') }}" alt="Image Unavailable" width="65%">
+    </div>
+    <p>
+        The project goal was to create a socially engaging solution for a problem that a community current faces. To identify a community
+        and the problem community members are facing, we brainstormed different population groups residing in Ann Arbor, Michigan, and
+        categories of potential problems community members might face. We decided on the final three based on user group availability and
+        group interest: (1) International college students' initial adjustment to foreign countries, (2) Teenagers and young adults'
+        unhealthy amount of obsession with video games, and (3) College students and young adults' imbalanced eating habits. To choose a
+        final community and problem to work on, we each conducted literature reviews and created mini-presentations among ourselves regarding
+        the three topics. We also reached out to three professors at the University of Michigan and received input on the community we
+        should work with.
+        <br><br><font color="#004080"><b>Outcome</b>: Completing literature reviews and receiving outsiders' feedback on community
+        selection allowed us to select a community group more objectively than simply relying on personal preferences. Literature
+        reviews also revealed the past research conducted on the community as well as what solutions had been attempted in the past.</font>
+        <br><br><p align="center"><font size="5" color="gray">
+                <i>The winner? College students and young adults' imbalanced eating habits</i>
+            </font></p>
+    </p>
+    <br>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_initialsurvey.jpg') }}" alt="Image Unavailable" width="65%">
+    </div>
+    <p>
+        Initially, we thought the problem was poor meal planning. Therefore, to gauge more details about the challenges college
+        students and young adults face when it comes to eating and grocery shopping, I developed a questionnaire that was sent to college
+        students at University of Michigan. We decided to utilize an online questionnaire because we could <i><b>collect a large volume of data
+        anonymously in a short period of time</b></i>, with just enough data that could move us forward to the next step in the process.
+        Examples of questions asked in the survey include the following:
+        <ul>
+            <li>How often do you plan your meal?</li>
+            <li>Are you concerned about the nutritional value of your meals?</li>
+            <li>Are you currently using any online grocery shopping services?</li>
+            <li>How often do you go grocery shopping?</li>
+        </ul>
+     <br><font color="#004080"><b>Outcome</b>: From this initial survey, we received over 30 responses and learned four major needs of our community:
+        (1) access to healthy and affordable food, (2) guidelines on how to effectively prepare food, (3) nutritional information,
+        and (4) convenience and time.</font>
+    </p>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_competitiveanalysis.png') }}" alt="Image Unavailable" width="65%">
+    </div>
+    <p>
+        With the user needs in mind, we put together a competitive analysis to assess what solutions have already been attempted specifically
+        for meal planning and expedited grocery shopping. This chart also helped us to identify what aspects of the current solutions were
+        flawed and what worked well.
+    </p>
+    <br>
+    <!--Beginning of second stage of research process-->
+    <p>
+        <b>2.</b> User Research </br></p>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_papersurvey.png') }}" alt="Image Unavailable" width="65%">
+    </div>
+    <p>
+        We quickly decided to design a mobile application to aid college students and young adults to plan and shop for more balanced
+        meals. With that said, the next phase was to identify features that users would like to see in the application, as well as to
+        collect more data on what service they currently use. We provided seven different factors for users to rank, from 1 being the
+        most important and 7 being the least important. I suggested the team to use printed copies for this one instead of an online
+        survey. Given the time constraint we had and the amount of data we needed to collect, <i><b>a 3-question paper survey allowed
+        us to quickly distribute the questions and collect users' perspectives on mobile application that aims to plan their meals,
+        shop for their grocery, and track their nutrition.</b></i>
+        <br><br><font color="#004080"><b>Outcome</b>: We collected 21 responses over the course of a week, enabling us to identify two
+        key features users wanted to include in the solution: (1) Able to provide nutrition information for users and motivate them
+        to eat nutritiously, and (2) low cost.</font>
+    </p>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_diarystudies.png') }}" alt="Image Unavailable" width="65%">
+    </div>
+    <p>
+        While the paper survey was able to provide us quantitative data on what users prefer, we wanted to look more into detailed
+        users' daily routines in terms of meal planning and grocery shopping. As a result, we conducted semi-structure interviews with
+        young adults and college students, focusing on exploring the food items they purchase and eat on a regular basis, as well as their current
+        technological solutions to solve problems they face in regards to tracking nutrition. To follow up with the interviews, we
+        sent out a diary study that tracked data for one week. Users recorded their meal planning for that week, the food items they
+        had and where they got them from, and the mood of their meals.
+        <br><br><font color="#004080"><b>Outcome</b>: Through semi-structure interviews and diary studies, we further identified several
+        solutions that currently solve the problems of tracking nutrition and expedited grocery shopping experiences (e.g., MyFitnessPal).
+        We also found that most users plan their meals on the night before or the day of the meal, often written down on something
+        physical. It was revealed to us that users often deviate from their grocery list when shopping for grocery and consume food items
+        based on their immediate availability and ease of preparation. Finally, we found that social engagement during a meal increases
+        satisfaction with the meal.</font>
+    </p>
+    <!--Beginning of third stage of research process-->
+    <br>
+    <p>
+        <b>3.</b> Design and Prototype </br></p>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_firstsketch.png') }}" alt="Image Unavailable" width="55%">
+    </div>
+    <p>
+        After user research, we began to make sketches using paper and pencil for
+    </p>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_initialsolution.jpg') }}" alt="Image Unavailable" width="55%">
+    </div>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_final.jpg') }}" alt="Image Unavailable" width="55%">
+    </div>
+    <p>
+        Based on this new design solution, we refocused our problem scope as I designed an additional questionnaire to be sent out to
+        undergraduate students at the University. This time, we wanted to understand their experiences when they first went through the
+        transition of cooking independently. This iteration briefly brought us back to phase two of the research process of user research,
+        but I believed that it was necessary to understand the true experiences and struggles users had gone through.
+        <br><br><font color="#004080"><b>Outcome</b>: Survey results confirmed our hypothesis that college students in transition to
+        cooking independently often face challenges to eat nutriously. This became one of the major factors that lead to consuming imbalanced
+        meals.</font>
+    </p>
+    <div align="center">
+        <img src="{{ url_for('static', filename='mealspace_example.png') }}" alt="Image Unavailable" width="55%">
+        <p><i>
+            Digital prototypes were created using Sketch, Invision, and Axure.
+        </i></p>
+    </div>
+    <!--Beginning of last stage of research process-->
+    <br>
+    <p>
+        <b>4.</b> User Feedback </br><br>
+        After finalizing on our design solution, we contacted a dietitian nutritionist at University of Michigan for a semi-structured
+        interviews to discuss about our solution. The interview lasted about 30 minutes long and she received an explanation and a walkthrough
+        of our solution. She also interacted with our protoytpes and we received feedback from her both on the conceptual and practical aspects
+        of the solution. We also had other open-ended questions regarding nutrition and eating habits of college students who were transitioning
+        from having someone else cook for them to having to cook on their own.
+        <br><br><font color="#004080"><b>Outcome</b>: We received more insight on the new problem scope and was able to verify
+        the practicality of our solution. The feedback we received was positive and we were referred to the Dining Service on campus
+        for further development.</font>
+        We also had current college students providing us with feedback on the solution. They reviewed the prototypes and commented on
+        features they liked and features they were concerned about. For example, some expressed concerns about safety and the overall
+        monetary cost of attending a MealSpace session. As a result, we reached out to MBA students and identified a business plan.
+    </p>
+    <br><p align="center"><font size="5" color="gray">
+                <i>As of right now, this design is still in its conceptual phase.</i>
+    </font></p>
 </div>
 
 {% include "footer.html" %}
