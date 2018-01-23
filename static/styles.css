@@ -89,6 +89,67 @@
   margin: auto;
 }*/
 
+
+/*Responsive Columns*/
+* {
+    box-sizing: border-box;
+}
+.col-1 {
+    width: 8.33%;
+    float: left;
+    padding: 15px;
+}
+.col-2 {width: 16.66%;
+    float: left;
+    padding: 15px;
+}
+.col-3 {width: 25%;
+    float: left;
+    padding: 15px;
+}
+.col-4 {width: 33.33%;
+    float: left;
+    padding: 15px;
+}
+.col-5 {width: 41.66%;
+    float: left;
+    padding: 15px;
+}
+.col-6 {width: 50%;
+    float: left;
+    padding: 15px;
+}
+.col-7 {width: 58.33%;
+    float: left;
+    padding: 15px;
+}
+.col-8 {width: 66.66%;
+    float: left;
+    padding: 15px;
+}
+.col-9 {width: 75%;
+    float: left;
+    padding: 15px;
+}
+.col-10 {width: 83.33%;
+    float: left;
+    padding: 15px;
+}
+.col-11 {width: 91.66%;
+    float: left;
+    padding: 15px;
+}
+.col-12 {width: 100%;
+    float: left;
+    padding: 15px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
 /*Home Page*/
 
 .profilepic {
@@ -106,29 +167,28 @@
 }*/
 
 .column1 {
-  width: 30%;
+  /*width: 30%;*/
   float: left;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   text-align: center;
   padding-top:70px;
   padding-bottom: 15px;
 }
 
-/*.intro {
-  text-align: center;
-  font-family: "Calibri";
-  padding-left: 30px;
-  padding-right: 30px;
-  color: #004080;
-}*/
+.intro {
+  text-align: left;
+  font-family: "Calibri Light";
+  color: gray;
+  font-size: 120%;
+}
 
 .column2 {
-  width: 60%;
+  /*width: 70%;*/
   float: left;
-  margin-left: 20px;
+  /*margin-left: 20px;
   margin-right: 20px;
-  font-size: 100%;
+  /*font-size: 100%;*/
   font-family: "Calibri Light";
   color: gray;
   text-align: left;
@@ -149,18 +209,18 @@
 }*/
 
 .prohi1 {
-  width: 30%;
+  /*width: 30%;*/
   float: left;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   text-align: center;
   padding-top:40px;
-  font-family: "Calibri";
+  font-family: "Calibri Light";
   font-size: 100%;
 }
 
 .prohi1 a {
-  font-family: "Calibri";
+  font-family: "Calibri Light";
   font-size: 100%;
   text-decoration: none;
   color: black;
@@ -168,36 +228,36 @@
 }
 
 .prohi2 {
-  width: 30%;
+  /*width: 30%;*/
   float: left;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   text-align: center;
   padding-top:40px;
-  font-family: "Calibri"
+  font-family: "Calibri Light"
   font-size: 100%;
 }
 
 .prohi2 a {
-  font-family: "Calibri";
+  font-family: "Calibri Light";
   font-size: 100%;
   text-decoration: none;
   color: black;
 }
 
 .prohi3 {
-  width: 30%;
+  /*width: 30%;*/
   float: left;
-  margin-left: 20px;
-  margin-right: 20px;
+  /*margin-left: 20px;
+  margin-right: 20px;*/
   text-align: center;
   padding-top:40px;
-  font-family: "Calibri"
+  font-family: "Calibri Light"
   font-size: 100%;
 }
 
 .prohi3 a {
-  font-family: "Calibri";
+  font-family: "Calibri Light";
   font-size: 100%;
   text-decoration: none;
   color: black;
@@ -215,7 +275,8 @@
   padding-left: 150px;
   padding-right: 150px;
   font-family: "Calibri Light";
-  font-size: 100%;
+  font-size: 150%;
+  color: gray;
 }
 
 .button {
@@ -223,7 +284,7 @@
   background-color: white;
   border: 2px solid #004080;
   font-size:100%;
-  font-family:"Calibri";
+  font-family:"Calibri Light";
   width: 100%;
 }
 
@@ -243,7 +304,7 @@
   margin: 0px;
   text-align: center;
   /*background-color: #eaeded;*/
-  font-family: "Calibri";
+  font-family: "Calibri Light";
   font-size: 100%;
 }
 
@@ -287,8 +348,9 @@
   display: block;
 }
 
-@media (max-width:800px) {
+
+/*@media (max-width:800px) {
   .column1, .column2, .prohi1, .prohi2, .prohi3 {
-    width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
+    width:100%; /*The width is 100%, when the viewport is 800px or smaller
   }
-}
+}*/
