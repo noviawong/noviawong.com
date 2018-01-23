@@ -1,14 +1,13 @@
 {% include "header.html" %}
+
 <!--this is the home page text and image-->
+
 <div>
-    <!--<div class="column1">-->
+    <!-- Profile Image -->
     <div class="col-4">
-        <img class="profilepic" src="{{ url_for('static', filename='PsiChiSuit.png') }}" alt="Image Unavailable" width="70%">
-        <!--<p class="intro"> Current Master Student at the </br> University of Michigan School of Information</p>
-        <br>
-        <p class="intro"> Studied psychology and mathematics at </br> San Jose State University </p>-->
+        <img id="profilepic" src="{{ url_for('static', filename='PsiChiSuit.png') }}" alt="Image Unavailable" width="70%">
     </div>
-    <!--<div class="column2">-->
+    <!-- About Me -->
     <div class="col-8">
         <br>
         <div>
@@ -27,28 +26,35 @@
             <div align="center"><img src="{{ url_for('static', filename='hobbies.png') }}" alt="Image Unavailable" width="65%"></div>
             <p> Professionally, my areas of interest include:</br>
                 <div align="center">Psychology</br>Statistics</br>Human-Computer Interaction</br>UX Research</div></p>
-        <!--<ul>
-            <li>Psychology</li>
-            <li>Statistics</li>
-            <li>Human-Computer Interaction</li>
-            <li>UX Research</li>
-        </ul>-->
         </div>
     </div>
 </div>
+
+<!-- Clears format -->
+
 <div class="clear"></div>
 <hr color=#AEC0D9>
-<div align="center">
+
+<!--Journey map-->
+
+<div>
     <br>
-    <p class="projectcontent"> My journey to become a UX researcher began when I was in my first year of college, when I wondered if there was a
-        way to merge technology and psychology.</font></p>
+    <p id="journey_descr"> My journey to become a UX researcher began when I was in my first year of college...</br>I wondered if there was a
+        way to merge technology and psychology.</p>
         <!--<p align="center"> Engineering Psychology <b>-></b> Human Factors <b>-></b> Human-Computer Interactions <b>-></b> UX Research</p>-->
+    <div align="center">
         <img src="{{ url_for('static', filename='journey.png') }}" alt="Image Unavailable" width="70%">
+    </div>
 </div>
+
+<!-- Clears format -->
+
 <div class="clear"></div>
 <hr color=#AEC0D9>
 <br>
-<!--this marks the beginning of projects highlights-->
+
+<!--Beginning of projects highlights-->
+
 <p align="center"><font size="6" face="Trebuchet MS" color=#004080>Project Highlights</font></p>
 <div>
     <div class="col-4">

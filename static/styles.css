@@ -89,73 +89,99 @@
   margin: auto;
 }*/
 
-
 /*Responsive Columns*/
 * {
     box-sizing: border-box;
 }
-.col-1 {
-    width: 8.33%;
-    float: left;
-    padding: 15px;
-}
-.col-2 {width: 16.66%;
-    float: left;
-    padding: 15px;
-}
-.col-3 {width: 25%;
-    float: left;
-    padding: 15px;
-}
-.col-4 {width: 33.33%;
-    float: left;
-    padding: 15px;
-}
-.col-5 {width: 41.66%;
-    float: left;
-    padding: 15px;
-}
-.col-6 {width: 50%;
-    float: left;
-    padding: 15px;
-}
-.col-7 {width: 58.33%;
-    float: left;
-    padding: 15px;
-}
-.col-8 {width: 66.66%;
-    float: left;
-    padding: 15px;
-}
-.col-9 {width: 75%;
-    float: left;
-    padding: 15px;
-}
-.col-10 {width: 83.33%;
-    float: left;
-    padding: 15px;
-}
-.col-11 {width: 91.66%;
-    float: left;
-    padding: 15px;
-}
-.col-12 {width: 100%;
-    float: left;
-    padding: 15px;
-}
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
+
+/* For mobile phones: */
+[class*="col-"] {
         width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {
+        width: 8.33%;
+        float: left;
+        padding: 15px;
     }
+    .col-2 {width: 16.66%;
+        float: left;
+        padding: 15px;
+    }
+    .col-3 {width: 25%;
+        float: left;
+        padding: 15px;
+    }
+    .col-4 {width: 33.33%;
+        float: left;
+        padding: 15px;
+    }
+    .col-5 {width: 41.66%;
+        float: left;
+        padding: 15px;
+    }
+    .col-6 {width: 50%;
+        float: left;
+        padding: 15px;
+    }
+    .col-7 {width: 58.33%;
+        float: left;
+        padding: 15px;
+    }
+    .col-8 {width: 66.66%;
+        float: left;
+        padding: 15px;
+    }
+    .col-9 {width: 75%;
+        float: left;
+        padding: 15px;
+    }
+    .col-10 {width: 83.33%;
+        float: left;
+        padding: 15px;
+    }
+    .col-11 {width: 91.66%;
+        float: left;
+        padding: 15px;
+    }
+    .col-12 {width: 100%;
+        float: left;
+        padding: 15px;
+    }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*Home Page*/
 
-.profilepic {
-  display:inline;
+#profilepic {
+  padding-top: 70px;
   align: center;
   margin: 15px;
+}
+
+.intro {
+  text-align: left;
+  font-family: "Calibri Light";
+  color: gray;
+  font-size: 120%;
+}
+
+#journey_descr {
+  text-align: center;
+  color: gray;
+  font-size: 150%;
+  font-family: "Calibri Light";
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.clear {
+  clear: both;
 }
 
 /*.content {
@@ -166,39 +192,28 @@
   text-align: center;
 }*/
 
-.column1 {
-  /*width: 30%;*/
-  float: left;
-  /*margin-left: 20px;
-  margin-right: 20px;*/
-  text-align: center;
-  padding-top:70px;
-  padding-bottom: 15px;
-}
-
-.intro {
-  text-align: left;
-  font-family: "Calibri Light";
-  color: gray;
-  font-size: 120%;
-}
-
-.column2 {
-  /*width: 70%;*/
+/*.column1 {
+  width: 30%;
   float: left;
   /*margin-left: 20px;
   margin-right: 20px;
-  /*font-size: 100%;*/
+  text-align: center;
+  padding-top:70px;
+  padding-bottom: 15px;
+}*/
+
+/*.column2 {
+  width: 70%;
+  float: left;
+  /*margin-left: 20px;
+  margin-right: 20px;
+  /*font-size: 100%;
   font-family: "Calibri Light";
   color: gray;
   text-align: left;
   padding-top: 10px;
   padding-bottom: 15px;
-}
-
-.clear {
-  clear: both;
-}
+}*/
 
 /*.test_column3 {
   width: 30%;
