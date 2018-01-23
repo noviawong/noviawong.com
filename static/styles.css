@@ -9,7 +9,7 @@
   list-style-type: none;
   width: 100%;
   font-size: 85%;
-  font-family:"Candara";
+  font-family:"Calibri";
 }
 
 #navigation a {
@@ -63,7 +63,7 @@
   background-color: #719DD9;
   display: block;
   font-size: 90%;
-  font-family:"Candara";
+  font-family:"Calibri";
 }
 
 /*#navigation active {
@@ -115,13 +115,13 @@
   padding-bottom: 15px;
 }
 
-.intro {
+/*.intro {
   text-align: center;
-  font-family: "Candara";
+  font-family: "Calibri";
   padding-left: 30px;
   padding-right: 30px;
   color: #004080;
-}
+}*/
 
 .column2 {
   width: 60%;
@@ -129,7 +129,8 @@
   margin-left: 20px;
   margin-right: 20px;
   font-size: 100%;
-  font-family: "Candara";
+  font-family: "Calibri Light";
+  color: gray;
   text-align: left;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -154,12 +155,12 @@
   margin-right: 20px;
   text-align: center;
   padding-top:40px;
-  font-family: "Candara";
+  font-family: "Calibri";
   font-size: 100%;
 }
 
 .prohi1 a {
-  font-family: "Candara";
+  font-family: "Calibri";
   font-size: 100%;
   text-decoration: none;
   color: black;
@@ -173,12 +174,12 @@
   margin-right: 20px;
   text-align: center;
   padding-top:40px;
-  font-family: "Candara"
+  font-family: "Calibri"
   font-size: 100%;
 }
 
 .prohi2 a {
-  font-family: "Candara";
+  font-family: "Calibri";
   font-size: 100%;
   text-decoration: none;
   color: black;
@@ -191,12 +192,12 @@
   margin-right: 20px;
   text-align: center;
   padding-top:40px;
-  font-family: "Candara"
+  font-family: "Calibri"
   font-size: 100%;
 }
 
 .prohi3 a {
-  font-family: "Candara";
+  font-family: "Calibri";
   font-size: 100%;
   text-decoration: none;
   color: black;
@@ -213,7 +214,7 @@
 .projectcontent {
   padding-left: 150px;
   padding-right: 150px;
-  font-family: "Candara";
+  font-family: "Calibri Light";
   font-size: 100%;
 }
 
@@ -222,7 +223,8 @@
   background-color: white;
   border: 2px solid #004080;
   font-size:100%;
-  font-family:"Candara";
+  font-family:"Calibri";
+  width: 100%;
 }
 
 .button:hover {
@@ -241,7 +243,7 @@
   margin: 0px;
   text-align: center;
   /*background-color: #eaeded;*/
-  font-family: "Candara";
+  font-family: "Calibri";
   font-size: 100%;
 }
 
@@ -283,4 +285,10 @@
 
 .expand {
   display: block;
+}
+
+@media (max-width:800px) {
+  .column1, .column2, .prohi1, .prohi2, .prohi3 {
+    width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
+  }
 }
