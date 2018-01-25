@@ -1,26 +1,30 @@
 /*Navigation Bar*/
-#navigation {
+.navigation {
   /*background-color: #cce6ff;*/
   /*background-color: #004080;*/
   background-color: #004080;
   padding: 0px;
   margin: 0px;
-  text-align: right;
-  list-style-type: none;
+  /*text-align: right;
+  list-style-type: none;*/
   width: 100%;
-  font-size: 85%;
-  font-family:"Calibri";
+  /*font-size: 85%;
+  font-family:"Calibri";*/
+  overflow: hidden;
 }
 
-#navigation a {
+.navigation a {
   display: block;
+  float: left;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
   color: white;
-  padding: 15px 47px 15px 47px;
+  padding: 15px 40px 15px 40px;
+  font-size: 100%;
+  font-family: "Calibri";
 }
 
-#navigation a.current {
+.navigation a.current {
   text-decoration: underline white;
 }
 
@@ -28,7 +32,7 @@
   text-decoration: underline black;
 }
 
-#navigation li {
+.navigation li {
   position: relative;
   display: inline-block;
   padding: 0px;
@@ -36,7 +40,7 @@
   font-size: 125%;
 }
 
-#navigation a:hover {
+.navigation a:hover {
   /*background-color: #004080;*/
   /*background-color: #6FAFFF;*/
   /*background-color: #DDEAEE;*/
@@ -44,11 +48,11 @@
   color: black;
 }
 
-#navigation li:hover ul {
+.navigation li:hover ul {
   display: block;
 }
 
-#navigation ul {
+.navigation ul {
   display: none;
   position: absolute;
   /*top: 100%;*/
@@ -58,12 +62,40 @@
   text-align: left;
 }
 
-#navigation ul li {
+.navigation ul li {
   /*background-color: #6FAFFF;*/
   background-color: #719DD9;
   display: block;
   font-size: 90%;
   font-family:"Calibri";
+}
+
+.navigation .icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation a:not(:first-child) {display: none;}
+  .navigation a.icon {
+   float: right;
+   display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation.responsive {
+        position: relative;
+    }
+    .navigation.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 /*#navigation active {
@@ -246,7 +278,7 @@
   /*margin-left: 20px;
   margin-right: 20px;*/
   text-align: center;
-  padding-top:40px;
+  padding-top:45px;
   font-family: "Calibri Light"
   font-size: 100%;
   color: gray;
@@ -265,7 +297,7 @@
   /*margin-left: 20px;
   margin-right: 20px;*/
   text-align: center;
-  padding-top:40px;
+  padding-top:45px;
   font-family: "Calibri Light"
   font-size: 100%;
   color: gray;
@@ -284,13 +316,14 @@
   padding-right:40px;
   padding-top:30px;
   padding-bottom:10px;
+  font-family: "Trebuchet MS";
+  font-size: 180%;
+  color: #004080;
 }
 
 .projectcontent {
-  padding-left: 150px;
-  padding-right: 150px;
   font-family: "Calibri Light";
-  font-size: 150%;
+  font-size: 110%;
   color: gray;
 }
 

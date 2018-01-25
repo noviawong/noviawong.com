@@ -7,17 +7,26 @@
 </head>
 <body>
         <!-- This is the navigation menu -->
-       <div>
-           <ul id=navigation>
-                <li><a href="{{ url_for('index') }}" class="{{pageclass('index')}}">Home</a></li>
-                <li><a href="{{ url_for('project') }}" class="{{pageclass('project')}}">Projects</a>
-                    <ul>
+       <div class="navigation" id="MyNav">
+           <!--<ul class="navigation">-->
+                <a href="{{ url_for('index') }}" class="{{pageclass('index')}}">Home</a>
+                <a href="{{ url_for('project') }}" class="{{pageclass('project')}}">Projects</a>
+                    <!--<ul>
                         <li><a href="{{ url_for('classprojects') }}">Class</a></li>
                         <li><a href="{{ url_for('independent') }}">Independent</a></li>
-                    </ul>
-               </li>
-               <li><a href="{{ url_for('paper') }}" class="{{pageclass('paper')}}">Paper</a></li>
-               <li><a href="{{ url_for('static', filename='Resume_Novia Wong_v4.pdf') }}" target="_blank">Resume</a></li>
-                <li><a href="mailto:novia0925@gmail.com" class="{{pageclass('contact')}}">Contact</a></li>
-           </ul>
+                    </ul>-->
+               <a href="{{ url_for('paper') }}" class="{{pageclass('paper')}}">Paper</a>
+               <a href="{{ url_for('static', filename='Novia Wong_Resume.pdf') }}" target="_blank">Resume</a>
+               <a href="mailto:novia0925@gmail.com" class="{{pageclass('contact')}}">Contact</a>
+               <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
+<script>
+function myFunction() {
+    var x = document.getElementById("MyNav");
+    if (x.className === "navigation") {
+        x.className += " responsive";
+    } else {
+        x.className = "navigation";
+    }
+}
+</script>
