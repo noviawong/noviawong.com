@@ -1,39 +1,39 @@
 {% include "header.html" %}
 
-<div align="center">
-    <p style="padding-top:20px"><font size="7" face="Trebuchet MS" color=#004080>Projects</font></p>
-    <!--<p style="padding-bottom:10px"><font color="red" size="3" face="Verdana"> This page is currently under update, please check back later for more content! </font></p>-->
-    <p><font size="3" face="Candara">This page includes a list of the projects I have
-        conducted at San Jose State University and University of Michigan, as well as the side-projects
-        that I do outside of classroom setting.</font>
-    </p>
-    <p><font size="3" face="Candara">If you would like to know the details of any of the following projects, you can click on the project names or contact me!</font>
-    </p>
-</div>
-<hr color=#AEC0D9>
-<!--<div id="classprojects">
-    <p align="left"><font size="4" face="Avenir"> Class Projects: </font></p>
-</div>
-<hr color=#DDEAEE>
-<div id="independentprojects">
-    <p align="left"><font size="4" face="Avenir"> Independent Projects: </font></p>
-</div>-->
-<div>
-    <p align="left"><font size="4" face="Avenir"> Class Projects: </font></p>
-    <ul><font size="3" face="Candara">
-        <li><a href="{{ url_for('somethingblue') }}">Something Blue Consulting: Improving Communications Between Organizations</a></li>
-        <li><a href="{{ url_for('RHCA') }}">RHCA: A Neighborhood Management App</a></li>
-    </font>
-    </ul>
-</div>
-<hr color=#AEC0D9>
-<div>
-    <p align="left"><font size="4" face="Avenir"> Independent Projects: </font></p>
-    <ul><font size="3" face="Candara">
-        <li><a href="{{ url_for('mealspace') }}">MealSpace: A New Way To Eat And Cook Nutritious Meals With Friends</a></li>
-        <li><a href="{{ url_for('thesis') }}">Investigating Criteria and Techniques for Increasing Password Security and Memorability for Users</a></li>
-    </font>
-    </ul>
+<div class="max">
+    <div align="center">
+        <p class="title">Projects</p>
+        <!--<p style="padding-bottom:10px"><font color="red" size="3" face="Verdana"> This page is currently under update, please check back later for more content! </font></p>-->
+        <p class="projectcontent">This page includes a list of the projects I have
+            conducted at San Jose State University and University of Michigan, as well as the side-projects
+            that I do outside of classroom setting.
+        </p>
+        <p class="projectcontent">If you would like to know the details of any of the following projects, you can click on the project names or contact me!
+        </p>
+    </div>
+    <hr color=#AEC0D9>
+    <!--<div id="classprojects">
+        <p align="left"><font size="4" face="Avenir"> Class Projects: </font></p>
+    </div>
+    <hr color=#DDEAEE>
+    <div id="independentprojects">
+        <p align="left"><font size="4" face="Avenir"> Independent Projects: </font></p>
+    </div>-->
+    <div>
+        <p align="left"><font size="4" face="Avenir"> Class Projects: </font></p>
+        <ul class="projectcontent">
+            <li><a href="{{ url_for('somethingblue') }}">Something Blue Consulting: Improving Communications Between Organizations</a></li>
+            <li><a href="{{ url_for('RHCA') }}">RHCA: A Neighborhood Management App</a></li>
+        </ul>
+    </div>
+    <hr color=#AEC0D9>
+    <div>
+        <p align="left"><font size="4" face="Avenir"> Independent Projects: </font></p>
+        <ul class="projectcontent">
+            <li><a href="{{ url_for('mealspace') }}">MealSpace: A New Way To Eat And Cook Nutritious Meals With Friends</a></li>
+            <li><a href="{{ url_for('thesis') }}">Investigating Criteria and Techniques for Increasing Password Security and Memorability for Users</a></li>
+        </ul>
+    </div>
 </div>
 
 

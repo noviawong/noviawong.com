@@ -7,19 +7,21 @@
 </head>
 <body>
         <!-- This is the navigation menu -->
-       <div class="navigation" id="MyNav">
-           <!--<ul class="navigation">-->
-                <a href="{{ url_for('index') }}" class="{{pageclass('index')}}">Home</a>
-                <a href="{{ url_for('project') }}" class="{{pageclass('project')}}">Projects</a>
-                    <!--<ul>
-                        <li><a href="{{ url_for('classprojects') }}">Class</a></li>
-                        <li><a href="{{ url_for('independent') }}">Independent</a></li>
-                    </ul>-->
-               <a href="{{ url_for('paper') }}" class="{{pageclass('paper')}}">Paper</a>
-               <a href="{{ url_for('static', filename='Novia Wong_Resume.pdf') }}" target="_blank">Resume</a>
-               <a href="mailto:novia0925@gmail.com" class="{{pageclass('contact')}}">Contact</a>
-               <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
+       <div class="navigation">
+            <div class="max" id="MyNav">
+               <!--<ul class="navigation">-->
+                    <a href="{{ url_for('index') }}" class="{{pageclass('index')}}">Home</a>
+                    <a href="{{ url_for('project') }}" class="{{pageclass('project')}}">Projects</a>
+                        <!--<ul>
+                            <li><a href="{{ url_for('classprojects') }}">Class</a></li>
+                            <li><a href="{{ url_for('independent') }}">Independent</a></li>
+                        </ul>-->
+                   <a href="{{ url_for('paper') }}" class="{{pageclass('paper')}}">Paper</a>
+                   <a href="{{ url_for('static', filename='Novia Wong_Resume.pdf') }}" target="_blank">Resume</a>
+                   <a href="mailto:novia0925@gmail.com" class="{{pageclass('contact')}}">Contact</a>
+                   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+       </div>
 <script>
 function myFunction() {
     var x = document.getElementById("MyNav");
