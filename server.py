@@ -52,13 +52,29 @@ def thesis():
 def mealspace():
     return render_temp('mealspace')
 
-@app.route('/project/independent/somethingblue')
+@app.route('/project/class/somethingblue')
 def somethingblue():
     return render_temp('somethingblue')
 
-@app.route('/project/independent/RHCA')
+@app.route('/project/class/RHCA')
 def RHCA():
     return render_temp('RHCA')
+
+@app.route('/project/independent/VECTR')
+def VECTR():
+    return render_temp('VECTR')
+
+@app.route('/project/independent/VM')
+def VM():
+    return render_temp('VM')
+
+@app.route('/project/class/Ferndale')
+def Ferndale():
+    return render_temp('Ferndale')
+
+@app.route('/project/class/Cengage')
+def Cengage():
+    return render_temp('Cengage')
 
 @app.route('/about')
 def about():

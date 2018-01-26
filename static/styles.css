@@ -8,13 +8,14 @@
   /*background-color: #cce6ff;*/
   /*background-color: #004080;*/
   background-color: #004080;
-  padding: 0px;
   /*text-align: right;
   list-style-type: none;*/
   width: 100%;
   /*font-size: 85%;
   font-family:"Calibri";*/
   overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 
 .navigation a {
@@ -199,6 +200,7 @@
   font-size: 300%;
   font-family:"Trebuchet MS";
   color: #004080;
+  padding-top: 30px;
 }
 
 .intro {
@@ -324,7 +326,7 @@
 .projecttitle {
   padding-left:40px;
   padding-right:40px;
-  padding-top:30px;
+  padding-top:50px;
   padding-bottom:10px;
   font-family: "Trebuchet MS";
   font-size: 180%;
@@ -405,10 +407,3 @@
 .expand {
   display: block;
 }
-
-
-/*@media (max-width:800px) {
-  .column1, .column2, .prohi1, .prohi2, .prohi3 {
-    width:100%; /*The width is 100%, when the viewport is 800px or smaller
-  }
-}*/
