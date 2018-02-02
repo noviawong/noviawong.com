@@ -404,6 +404,44 @@
   padding-top:20px;
 }*/
 
-.expand {
-  display: block;
+/*Drop-down Accordion*/
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: "Calibri Light";
+    font-size: 110%;
+    color: gray;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #004080;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Calibri Light";
+    font-size: 120%;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #004080;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
