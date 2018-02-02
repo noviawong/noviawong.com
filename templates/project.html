@@ -20,13 +20,65 @@
         <p align="left"><font size="4" face="Avenir"> Independent Projects: </font></p>
     </div>-->
     <div>
-        <p align="left"><font size="4" face="Calibri"> Class Projects: </font></p>
-        <ul class="projectcontent">
+        <p align="left"><font size="5" face="Calibri" color="gray"> Class Projects: </font></p>
+        <div>
+         <button class="accordion">Something Blue Consulting: Improving Communications Between Organizations</button>
+            <div class="panel">
+                <p><b>Role:</b> Researcher and Project Manager</p>
+                <p><b>Skills Used:</b></br>Contextual Inquiries</br>Affinity Walls</br>Literature Reviews</br>Public Speaking</br>Google Drive</p>
+                <p><b>Summary</b> </br>Something Blue Consulting was a team-based course project. We were given three months
+                    to work on this project with a client. Our client approached us with a desire to update and increase their social media usage.
+                    After coducting six different contextual inquiries, my team and I organized the interview findings and our background research
+                    information, we put together an affinity wall. Through this analysis, we further identified additional issues that the organization was facing and brainstormed solutions
+                    around these newly identified issues. In the end, we suggested two solutions, one being the most practical and another being
+                    the ideal solution for the orgnaization. Given the nature of the organization, both solutions consisted of minimal technology
+                    usage, and instead focused on changing the way information was communicated between our client and another organization on campus.</p>
+                <div align="center">
+                    <a href="{{ url_for('somethingblue') }}"><button class="button">Read More</button></a>
+                </div>
+                <br>
+            </div>
+         <button class="accordion">RHCA: A Neighborhood Management App</button>
+            <div class="panel">
+                <p><b>Role:</b> User Experience Researcher and Designer</p>
+                <p><b>Skills Used:</b></br>Competitive Analysis</br>Storymapping</br>Personas</br>Usability Testing</br>Axure</p>
+                <p><b>Summary:</b> RHCA stands for River House Condominium Association. To get messages across to residents, the Association currently
+                    relies on paper notice that they put up on the glass windows at each building. This method requires the owners and residents to be
+                    physically present at the building to receive new information, which is not always possible to do so (e.g., traveling).
+                    The current non-centralized communication method presents a problem: a lack of available information for all house owners and
+                    tenants, particularly, it lacks an effective, clean, and accessible information system for all. To address the need of portable
+                    searching and communication, I created a prototype for a mobile application that facilitates efficient and comprehensive
+                    searches for neighborhood information for all resident and owners at RHCA. The information users can find in this application
+                    includes the following: neighborhood files  (e.g., board minutes, map, policies), neighborhood events, announcements, safety
+                    alerts, chats and messages from other users, and money transaction.</p>
+                <div align="center">
+                    <a href="{{ url_for('RHCA') }}"><button class="button">Read More</button></a>
+                </div>
+                <br>
+            </div>
+         <button class="accordion">Special Events in Ferndale</button>
+            <div class="panel">
+                 <p><b>Role:</b>User Experience Researcher</p>
+                 <p><b>Skills Used:</b></br>Contextual Inquires and Semi-structured Interview</br>Hallway Usability Testing</br>Survey Analysis
+                    </br>Personas
+                 </p>
+                 <p><b>Summary:</b> The city of Ferndale has tasked us to improve the communication between the city and its residents and local
+                businesses regarding information on special events. Our goal is to identify problems in the current communication methods and find out
+                users' preferences in receiving information and provding feedback.
+                 </p>
+                <div align="center">
+                    <a href="{{ url_for('Ferndale') }}"><button class="button">Read More</button></a>
+                </div>
+                <br>
+            </div>
+            <br>
+
+        <!--<ul class="projectcontent">
             <li><a href="{{ url_for('somethingblue') }}">Something Blue Consulting: Improving Communications Between Organizations</a></li>
             <li><a href="{{ url_for('RHCA') }}">RHCA: A Neighborhood Management App</a></li>
             <li><a href="{{ url_for('Ferndale') }}">Special Events in Ferndale</a></li>
-            <!--<li><a href="{{ url_for('Cengage') }}">Cengage Digital Scholar Lab</a></li>-->
-        </ul>
+            <!--<li><a href="{{ url_for('Cengage') }}">Cengage Digital Scholar Lab</a></li>
+        </ul>-->
     </div>
     <hr color=#AEC0D9>
     <div>
