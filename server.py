@@ -32,6 +32,10 @@ def project():
 def paper():
     return render_temp('paper')
 
+@app.route('/design')
+def design():
+    return render_temp('design')
+
 @app.route('/contact')
 def contact():
     return render_temp('contact')
