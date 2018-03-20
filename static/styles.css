@@ -23,14 +23,14 @@
   float: left;
   text-decoration: none;
   text-align: center;
-  color: #76a3d8;
+  color: #3c424a;
   padding: 15px 40px 15px 40px;
-  font-size: 110%;
+  font-size: 100%;
   font-family: "Calibri light";
 }
 
 .navigation a.current {
-  text-decoration: underline #76a3d8;
+  text-decoration: underline #3c424a;
 }
 
 #navigation a.current:hover {
@@ -46,8 +46,8 @@
 }
 
 .navigation a:hover {
-  background-color: #9bc4f4;
-  color: #ffffff;
+  background-color: #c9dff9;
+  color: #3c424a;
 }
 
 .navigation li:hover ul {
@@ -186,6 +186,8 @@
 .subtitle {
   font-family:"Calibri Light";
   font-size: 250%;
+  text-align: center;
+  color: #76a3d8;
 }
 
 .intro {
@@ -249,63 +251,63 @@
   text-align: center;
 }*/
 
-.prohi1 {
+.prohi {
   /*width: 30%;*/
   float: left;
   /*margin-left: 20px;
   margin-right: 20px;*/
   text-align: center;
-  padding-top:40px;
+  /*padding-top:40px;*/
   font-family: "Calibri Light";
-  font-size: 100%;
-  color: gray;
+  font-size: 105%;
+  color: #585858;
 }
 
-.prohi1 a {
+.prohi a {
   font-family: "Calibri Light";
-  font-size: 110%;
+  font-size: 100%;
   text-decoration: none;
-  color: gray;
+  color: #585858;
   /*  background-color: #76A246;*/
 }
 
-.prohi2 {
-  /*width: 30%;*/
+/*.prohi2 {
+  /*width: 30%;
   float: left;
   /*margin-left: 20px;
-  margin-right: 20px;*/
+  margin-right: 20px;
   text-align: center;
   padding-top:45px;
   font-family: "Calibri Light"
   font-size: 100%;
   color: gray;
-}
+}*/
 
-.prohi2 a {
+/*.prohi2 a {
   font-family: "Calibri Light";
   font-size: 110%;
   text-decoration: none;
   color: gray;
-}
+}*/
 
-.prohi3 {
-  /*width: 30%;*/
+/*.prohi3 {
+  /*width: 30%;
   float: left;
   /*margin-left: 20px;
   margin-right: 20px;*/
-  text-align: center;
+  /*text-align: center;
   padding-top:45px;
   font-family: "Calibri Light"
   font-size: 100%;
   color: gray;
-}
+}*/
 
-.prohi3 a {
+/*.prohi3 a {
   font-family: "Calibri Light";
   font-size: 110%;
   text-decoration: none;
   color: gray;
-}
+}*/
 
 /*Projects*/
 .projecttitle {

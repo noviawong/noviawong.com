@@ -8,14 +8,81 @@
     <!-- Clears format -->
 
     <div class="clear"></div>
-    <!--<hr color=#c9dff9>-->
     <br>
 
     <!--Beginning of projects highlights-->
 <div class="max">
-    <p align="center" class="subtitle"><font color=#76a3d8>Project Highlights</font></p>
-    <div class="max">
-        <div class="col-4">
+    <p class="subtitle">Project Highlights</p>
+
+    <!--First project highlight -->
+
+    <div>
+        <div class="col-6" align="center"><a href="{{ url_for('mealspace') }}"></a>
+            <br>
+            <img src="{{ url_for('static', filename='MealSpace.png') }}" alt="Image Unavailable" width="50%">
+        </div>
+        <div class="col-6">
+            <p class="prohi">MealSpace was a team-based self-initiated project for 2018 CHI Student Design Competition. It is a solution aimed to solve
+                the problem of college students lacking healthy eating habits. The process of user research and design iteration took place
+                    over the course of 4 months. My primary role was a UX researcher and we mainly utilized online surveys, paper surveys
+                    , as well as semi-structured interivews to collect user data.</p>
+            <div align="center">
+                    <a href="{{ url_for('mealspace') }}"><button class="button">Read More</button></a>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- Clears format -->
+
+    <div class="clear"></div>
+    <hr color= #d9ebff>
+    <br>
+
+    <!-- Second project highlight -->
+
+    <div>
+        <div class="col-6" align="center"><a href="{{ url_for('mealspace') }}"></a>
+            <img src="{{ url_for('static', filename='SomethingBlue.png') }}" alt="Image Unavailable" width="75%">
+        </div>
+        <div class="col-6">
+            <p class="prohi">Something Blue Consulting was a class project at the University of Michigan for the course on contextual inquiry. I worked on a
+                    team of 4 to assess existing problems of our client, develop interview protocols and conduct interviews with stakeholders,
+                    and analyze interview results using affinity wall. We found that their major problem was task distribution.
+                    This project spanned across 4 months and my primary role was interviewer and project manager.</p></a>
+            <div align="center">
+                <a href="{{ url_for('somethingblue') }}"><button class="button">Read More</button></a>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- Clears format -->
+
+    <div class="clear"></div>
+    <hr color= #d9ebff>
+    <br>
+
+    <!-- Third project highlight -->
+
+    <div>
+        <div class="col-6" align="center"><a href="{{ url_for('mealspace') }}"></a>
+            <img src="{{ url_for('static', filename='PasswordStudy.png') }}" alt="Image Unavailable" width="75%">
+        </div>
+        <div class="col-6">
+            <p class="prohi">Inspired by the flaws and constant frustrations of some of the modern account authentication systems, this study explored users'
+                    problems with password management and usage. The study was designed, conducted, and analyzed in five months. My role in this research was the primary investigator, in
+                    which I designed an online questionnaire and an implicit memory test to collect user data on password usage. </p></a>
+            <div class="clear"></div>
+            <div align="center">
+                <a href="{{ url_for('thesis') }}"><button class="button">Read More</button></a>
+            </div>
+            <br>
+        </div>
+    </div>
+
+
+        <!--<div class="col-4">
             <div class="prohi1"><a href="{{ url_for('mealspace') }}">
                 <img src="{{ url_for('static', filename='MealSpace.png') }}" alt="Image Unavailable" width="66%">
                 <p>MealSpace was a team-based self-initiated project for 2018 CHI Student Design Competition. It is a solution aimed to solve
@@ -51,7 +118,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <!-- Clears format -->
 
@@ -59,13 +126,14 @@
     <br>
     <br>
 
-    <!--<hr color=#AEC0D9>-->
+
 </div>
     <!--this is the home page text and image-->
 
 <div class="section_background">
     <div class="max">
-        <p align="center" class="subtitle"><font color=#ffffff>About Me</font></p>
+        <p class="subtitle"><font color=#ffffff>About Me</font></p>
+
         <!--Journey map-->
 
         <div>
@@ -101,7 +169,6 @@
                 <div class="clear"></div>
             </div>
         </div>
-    </div>
 </div>
 
 
