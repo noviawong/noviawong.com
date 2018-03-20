@@ -7,7 +7,7 @@
 .navigation {
   /*background-color: #cce6ff;*/
   /*background-color: #004080;*/
-  background-color: #004080;
+  background-color: #ffffff;
   /*text-align: right;
   list-style-type: none;*/
   width: 100%;
@@ -23,18 +23,18 @@
   float: left;
   text-decoration: none;
   text-align: center;
-  color: white;
+  color: #76a3d8;
   padding: 15px 40px 15px 40px;
   font-size: 110%;
-  font-family: "Calibri";
+  font-family: "Calibri light";
 }
 
 .navigation a.current {
-  text-decoration: underline white;
+  text-decoration: underline #76a3d8;
 }
 
 #navigation a.current:hover {
-  text-decoration: underline black;
+  text-decoration: underline white;
 }
 
 .navigation li {
@@ -46,11 +46,8 @@
 }
 
 .navigation a:hover {
-  /*background-color: #004080;*/
-  /*background-color: #6FAFFF;*/
-  /*background-color: #DDEAEE;*/
-  background-color: #AEC0D9;
-  color: black;
+  background-color: #9bc4f4;
+  color: #ffffff;
 }
 
 .navigation li:hover ul {
@@ -72,7 +69,7 @@
   background-color: #719DD9;
   display: block;
   font-size: 90%;
-  font-family:"Calibri";
+  font-family:"Calibri Light";
 }
 
 .navigation .icon {
@@ -102,29 +99,6 @@
         text-align: left;
     }
 }
-
-/*#navigation active {
-  text-decoration: underline;
-  text-decoration-color: white;
-}*/
-
-/*.description {
-  text-align: center;
-  font-size: 500%;
-  background-color: #cce6ff;
-  margin: 5px;
-}
-
-.test a {
-  font-size: 400%;
-}
-
-.img-circle-menu {
-  float: left;
-  display: inline-block;
-  padding: auto;
-  margin: auto;
-}*/
 
 /*Responsive Columns*/
 * {
@@ -195,18 +169,29 @@
   align: center;
 }
 
+.section_background {
+  background-color: #76a3d8;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
 .title {
   text-align: center;
-  font-size: 300%;
-  font-family:"Trebuchet MS";
-  color: #004080;
+  font-size: 400%;
+  font-family:"Calibri Light";
+  color: #ffffff;
   padding-top: 30px;
+}
+
+.subtitle {
+  font-family:"Calibri Light";
+  font-size: 250%;
 }
 
 .intro {
   text-align: center;
   font-family: "Calibri Light";
-  color: gray;
+  color: #ffffff;
   font-size: 120%;
   padding-left: 50px;
   padding-right: 50px;
@@ -214,8 +199,8 @@
 
 #journey_descr {
   text-align: center;
-  color: gray;
-  font-size: 150%;
+  color: #ffffff;
+  font-size: 130%;
   font-family: "Calibri Light";
   padding-left: 50px;
   padding-right: 50px;
@@ -328,38 +313,37 @@
   padding-right:40px;
   padding-top:50px;
   padding-bottom:10px;
-  font-family: "Trebuchet MS";
+  font-family: "Calibri Light";
   font-size: 180%;
-  color: #004080;
+  color: #76a3d8;
 }
 
 .projectcontent {
   font-family: "Calibri Light";
   font-size: 110%;
-  color: gray;
+  color: #585858;
 }
 
 .button {
   padding: 10px 100px;
   background-color: white;
-  border: 2px solid #004080;
+  border: 2px solid #76a3d8;
   font-size:100%;
   font-family:"Calibri Light";
   width: 100%;
 }
 
 .button:hover {
-   background-color: #004080;
+   background-color: #76a3d8;
    color: white;
 }
 
 /*Footer */
 #footer {
   position: relative;
+  top: 5px;
   left: 0px;
-  bottom: 20px;
-  height: 40px;
-  width: 97%;
+  width: 100%;
   list-style-type: none;
   margin: 0px;
   text-align: center;
