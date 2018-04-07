@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+body{
+margin: 0px;
+}
+
 /*Navigation Bar*/
 .navigation {
   /*background-color: #cce6ff;*/
@@ -104,6 +108,8 @@
 * {
     box-sizing: border-box;
 }
+
+
 
 /* For mobile phones: */
 [class*="col-"] {

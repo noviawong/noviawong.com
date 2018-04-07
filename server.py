@@ -23,9 +23,9 @@ def index():
     return render_temp('index')
 
 
-@app.route('/research')
-def research():
-    return render_temp('research')
+@app.route('/UX')
+def UX():
+    return render_temp('UX')
 
 
 @app.route('/paper')
@@ -40,43 +40,43 @@ def design():
 def contact():
     return render_temp('contact')
 
-@app.route('/research/class')
+@app.route('/UX/class')
 def classprojects():
     return render_temp('classprojects')
 
-@app.route('/research/independent')
+@app.route('/UX/independent')
 def independent():
     return render_temp('independent')
 
-@app.route('/research/independent/thesis')
+@app.route('/UX/independent/thesis')
 def thesis():
     return render_temp('thesis')
 
-@app.route('/research/independent/mealspace')
+@app.route('/UX/independent/mealspace')
 def mealspace():
     return render_temp('mealspace')
 
-@app.route('/research/class/somethingblue')
+@app.route('/UX/class/somethingblue')
 def somethingblue():
     return render_temp('somethingblue')
 
-@app.route('/research/class/RHCA')
+@app.route('/UX/class/RHCA')
 def RHCA():
     return render_temp('RHCA')
 
-@app.route('/research/independent/VECTR')
+@app.route('/UX/independent/VECTR')
 def VECTR():
     return render_temp('VECTR')
 
-@app.route('/research/independent/VM')
+@app.route('/UX/independent/VM')
 def VM():
     return render_temp('VM')
 
-@app.route('/research/class/Ferndale')
+@app.route('/UX/class/Ferndale')
 def Ferndale():
     return render_temp('Ferndale')
 
-@app.route('/research/class/Cengage')
+@app.route('/UX/class/Cengage')
 def Cengage():
     return render_temp('Cengage')
 
