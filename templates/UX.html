@@ -1,14 +1,15 @@
 {% include "header.html" %}
 
-<div align="center" class="section_background">
-    <p class="title">UX Projects</p>
-</div>
+<section class="pagetitles">
+    <div class="max">
+        <h1>UX Projects</h1>
+    </div>
+</section>
 
-<div class="max">
-    <div>
-        <p align="center" class="subtitle"><font color="#76a3d8"> Class Projects</font></p>
-        <div>
-         <button class="accordion">Something Blue Consulting: Improving Communications Between Organizations</button>
+<section>
+    <div class="max">
+        <h3>Class Projects</h3>
+        <button class="accordion">Something Blue Consulting: Improving Communications Between Organizations</button>
             <div class="panel">
                 <p><b>Role:</b> Researcher and Project Manager</p>
                 <p><b>Skills Used:</b></br>Contextual Inquiries</br>Affinity Walls</br>Literature Reviews</br>Public Speaking</br>Google Drive</p>
@@ -20,7 +21,7 @@
                     the ideal solution for the orgnaization. Given the nature of the organization, both solutions consisted of minimal technology
                     usage, and instead focused on changing the way information was communicated between our client and another organization on campus.</p>
                 <div align="center">
-                    <a href="{{ url_for('somethingblue') }}"><button class="button">Read More</button></a>
+                    <a href="{{ url_for('somethingblue') }}"><button class="button-accordion">Read More</button></a>
                 </div>
                 <br>
             </div>
@@ -38,7 +39,7 @@
                     includes the following: neighborhood files  (e.g., board minutes, map, policies), neighborhood events, announcements, safety
                     alerts, chats and messages from other users, and money transaction.</p>
                 <div align="center">
-                    <a href="{{ url_for('RHCA') }}"><button class="button">Read More</button></a>
+                    <a href="{{ url_for('RHCA') }}"><button class="button-accordion">Read More</button></a>
                 </div>
                 <br>
             </div>
@@ -53,22 +54,20 @@
                 users' preferences in receiving information and provding feedback.
                  </p>
                 <div align="center">
-                    <a href="{{ url_for('Ferndale') }}"><button class="button">Read More</button></a>
+                    <a href="{{ url_for('ferndale') }}"><button class="button-accordion">Read More</button></a>
                 </div>
                 <br>
             </div>
             <br>
 
-        <!--<ul class="projectcontent">
-            <li><a href="{{ url_for('somethingblue') }}">Something Blue Consulting: Improving Communications Between Organizations</a></li>
-            <li><a href="{{ url_for('RHCA') }}">RHCA: A Neighborhood Management App</a></li>
-            <li><a href="{{ url_for('Ferndale') }}">Special Events in Ferndale</a></li>
-            <!--<li><a href="{{ url_for('Cengage') }}">Cengage Digital Scholar Lab</a></li>
-        </ul>-->
     </div>
+
+<br>
+<hr class="max">
+
     <!--INDEPENDENT PROJECTS-->
-    <div>
-        <p align="center" class="subtitle"><font color="#76a3d8"> Independent Projects </font></p>
+    <div class="max">
+        <h3> Independent Projects </h3>
         <button class="accordion">MealSpace: A New Way To Eat And Cook Nutritious Meals With Friends</button>
             <div class="panel">
                  <p><b>Role:</b> UX Researcher and Designer</p>
@@ -84,7 +83,7 @@
                     cooking sessions and a tablet interface for recipes. The main focus of MealSpace resides in engaging students to create a meal
                     with each other.</p>
                 <div align="center">
-                    <a href="{{ url_for('mealspace') }}"><button class="button">Read More</button></a>
+                    <a href="{{ url_for('mealspace') }}"><button class="button-accordion">Read More</button></a>
                 </div>
                 <br>
             </div>
@@ -113,7 +112,7 @@
                 requirement, but participants perceived each requirement differently. This study also
                 explored other areas of interest, such as password composition strategies.</p>
                 <div align="center">
-                    <a href="{{ url_for('thesis') }}"><button class="button">Read More</button></a>
+                    <a href="{{ url_for('thesis') }}"><button class="button-accordion">Read More</button></a>
                 </div>
                 <br>
             </div>
@@ -137,7 +136,7 @@
                     research on human decision-making in cyber security, future studies can also utilize this technology to further
                     improve the functionality of technology by incorporating human physical needs and their psychological needs. </p>
                 <div align="center">
-                    <a href="{{ url_for('VM') }}"><button class="button">Read More</button></a>
+                    <a href="{{ url_for('VM') }}"><button class="button-accordion">Read More</button></a>
                 </div>
                 <br>
             </div>
@@ -155,19 +154,12 @@
                     particularly focuses on cyber network defense professionals and the relationship between human decision making models and their
                     daily work. </p>
                 <div align="center">
-                    <a href="{{ url_for('VECTR') }}"><button class="button">Read More</button></a>
+                    <a href="{{ url_for('VECTR') }}"><button class="button-accordion">Read More</button></a>
                 </div>
                 <br>
             </div>
-        <!--<ul class="projectcontent">
-            <li><a href="{{ url_for('mealspace') }}">MealSpace: A New Way To Eat And Cook Nutritious Meals With Friends</a></li>
-            <li><a href="{{ url_for('thesis') }}">Investigating Criteria and Techniques for Increasing Password Security and Memorability for Users</a></li>
-            <li><a href="{{ url_for('VM') }}">The Use of Virtual Machines in Learning About Humans Behaviors on Cyber Security</a></li>
-            <li><a href="{{ url_for('VECTR') }}">Understanding Human Cognition in Computer Network Defense</a></li>
-        </ul>-->
-        </div>
     </div>
-</div>
+</section>
 
 
 {% include "footer.html" %}

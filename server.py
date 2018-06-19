@@ -28,9 +28,9 @@ def UX():
     return render_temp('UX')
 
 
-@app.route('/paper')
-def paper():
-    return render_temp('paper')
+@app.route('/resume')
+def resume():
+    return render_temp('resume')
 
 @app.route('/design')
 def design():
@@ -72,9 +72,9 @@ def VECTR():
 def VM():
     return render_temp('VM')
 
-@app.route('/UX/class/Ferndale')
-def Ferndale():
-    return render_temp('Ferndale')
+@app.route('/UX/class/ferndale')
+def ferndale():
+    return render_temp('ferndale')
 
 @app.route('/UX/class/Cengage')
 def Cengage():

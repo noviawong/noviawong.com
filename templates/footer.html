@@ -1,29 +1,23 @@
+<div class="clear"><br><br></div>
 <footer>
-    <div class="clear"></div>
-    <br>
-    <br>
-    <div class="clear"></div>
-    <ul id="footer">
-        <li>
-            <a href="{{ url_for('about') }}">About Website</a>
-        </li>
-        <li>
-            <a class="GitHub" href="https://github.com/noviawong" target="_blank">
-                <img src="{{ url_for('static', filename='GitHub.png') }}" alt="Image Unavailable" width="45%">
-            </a>
-        </li>
-        <li>
-            <a class="LinkedIn" href="https://www.linkedin.com/in/novia-wong-2848bbaa/" target="_blank">
-                <img src="{{ url_for('static', filename='LinkedIn.png') }}" alt="Image Unavailable">
-            </a>
-        </li>
-    </ul>
+    <div>
+        <p>
+            &copy; Copyright Novia Wong, June 2018
+        </p>
+        <a href="https://github.com/noviawong" target="_blank">
+            <img id="Github" src="{{ url_for('static', filename='GitHub.png') }}" alt="Click to go to my GitHub profile.">
+        </a>
+        <a href="https://www.linkedin.com/in/novia-wong" target="_blank">
+            <img id="LinkedIn" src="{{ url_for('static', filename='LinkedIn.png') }}" alt="Click to go to my LinkedIn profile.">
+        </a>
+        <a href="{{ url_for('about')}}">About Website</a>
+    </div>
 </footer>
 
 <script>
 function myFunction() {
     var x = document.getElementById("MyNav");
-    if (x.className === "navigation") {
+    if (x.className === "navigation"){
         x.className += " responsive";
     } else {
         x.className = "navigation";
@@ -44,6 +38,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
 </script>
 </body>
 </html>

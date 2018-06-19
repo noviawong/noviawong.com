@@ -1,19 +1,23 @@
 {% include "header.html" %}
-<div align="center" class="section_background">
-    <p class="title">Graphic Design</p>
-</div>
 
-<br>
+<section class="pagetitles">
+    <div class="max">
+        <h1>Graphic Design</h1>
+    </div>
+</section>
 
-<div class="max">
-    <p class="subtitle"> Wallpaper </p>
-    <a href="{{ url_for('static', filename='bb8.png') }}" target="_blank"><img src="{{ url_for('static', filename='bb8.png') }}" alt="BB8_Wallpaper" width="30%"></a>
-    <a href="{{ url_for('static', filename='appa.png') }}" target="_blank"><img src="{{ url_for('static', filename='appa.png') }}" alt="Appa_Wallpaper" width="30%"></a>
+<section>
+    <div class="max">
+        <h3> Wallpaper </h3>
+        <a href="{{ url_for('static', filename='bb8.png') }}" target="_blank"><img src="{{ url_for('static', filename='bb8.png') }}" alt="BB8_Wallpaper" width="30%"></a>
+        <a href="{{ url_for('static', filename='appa.png') }}" target="_blank"><img src="{{ url_for('static', filename='appa.png') }}" alt="Appa_Wallpaper" width="30%"></a>
 
-    <p class="subtitle">Mobile Interfaces</p>
-    <a href="{{url_for('static', filename='FODMAPPA_hifi-01.jpg') }}" target="_blank"><img src="{{url_for('static', filename='FODMAPPA_hifi-01.jpg') }}" alt = "FODMAPPA mobile application high fidelity mockup" width="30%"></a>
-</div>
+        <br><br>
+        <hr>
 
-<div class="clear"></div>
+        <h3>Mobile Interfaces</h3>
+        <a href="{{url_for('static', filename='FODMAPPA_hifi-01.jpg') }}" target="_blank"><img src="{{url_for('static', filename='FODMAPPA_hifi-01.jpg') }}" alt = "FODMAPPA mobile application high fidelity mockup" width="30%"></a>
+    </div>
+</section>
 
 {% include "footer.html" %}

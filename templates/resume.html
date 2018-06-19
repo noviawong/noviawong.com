@@ -1,0 +1,23 @@
+{% include "header.html" %}
+
+<section class="pagetitles">
+    <div class="max">
+        <h1>Resume</h1>
+    </div>
+</section>
+
+<section class="resumesection">
+    <div align="center" class="max">
+        <a href="{{ url_for('static', filename='Novia_Resume.pdf') }}" target="_blank"><button class="button-accordion">Download Resume</button></a>
+    </div>
+    <div align="center">
+        <object id="resumepdf" data="{{ url_for('static', filename='Novia Wong_Resume.pdf') }}"></object>
+    </div>
+</section>
+
+<!--<div align="center">
+
+</div>-->
+
+
+{% include "footer.html" %}
