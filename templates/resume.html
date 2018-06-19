@@ -6,14 +6,14 @@
     </div>
 </section>
 
-<section class="resumesection">
-    <div align="center" class="max">
-        <a href="{{ url_for('static', filename='Novia_Resume.pdf') }}" target="_blank"><button class="button-accordion">Download Resume</button></a>
+<div class="resumesection">
+    <div class="max center">
+        <form action="{{ url_for('static', filename='Novia_Resume.pdf') }}" method="get"><button class="button-accordion">Download Resume</button></form>
     </div>
-    <div align="center">
+    <div class="center">
         <object id="resumepdf" data="{{ url_for('static', filename='Novia Wong_Resume.pdf') }}"></object>
     </div>
-</section>
+</div>
 
 <!--<div align="center">
 

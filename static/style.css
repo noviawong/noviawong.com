@@ -8,6 +8,10 @@ max-width:1000px;
 margin:0 auto;
 }
 
+.center{
+margin: auto;
+}
+
 * {
 box-sizing: border-box;
 }
@@ -40,7 +44,7 @@ display: block;
 
 .button-accordion{
 padding: 10px 20px;
-margin: 20px;
+margin: auto;
 background-color: rgb(255,255,255);
 color: rgb(88, 88, 88);
 border: 2px solid rgb(118, 162, 214);
@@ -448,7 +452,7 @@ margin-top: 50px;
 }
 
 #resumepdf {
-margin: 10px;
+margin-left: auto;
 padding: 50px;
 width:90%;
 height: 1300px;

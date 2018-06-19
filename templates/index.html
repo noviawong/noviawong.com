@@ -13,7 +13,7 @@
 <section id="experiences">
     <div class="max">
         <h3>Experiences</h3>
-        <a href="{{ url_for('static', filename='Novia_Resume.pdf') }}" target="_blank"><button class="button-light">Download Resume</button></a>
+        <form action="{{ url_for('static', filename='Novia_Resume.pdf') }}" method="get"><button class="button-light">Download Resume</button></form>
         <img src="{{ url_for('static', filename='Experiences.png') }}" alt="My undergraduate was at San Jose State University, where I earned a Bachelor of Science in Psychology, worked as a behavioral therapist, and served as a research assistant at a cyber security lab. I am currently going to the University of Michigan Ann Arbor, and I am part of the School of Information. There, I worked as an instructional designer, an information mentor, and I focus on UX Research and Design as part of my Masters program.">
     </div>
 </section>
@@ -23,7 +23,7 @@
 <section id="projecthighlights">
     <div class="max">
         <h3>Projects</h3>
-        <a href="{{ url_for('UX') }}" class="{{pageclass('UX')}}"><button class="button-light">View All</button></a>
+        <form action="{{ url_for('UX') }}" class="{{pageclass('UX')}}" method="get"><button class="button-light">View All</button></form>
         <a href="{{ url_for('mealspace') }}" class="{{pageclass('mealspace')}}">
             <img src="{{ url_for('static', filename='MealSpace.png') }}" alt="Click to learn more about MealSpace project.">
         </a>
