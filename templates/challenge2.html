@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Challenge Two</title>
+    
+    <script>
+     function setHomeAddress(){
+           if (document.getElementById('useBilling').checked){
+               document.getElementById('home').value = document.getElementById('billing').value;
+               document.getElementById('home').disabled = true;
+           }
+           else {
+               document.getElementById('home').value = '';
+           }
+     }
+    </script>
+</head>
+<body>
+    <h1>Challenge Two</h1>
+    <form action="{{ url_for('challenge3') }}">
+      <fieldset>
+        <legend>Billing Information</legend>
+        <div>
+          <label for ="billing">Billing Address:</label><br>
+          <textarea name="billingAdd" id="billing"></textarea>
+        </div>
+
+        <div>
+          <label for ="home">Home Address:</label><br>
+          <input type="checkbox" name="useBilling" onclick = "setHomeAddress()" id="useBilling"> Same as above <br>
+        <textarea name="homeAdd" id="home"></textarea>
+        </div>
+        <input type = "submit" value = "Go To Challenge 3">
+      </fieldset>
+      </form>
+</body>
+</html>

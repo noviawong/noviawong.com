@@ -84,6 +84,27 @@ def Cengage():
 def about():
     return render_temp('aboutwebsite')
 
+@app.route('/challenge1')
+def challenge1():
+    return render_temp('challenge1')
+
+@app.route('/challenge2')
+def challenge2():
+    return render_temp('challenge2')
+
+@app.route('/challenge3')
+def challenge3():
+    return render_temp('challenge3')
+
+@app.route('/challenge4')
+def challenge4():
+    return render_temp('challenge4')
+
+@app.route('/challenge5')
+def challenge5():
+    return render_temp('challenge5')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
     

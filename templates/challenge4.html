@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 4</title>
+    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet"> 
+    <style>
+    .errormsg { 
+        font-family: 'Spirax', cursive;
+    	color:red;
+    	display:none; } 
+    </style>
+    
+    <script>
+    function checkForm(){
+        if(document.getElementById('fullname').value == ''){
+            document.getElementById('nameerrormsg').style.display = "block";
+        }
+        else{
+            document.getElementById('nameerrormsg').style.display = "none";
+        }
+        if (document.getElementById('streetaddr').value == ''){
+        document.getElementById('addrerrormsg').style.display = "block";
+        }
+        else{
+            document.getElementById('addrerrormsg').style.display = "none";
+        }
+        if (document.getElementById('fullname').value == '' || document.getElementById('streetaddr').value == ''){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }  
+    </script>
+</head>
+<body onload="checkForm();">
+    <h1>Challenge 4</h1>
+	<form action="{{ url_for('challenge5') }}" onsubmit="return checkForm();">
+        <fieldset>
+        <legend>Personal details</legend>
+          <label for="fullname">Full name: </label>
+            <input type="text" name="fullname" id="fullname" onchange="checkForm();"><br/>
+            <p class="errormsg" id="nameerrormsg">Please enter your name above!</p>
+
+          <label for ="streetaddr"></label>
+            Street Address:
+            <input type="text" name="streetaddr" id="streetaddr" onchange="checkForm();">
+            <p class="errormsg" id="addrerrormsg">Please enter your street address!</p>
+        </fieldset>
+        <input type="submit" value="Submit it!"> 
+    </form>
+</body>
+</html>
