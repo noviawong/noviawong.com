@@ -1,12 +1,14 @@
 {% include "header.html" %}
 
-<div class="max">
-    <div align="center">
-        <p class="projecttitle">RHCA: A Nieghborhood Management App</p>
-        <hr color=#DDEAEE>
+<section class="projecttitles">
+    <div class="max">
+        <h1>RHCA: A Neighborhood Management Mobile Application</h1>
     </div>
-    <div class="col-1"></div>
-    <div class="col-10 projectcontent">
+</section>
+
+<div class="max">
+    <section class="projectcontent">
+    <div class="projectcontent">
         <!--<br>
         <p><b>Role:</b> User Experience Researcher and Designer</p>
         <p>
@@ -23,11 +25,9 @@
             alerts, chats and messages from other users, and money transaction.</p>
         <div class="clear"></div>
         <hr color=#AEC0D9>-->
-        <p><b>Research Process</b></p>
-        <div align="center">
-                <img src="{{ url_for('static', filename='RHCA_researchprocess.png') }}" alt="Image Unavailable" width="100%">
-        </div>
+        <h3>Research Process</h3>
+        <img src="{{ url_for('static', filename='RHCA_researchprocess.png') }}" alt="Image Unavailable" width="100%">
     </div>
-    <div class="col-1"></div>
+    </section>
 </div>
 {% include "footer.html" %}

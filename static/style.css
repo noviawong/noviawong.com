@@ -471,3 +471,35 @@ display: block;
 .outcome{
 color: rgb(137, 181, 225);
 }
+
+.artwork {
+width: 30%;
+}
+
+.projecttitles{
+background-color: rgb(118, 162, 214);
+padding: 10px 0px 20px 0px;
+margin: 0px;
+}
+
+.projecttitles h1{
+font-size: 300%;
+}
+
+.projectcontent img{
+max-width: 1000px;
+width: 80%;
+margin: auto;
+display: block;
+}
+
+@media only screen and (max-width: 768px){
+.projecttitles h1{
+font-size: 200%;
+}
+
+.projectcontent img{
+width: 100%;
+max-width: 768px;
+}
+}

@@ -1,13 +1,14 @@
 {% include "header.html" %}
 
-<div class="max">
-    <div align="center">
-        <p class="projecttitle">CID: Special Events in Ferndale</p>
-        <p class="projectcontent">This is an ongoing project.</p>
-        <hr color=#DDEAEE>
+<section class="projecttitles">
+    <div class="max">
+        <h1>CID: Special Events in Ferndale</h1>
     </div>
-    <div class="col-1"></div>
-    <div class="col-10 projectcontent">
+</section>
+
+<div class="max">
+    <section class="projectcontent">
+        <h3>This page is currently being updated.</h3>
         <!--<br>
         <p><b>Role:</b>User Experience Researcher</p>
         <p>
@@ -20,11 +21,9 @@
         </p>
         <div class="clear"></div>
         <hr color=#AEC0D9>-->
-        <p><b>Research Process</b></p>
-        <div align="center">
-                <img src="{{ url_for('static', filename='ferndale_researchprocess.png') }}" alt="Image Unavailable" width="100%">
-        </div>
-    </div>
-    <div class="col-1"></div>
+        <h3>Research Process</h3>
+        <img src="{{ url_for('static', filename='ferndale_researchprocess.png') }}" alt="Image Unavailable" width="100%">
+    </section>
 </div>
+
 {% include "footer.html" %}
