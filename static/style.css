@@ -27,14 +27,14 @@ clear:both;
 a, p, ul, li{
 font-family: "Calibri Light";
 text-decoration: none;
-color: rgb(88, 88, 88);
+color: rgb(62,62,62);
 }
 
 .button-light{
 padding: 10px 20px;
 margin: 0px 0px 50px 20px;
 background-color: rgb(255,255,255);
-color: rgb(88, 88, 88);
+color: rgb(62, 62, 62);
 border: 2px solid rgb(118, 162, 214);
 border-radius: 5px;
 font-size: 100%;
@@ -46,8 +46,8 @@ display: block;
 padding: 10px 20px;
 margin: auto;
 background-color: rgb(255,255,255);
-color: rgb(88, 88, 88);
-border: 2px solid rgb(118, 162, 214);
+color: rgb(62,62,62);
+border: 2px solid rgb(9,68,125);
 border-radius: 5px;
 font-size: 100%;
 font-family: "Calibri Light";
@@ -58,7 +58,8 @@ width: 70%;
 .button-dark{
 padding:10px 20px;
 margin: 0px 0px 0px 20px;
-background-color: rgb(118, 162, 214);
+/*ackground-color: rgb(118, 162, 214);*/
+background-color: rgb(218, 234, 248);
 color: rgb(255,255,255);
 border: 2px solid rgb(255,255,255);
 border-radius: 5px;
@@ -74,16 +75,17 @@ color: rgb(255,255,255);
 
 .button-dark:hover{
 background-color: rgb(255,255,255);
-color: rgb(88,88,88);
+color: rgb(62,62,62);
 }
 
 .button-accordion:hover{
-background-color: rgb(118,162,214);
+background-color: rgb(9,68,125);
 color: rgb(255,255,255);
 }
 
 nav {
-    background-color: rgb(118, 162, 214);
+    /*background-color: rgb(118, 162, 214);*/
+    background-color: rgb(218, 234, 248);
     width: 100%;
     overflow:hidden;
     position: fixed;
@@ -96,7 +98,7 @@ nav {
     float: left;
     text-decoration: none;
     text-align: center;
-    color: rgb(255,255,255);
+    color: rgb(62,62,62);
     padding: 15px 40px;
     font-size: 100%;
     font-family: "Calibri Light";
@@ -104,12 +106,13 @@ nav {
     }
 
     nav a.current{
-    text-decoration: underline rgb(255,255,255);
+    text-decoration: underline rgb(62,62,62);
     }
 
     nav a:hover{
     background-color: rgb(255,255,255);
     color: rgb(118, 162, 214);
+    text-decoration: underline rgb(118,162,214);
     }
 
     nav a.icon{
@@ -192,7 +195,8 @@ nav {
 
 /*Home Page*/
 .tagline{
-background-color: rgb(118, 162, 214);
+/*background-color: rgb(118, 162, 214);*/
+background-color: rgb(218, 234, 248);
 padding: 10px 0px 20px 0px;
 width: 100%;
 margin: 0px;
@@ -212,8 +216,9 @@ margin: 0px;
 }
 
 #experiences img{
-width: 100%;
-margin: 0 auto;
+width: 80%;
+margin-left: 100px;
+margin-right: 100px;
 }
 
 #projecthighlights{
@@ -230,15 +235,15 @@ margin: 0px;
 
 h1 {
 text-align: left;
-font-size: 400%;
+font-size: 300%;
 font-family: "Avenir", "Calibri Light", "Arial";
-color: rgb(255,255,255);
+color: rgb(62,62,62);
 padding-top: 30px;
 }
 
-h3 {
+h2 {
 text-align: left;
-color: rgb(118, 162, 214);
+color: rgb(118,162,214);
 font-size: 200%;
 font-family: "Calibri Light";
 padding: 30px 20px 20px 20px;
@@ -246,8 +251,8 @@ margin: 0px;
 display: block;
 }
 
-.tagline h3{
-color: rgb(255,255,255);
+.tagline h2{
+color: rgb(62,62,62);
 display: inline-block;
 margin: 0px;
 float: left;
@@ -256,6 +261,7 @@ float: left;
 #projecthighlights img{
 width: 20%;
 border-radius: 50%;
+/*border: solid rgb(118, 162, 214);*/
 border: solid rgb(118, 162, 214);
 display: inline-block;
 margin: 0px 20px 20px 20px;
@@ -275,26 +281,125 @@ margin: 0px;
 
 /*Pages*/
 .pagetitles{
-background-color: rgb(118, 162, 214);
+/*background-color: rgb(118, 162, 214);*/
+background-color: rgb(218, 234, 248);
 padding: 10px 0px 20px 0px;
 margin: 0px;
+}
+
+.artwork {
+width: 30%;
+}
+
+/*Drop-down Accordion*/
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: "Calibri Light";
+    font-size: 110%;
+    color: gray;
+}
+
+.accordion {
+    background-color: rgb(218, 234, 248);
+    color: rgb(62,62,62);
+    cursor: pointer;
+    padding: 18px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Calibri Light";
+    font-size: 120%;
+}
+
+.active, .accordion:hover {
+    /*background-color: rgb(137, 181, 225);*/
+    background-color: rgb(9,68,125);
+    color: rgb(255,255,255);
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 10px;
+    color: rgb(255,255,255);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.resumesection{
+margin-top: 50px;
+}
+
+#resumepdf {
+margin-left: auto;
+padding: 50px;
+width:90%;
+height: 1300px;
+}
+
+.projectcontent{
+margin: 50px;}
+
+.projectcontent h2{
+margin:0px;
+padding: 50px 0px 50px 0px;
+clear: both;
+display: block;
+}
+
+.outcome{
+color: rgb(118,162,214);
+}
+
+.projecttitles{
+/*background-color: rgb(118, 162, 214);*/
+background-color: rgb(218, 234, 248);
+padding: 10px 0px 20px 0px;
+margin: 0px;
+}
+
+.projecttitles h1{
+font-size: 300%;
+}
+
+.projectcontent img{
+max-width: 1000px;
+width: 80%;
+margin: auto;
+display: block;
 }
 
 /*Footer*/
 footer {
 clear: both;
-background-color: rgb(118, 162, 214);
+/*background-color: rgb(118, 162, 214);*/
+background-color: rgb(218, 234, 248);
 padding: 20px 0px;
+margin: auto;
 }
 
 footer a{
-margin-left: 200px;
+margin-left: 20px;
 margin-right: 20px;
 display: inline-block;
 text-align: right;
 text-decoration: none;
-color: rgb(255,255,255);
+color: rgb(62,62,62);
 font-family: "Calibri Light";
+}
+
+footer a:hover{
+text-decoration: underline;
 }
 
 #Github{
@@ -311,12 +416,11 @@ margin-right: 10px;
 margin-left: 10px;
 }
 
-
 footer p{
 margin-left: 20px;
-margin-right: 200px;
+margin-right: 20px;
 display: inline-block;
-color: rgb(255,255,255);
+color: rgb(62,62,62);
 }
 
 @media screen and (max-width: 768px){
@@ -332,7 +436,7 @@ color: rgb(255,255,255);
     float: left;
     text-decoration: none;
     text-align: center;
-    color: rgb(255,255,255);
+    color: rgb(62,62,62);
     padding: 15px 40px;
     font-size: 100%;
     font-family: "Calibri Light";
@@ -340,7 +444,7 @@ color: rgb(255,255,255);
     }
 
     nav a.current{
-    text-decoration: underline rgb(255,255,255);
+    text-decoration: underline rgb(62,62,62);
     }
 
     nav a:hover{
@@ -374,10 +478,15 @@ color: rgb(255,255,255);
     }
 
     .tagline img{
-    width: 80%;
+    width: 50%;
     display: inline-block;
     margin-left: 20px;
     padding:0px;
+    }
+
+    #experiences img{
+    width: 100%;
+    margin: auto;
     }
 
     #projecthighlights img{
@@ -388,118 +497,34 @@ color: rgb(255,255,255);
     margin: 0px 20px 50px 60px;
     }
 
+    .projecttitles h1{
+    font-size: 200%;
+    }
+
+    .projectcontent img{
+    width: 100%;
+    max-width: 768px;
+    }
+
+    .artwork {
+    width: 100%;
+    }
+
     footer a{
     margin-left: 20px;
     margin-right: 20px;
     display: inline-block;
-    color: rgb(255,255,255);
+    color: rgb(62,62,62);
     }
 
     footer p{
     margin-left: 20px;
     margin-right: 20px;
     display: inline-block;
-    color: rgb(255,255,255);
+    color: rgb(62,62,62);
     }
 }
 
-/*Drop-down Accordion*/
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    font-family: "Calibri Light";
-    font-size: 110%;
-    color: gray;
-}
-
-.accordion {
-    background-color: rgb(218, 234, 248);
-    color: rgb(62, 62, 62);
-    cursor: pointer;
-    padding: 18px;
-    margin-bottom: 5px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    font-family: "Calibri Light";
-    font-size: 120%;
-}
-
-.active, .accordion:hover {
-    background-color: rgb(137, 181, 225);
-    color: rgb(255,255,255);
-}
-
-.accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 10px;
-    color: rgb(255,255,255);
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-.resumesection{
-margin-top: 50px;
-}
-
-#resumepdf {
-margin-left: auto;
-padding: 50px;
-width:90%;
-height: 1300px;
-}
-
-.projectcontent{
-margin: 50px;}
-
-.projectcontent h3{
-margin:0px;
-padding: 50px 0px 50px 0px;
-clear: both;
-display: block;
-}
-
-.outcome{
-color: rgb(137, 181, 225);
-}
-
-.artwork {
-width: 30%;
-}
-
-.projecttitles{
-background-color: rgb(118, 162, 214);
-padding: 10px 0px 20px 0px;
-margin: 0px;
-}
-
-.projecttitles h1{
-font-size: 300%;
-}
-
-.projectcontent img{
-max-width: 1000px;
-width: 80%;
-margin: auto;
-display: block;
-}
-
-@media only screen and (max-width: 768px){
-.projecttitles h1{
-font-size: 200%;
-}
-
-.projectcontent img{
-width: 100%;
-max-width: 768px;
-}
+a:focus{
+background-color: #000000;
 }

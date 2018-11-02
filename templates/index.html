@@ -3,8 +3,8 @@
 <section class="tagline">
     <div class="max">
         <h1>Hi, I am Novia Wong!</h1>
-        <h3 class="col-7">UX Research<br>Designer<br>90% Extrovert</h3>
-        <img src="{{ url_for('static', filename='Logo.png') }}" alt="Novia's logo">
+        <h2 class="col-7">UX Research<br>Designer<br>90% Extrovert</h2>
+        <img src="{{ url_for('static', filename='logo-colored.png') }}" alt="Novia's logo">
     </div>
 </section>
 
@@ -12,9 +12,9 @@
 
 <section id="experiences">
     <div class="max">
-        <h3>Experiences</h3>
+        <h2>Experiences</h2>
         <form action="{{ url_for('static', filename='Novia_Resume.pdf') }}" method="get"><button class="button-light">Download Resume</button></form>
-        <img src="{{ url_for('static', filename='Experiences.png') }}" alt="My undergraduate was at San Jose State University, where I earned a Bachelor of Science in Psychology, worked as a behavioral therapist, and served as a research assistant at a cyber security lab. I am currently going to the University of Michigan Ann Arbor, and I am part of the School of Information. There, I worked as an instructional designer, an information mentor, and I focus on UX Research and Design as part of my Masters program.">
+        <img src="{{ url_for('static', filename='Experiences.png') }}" alt="My undergraduate was at San Jose State University, where I earned a Bachelor of Science in Psychology, worked as a behavioral therapist, and served as a research assistant at a cyber security lab. I am currently going to the University of Michigan Ann Arbor, and I am part of the School of Information. There, I worked as a UX designer Intern, a graduate student instructor, and I focus on UX Research and Design as part of my Masters program.">
     </div>
 </section>
 
@@ -22,19 +22,19 @@
 
 <section id="projecthighlights">
     <div class="max">
-        <h3>Projects</h3>
+        <h2>Projects</h2>
         <form action="{{ url_for('UX') }}" class="{{pageclass('UX')}}" method="get"><button class="button-light">View All</button></form>
         <a href="{{ url_for('mealspace') }}" class="{{pageclass('mealspace')}}">
-            <img src="{{ url_for('static', filename='MealSpace.png') }}" alt="Click to learn more about MealSpace project.">
+            <img src="{{ url_for('static', filename='MealSpace.png') }}" alt="Learn more about MealSpace project.">
         </a>
         <a href="{{ url_for('mealspace') }}" class="{{pageclass('mealspace')}}">
-            <img src="{{ url_for('static', filename='PlateForward.png') }}" alt="Click to learn more about PlateForward project.">
+            <img src="{{ url_for('static', filename='PlateForward.png') }}" alt="Learn more about PlateForward project.">
         </a>
         <a href="{{ url_for('ferndale') }}" class="{{pageclass('ferndale')}}">
-            <img src="{{ url_for('static', filename='Ferndale.png') }}" alt="Click to learn more about Ferndale project.">
+            <img src="{{ url_for('static', filename='Ferndale.png') }}" alt="Learn more about Ferndale project.">
         </a>
         <a href="{{ url_for('thesis') }}" class="{{pageclass('thesis')}}">
-            <img src="{{ url_for('static', filename='PasswordStudy.png') }}" alt="Click to learn more about my honor thesis.">
+            <img src="{{ url_for('static', filename='PasswordStudy.png') }}" alt="Learn more about my honor thesis.">
         </a>
     </div>
 </section>
@@ -43,12 +43,12 @@
 
 <section id="aboutme">
     <div class="max">
-        <h3>About</h3>
-        <figure class="col-3">
-            <img id="profilepic" src="{{ url_for('static', filename='PsiChiSuit.png') }}" alt="Image of Novia">
+        <h2>About</h2>
+        <figure class="col-4">
+            <img id="profilepic" src="{{ url_for('static', filename='headshot.png') }}" alt="Image of Novia">
         </figure>
-        <p class="col-8">
-            I am a first year master student at University of Michigan School of Information, studying user experience research and design. My passion is deeply rooted in psychology and advancing technology for the special needs population. When I worked as a therapist, I realized the importance of user-friendly and accessible technology for therapists, parents, as well as children of special needs. That being said, I hope to improve the way we communicate and educate through technology that is accessible and intuitive for all. <br><br> While I am not working on school work or projects, I like to play the piano, bake, build robots, and sketch and doodle. I also love making new friends and learning something new everyday!
+        <p class="col-7">
+            I am a second year master student at University of Michigan School of Information, studying user experience research and design. My passion is deeply rooted in psychology and advancing technology for the vulnerable population. When I worked as a therapist, I realized the importance of user-friendly and accessible technology for therapists, parents, and children with special needs. So, I aim to improve the way we communicate and educate, particularly through accessible and intuitive technology. <br><br> I believe good design is supported by compelling research data. One way to get that data is through user research. Among the many different techniques, I particularly enjoy talking and observing people. By doing these two simple things, I can learn a lot both from and about them. And then, I can become a better advocate for them. <br><br> Besides UX, I also enjoy: playing the piano, baking, volunteering, and skeching characters and comic strips. I also love making new friends and learning something new everyday!
         </p>
     </div>
 </section>
