@@ -25,9 +25,10 @@ clear:both;
 }
 
 a, p, ul, li{
-font-family: "Calibri Light";
+font-family: "Calibri Light", "Calibri";
 text-decoration: none;
 color: rgb(62,62,62);
+font-size: 100%;
 }
 
 .button-light{
@@ -38,7 +39,7 @@ color: rgb(62, 62, 62);
 border: 2px solid rgb(118, 162, 214);
 border-radius: 5px;
 font-size: 100%;
-font-family: "Calibri Light";
+font-family: "Calibri Light", "Calibri";
 display: block;
 }
 
@@ -50,7 +51,7 @@ color: rgb(62,62,62);
 border: 2px solid rgb(9,68,125);
 border-radius: 5px;
 font-size: 100%;
-font-family: "Calibri Light";
+font-family: "Calibri Light", "Calibri";
 display: block;
 width: 70%;
 }
@@ -64,7 +65,7 @@ color: rgb(255,255,255);
 border: 2px solid rgb(255,255,255);
 border-radius: 5px;
 font-size: 100%;
-font-family: "Calibri-Light";
+font-family: "Calibri-Light", "Calibri";
 display: block;
 }
 
@@ -101,7 +102,7 @@ nav {
     color: rgb(62,62,62);
     padding: 15px 40px;
     font-size: 100%;
-    font-family: "Calibri Light";
+    font-family: "Calibri Light", "Calibri";
     margin: 0px;
     }
 
@@ -114,6 +115,8 @@ nav {
     color: rgb(118, 162, 214);
     text-decoration: underline rgb(118,162,214);
     }
+
+
 
     nav a.icon{
     display: none;
@@ -236,7 +239,7 @@ margin: 0px;
 h1 {
 text-align: left;
 font-size: 300%;
-font-family: "Avenir", "Calibri Light", "Arial";
+font-family: "Avenir", "Calibri Light", "Calibri", "Arial";
 color: rgb(62,62,62);
 padding-top: 30px;
 }
@@ -245,7 +248,7 @@ h2 {
 text-align: left;
 color: rgb(118,162,214);
 font-size: 200%;
-font-family: "Calibri Light";
+font-family: "Calibri Light", "Calibri";
 padding: 30px 20px 20px 20px;
 margin: 0px;
 display: block;
@@ -298,9 +301,9 @@ width: 30%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-family: "Calibri Light";
-    font-size: 110%;
+    font-family: "Calibri Light", "Calibri";
     color: gray;
+    font-size: 110%;
 }
 
 .accordion {
@@ -314,7 +317,7 @@ width: 30%;
     border: none;
     outline: none;
     transition: 0.4s;
-    font-family: "Calibri Light";
+    font-family: "Calibri Light", "Calibri";
     font-size: 120%;
 }
 
@@ -348,13 +351,24 @@ height: 1300px;
 }
 
 .projectcontent{
-margin: 50px;}
+margin: 50px;
+font-size: 110%;
+}
+
+.projectcontent .panel{
+font-size: 100%;
+}
 
 .projectcontent h2{
 margin:0px;
-padding: 50px 0px 50px 0px;
+padding: 50px 0px 30px 0px;
 clear: both;
 display: block;
+}
+
+.description-text{
+color: rgb(118,162,214);
+font-style: italic;
 }
 
 .outcome{
@@ -372,11 +386,54 @@ margin: 0px;
 font-size: 300%;
 }
 
-.projectcontent img{
+/*.projectcontent img{
 max-width: 1000px;
 width: 80%;
 margin: auto;
 display: block;
+}*/
+
+.process_img{
+width: 100%;
+display: block;
+margin: auto;
+}
+
+.plateforward_img{
+max-width: 1000px;
+width: 50%;
+margin: auto;
+display: block;
+}
+
+.somethingblue_img{
+max-width: 1000px;
+width: 80%;
+display: block;
+margin: auto;
+}
+
+.MealSpace_img{
+width: 70%;
+margin: auto;
+display: block;
+}
+
+.thesis_img{
+width: 70%;
+margin: auto;
+display: block;
+}
+
+#PFtasks{
+width: 80%;
+}
+
+.demo{
+width: 640px;
+height: 360px;
+display: block;
+margin: auto;
 }
 
 /*Footer*/
@@ -439,7 +496,7 @@ color: rgb(62,62,62);
     color: rgb(62,62,62);
     padding: 15px 40px;
     font-size: 100%;
-    font-family: "Calibri Light";
+    font-family: "Calibri Light", "Calibri";
     margin: 0px;
     }
 
@@ -501,9 +558,23 @@ color: rgb(62,62,62);
     font-size: 200%;
     }
 
+    .projectcontent{
+    max-width: 768px;
+    margin:10px 20px 0px 20px;
+    }
+
     .projectcontent img{
     width: 100%;
     max-width: 768px;
+    }
+
+    #PFtasks{
+    width:100%;
+    }
+
+    .demo{
+    width: 320px;
+    height: 210px;
     }
 
     .artwork {
@@ -523,8 +594,4 @@ color: rgb(62,62,62);
     display: inline-block;
     color: rgb(62,62,62);
     }
-}
-
-a:focus{
-background-color: #000000;
 }
