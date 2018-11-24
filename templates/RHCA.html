@@ -8,13 +8,13 @@
 
 <div class="max">
     <section class="projectcontent">
-    <div class="projectcontent">
-        <!--<br>
-        <p><b>Role:</b> User Experience Researcher and Designer</p>
-        <p>
-            <b>Skills Used:</b></br>Competitive Analysis</br>Storymapping</br>Personas</br>Usability Testing</br>Axure
-        </p>
-        <p><b>Summary:</b> RHCA stands for River House Condominium Association. To get messages across to residents, the Association currently
+        <div>
+            <button class="accordion">Overview</button>
+                <div class="panel">
+                     <p><b class="lightblue">Role:</b> User Experience Researcher and Designer</p>
+        <p><b class="lightblue">Skills Used:</b></br>Competitive Analysis</br>Storymapping</br>Personas</br>Usability Testing</br>Axure</p>
+        <p><b class="lightblue">Duration:</b> 4 months</p>
+        <p><b class="lightblue">Summary:</b><br>RHCA stands for River House Condominium Association. To get messages across to residents, the Association currently
             relies on paper notice that they put up on the glass windows at each building. This method requires the owners and residents to be
             physically present at the building to receive new information, which is not always possible to do so (e.g., traveling).
             The current non-centralized communication method presents a problem: a lack of available information for all house owners and
@@ -23,11 +23,76 @@
             searches for neighborhood information for all resident and owners at RHCA. The information users can find in this application
             includes the following: neighborhood files  (e.g., board minutes, map, policies), neighborhood events, announcements, safety
             alerts, chats and messages from other users, and money transaction.</p>
-        <div class="clear"></div>
-        <hr color=#AEC0D9>-->
+         </div>
+       </div>
+
         <h2>Research Process</h2>
-        <img src="{{ url_for('static', filename='RHCA_researchprocess.png') }}" alt="Image Unavailable" width="100%">
-    </div>
+        <img class="process_img" src="{{ url_for('static', filename='RHCA_researchprocess.png') }}" alt="Image Unavailable">
+
+        <h2>Brainstorming</h2>
+        <p>During the initial sketches and brainstorming stage, I generated eight different possible solutions for the problem identified. I followed the suggestion and advice given by our course reading, which was the freedom to create ideas without any limitation or constraints. With that in mind, I created solutions that might not have seemed practical at that point, but were possible if given the appropriate implementation (see Figure 1 in Appendix A).  In addition, I focused on quantity instead of high-quality ideas during the brainstorming phase, as suggested by Kelley and Littman.   Some of the initial sketches included sketching out possible solutions along with their corresponding interaction flow (i.e., storyboard). These sketches helped me to visualize how each solution would be implemented if they had become my final design.</p>
+
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_storymap.png') }}" alt="Brainstorming for the RHCA project. Image has 8 different possible design solutions.">
+        <p>I developed 8 different design solutions for my problem statement.</p>
+
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_storyboard1.png') }}" alt="Storyboarding for all 8 different solutions.">
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_storyboard2.png') }}" alt="Storyboarding for all 8 different solutions.">
+        <p>For each of the 8 solutions I came up with during the brainstorming process, I created a storyboard, highlighting the key intneractions users would have with each solution.</p>
+
+        <p>Personas and storymap served as a major guidance in my design process. After collecting data through online reviews of current and former residents and conducting user interviews, I created four personas to identify user needs. Through both personas and storymap, I refocused refocus my design and finalized a list of functions to be included in my final design. They were also the turning point for me to choose a final solution; of all solutions, mobile application would support the most needs on my persona profiles. One major change I made to the solution was to include a secured login system for the users.</p>
+
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_persona1.png') }}" alt="Persona for RHCA. Kelly Zhu is a first year medical school student living at the condo complex."><br><br>
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_persona2.png') }}" alt="Anti-persona for RHCA, which means this personas represents those who do not reside at the condo complex.">
+        <p>The personas above are two of the four personas I created for this project.</p>
+
+
+        <h2>Design and Prototype</h2>
+        <p>After choosing a solution for the problem, I made quick sketches on possible layouts and features for the mobile application (see Figure 2 in Appendix A). These sketches were not drawn to scale, but simply to represent a general idea of how the design would look like; instead, they served more as the initial ideation of how the application would look like. I was able to explore options and make several design decision through these sketches. For sketching my design, I used pencil and paper to create the sketches, and then I used a black pen for outlining the pencil marks for scanning purposes.</p>
+
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_sketch1.png') }}" alt="RHCA sketch compilation 1.">
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_sketch2.png') }}" alt="RHCA sketch compilation 2.">
+
+        <p>The low-fidelity prototype was built using paper, index cards, and pencil. The index cards were cut to the actual size of an Android device. Different screens, including pop-up windows, of the application were created using paper.
+The benefits of using paper and pencil for low-fidelity prototype were highlighted in multiple of course readings, and I found them to be accurate as I created my own paper prototype for user testing. For example, paper prototypes offered rapid designs that focused on functions to be included in the design.   I was able to identify and refine the most logical interaction flow for my design through paper prototype, and users were comfortable to criticize the overall functionality of the design. A drawback to using paper and pencils is the limitation of interactions. Since paper prototype is not interactive without the help of a human-computer (i.e., someone, likely the designer, who controls the prototype to show the possible responses upon user interactions during user testing), I had to rely on someone else to be the observer and they might have missed some key interactions that suggested problems with my design.</p>
+
+        <img class="RHCA_prototype col-6" src="{{ url_for('static', filename='RHCA_paper1.png') }}" alt="RHCA paper prototype sample page 1.">
+        <img class="RHCA_prototype" src="{{ url_for('static', filename='RHCA_paper2.png') }}" alt="RHCA paper prototype sample page 2.">
+
+        <p>The next stage when I made major changes was after my QOC defense. The QOC defense prompted me to consider the critical feature of my final design and I had to brainstorm on alternative ideas that would satisfy that feature. After the defense, I began my paper prototype, where I chose to further finalize the design for the critical feature – I made the design decision to use both search-by-category and a search bar to complement each other, and made searching as the homepage of the application (see Figure 3 in Appendix B). Since paper prototype was a quick iterative process where I could make rapid revisions  , I was able to implement quick changes after user testing. I also included an extra feature of “newsfeed”, thinking that users might want to have a centralized place for all newest updates from the rest of the residents and the association management team. </p>
+
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_QOC1.png') }}" alt="Diagram for QOC defense for approach 1: search.">
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_QOC2.png') }}" alt="Diagram for QOC defense for approach 2: search bar.">
+        <img class="RHCA_img" src="{{ url_for('static', filename='RHCA_QOC3.png') }}" alt="Diagram for QOC defense for approach 3: voice control.">
+
+        <h2>Usability Testing</h2>
+        <p>Through my user testing with my paper prototype, the following changes were suggested and implemented for my medium-fidelity prototype: (1) create a static navigation menu instead of a dynamic one at the end of each search page, (2) remove either the search bar to reduce redundancy in searching, (3) make the “back” button more accessible on each screen, and (4) reformat the chat-boxes on the “Chat” screen. I created a mockup of my prototype for more user testing (see Figure 4 in Appendix B). For the most part, the design was effective. Some minor suggestions include color choices and placements of different widgets. One major recommendation I received was to follow the Android OS material design guideline. </p>
+
+        <img class="RHCA_prototype" src="{{ url_for('static', filename='RHCA_medium1.png') }}" alt="RHCA medium-fidelity prototype sample page 1.">
+        <img class="RHCA_prototype" src="{{ url_for('static', filename='RHCA_medium2.png') }}" alt="RHCA medium-fidelity prototype sample page 2.">
+
+        <p>The medium- and high-fidelity prototypes were created digitally on my MacBook Air using the prototype software Axure RP8. I used the built-in default library for widgets for my medium-fidelity prototype, creating the basic layout and testing out various user interactions. For my high-fidelity prototype, I explored various free libraries specifically for Android OS designs, including widgets and item placements and utilized the following libraries for my final design: Material Lite 8 and UXTT-Android-Material-Design-V01.</p>
+
+        <p>The benefits of using Axure for my medium- and high-fidelity prototypes are many, including creating the layout and interaction elements all on the same platform. Instead of creating individual screens with different possible combinations of user interactions, the prototype created using Axure was responsive to users. In addition, Axure has many free libraries available for both Android OS and IOS, facilitating the prototyping process and making it more efficient and aligned with other material design of similar operation system. Axure also offers a preview option to interact with the digital prototype, which is helpful in conducting quick user testing and assessing a new feature.</p>
+
+        <p>One drawback of using Axure is the complexity of the software. I found that although Axure is self-intuitive for creating basic layout and animation, it requires much more exploration and training to set up a completely dynamic prototype without the help of existing libraries (e.g., one screen can include multiple folders and layers to indicate all possible interactions). With that in mind, compared to Sketch and Invision, first time Axure users may need to spend more time on understanding different functions of the tool.</p>
+
+        <h2>Re-design and Prototype</h2>
+        <p>With the feedback I received from the medium-fidelity prototype, I created my high-fidelity prototype using the Android OS guideline, which made the design look more standardized and easy to follow through. I also decided to split the account profile setup into multiple steps to match the Android OS material design guideline. The design was also polished with more modern color choices and images to create a more realistic interaction.</p>
+
+        <p class="lightblue">Key Features</p>
+        <p><b>1. Log-in</b><br><span>Given that there is sensitive information and it's a closed community, users are required to create an account and login with passwords. Users will also use their phone numbers as their IDs, so the application can send text messages in addition to push notifications for updates if users desire.</span></p>
+        <p><b>2. Search by Categories</b><br><span>Searching is one of the critical features in my solution. Contrary to my intuition of a search bar, some users expressed that it would be easier to search by categories. The sarching will be the home page of the application every time users log in to their accounts.</span></p>
+        <p><b>3. Announcement and Notification</b><br><span>One problem I attemped to solve is the efficiency and accessibility of announcements. This solution will send out text messages along with push notifications for users when the condo association makes an announcement or adds a new file. Users can also make announcements to each other by posting on the newsfeed.</span></p>
+        <p><b>4. Communication with Others</b><br><span>Communication often is needed between landlords and tenants, as well as among the residents themselves (e.g., social events). This solution facilitates such interaction by implementing a chatting function. There will be an optino for money transaction as well, mostly for interactions between landlords and tenants.</span></p>
+
+        <img class="RHCA_prototype" src="{{ url_for('static', filename='RHCA_final1.png') }}" alt="RHCA final prototype sample page 1.">
+        <img class="RHCA_prototype" src="{{ url_for('static', filename='RHCA_final2.png') }}" alt="RHCA final prototype sample page 2.">
+
+        <br><br>
+
+        <p>The final version of my digital prototype can be found here:<a class="lightblue" href="https://rf7871.axshare.com/login.html" target="_blank"> FINAL DIGITAL PROTOTYPE</a></p>
+
+
     </section>
 </div>
 {% include "footer.html" %}

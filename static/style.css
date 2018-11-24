@@ -31,6 +31,10 @@ color: rgb(62,62,62);
 font-size: 100%;
 }
 
+.lightblue{
+color: rgb(118,162,214);
+}
+
 .button-light{
 padding: 10px 20px;
 margin: 0px 0px 50px 20px;
@@ -425,8 +429,26 @@ margin: auto;
 display: block;
 }
 
+.TechSmith_img{
+width: 70%;
+margin: auto;
+display: block;
+}
+
+.RHCA_img{
+width: 70%;
+margin: auto;
+display: block;
+}
+
 #PFtasks{
 width: 80%;
+}
+
+.RHCA_prototype{
+width: 35%;
+display: inline-block;
+margin: auto;
 }
 
 .demo{
