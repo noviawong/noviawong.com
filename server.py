@@ -80,6 +80,10 @@ def ferndale():
 def Cengage():
     return render_temp('Cengage')
 
+@app.route('/UX/class/ARVR')
+def ARVR():
+    return render_temp('ARVR')
+
 @app.route('/UX/independent/plateforward')
 def plateforward():
     return render_temp('plateforward')
