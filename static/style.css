@@ -76,16 +76,19 @@ display: block;
 .button-light:hover{
 background-color: rgb(118,162,214);
 color: rgb(255,255,255);
+cursor: pointer;
 }
 
 .button-dark:hover{
 background-color: rgb(255,255,255);
 color: rgb(62,62,62);
+cursor: pointer;
 }
 
 .button-accordion:hover{
 background-color: rgb(9,68,125);
 color: rgb(255,255,255);
+cursor: pointer;
 }
 
 nav {
@@ -258,6 +261,16 @@ margin: 0px;
 display: block;
 }
 
+h3 {
+text-align: left;
+color: rgb(118,162,214);
+font-size: 120%;
+font-family: "Calibri Light", "Calibri";
+padding: 30px 0px 20px 0px;
+margin: 0px;
+display: block;
+}
+
 .tagline h2{
 color: rgb(62,62,62);
 display: inline-block;
@@ -272,6 +285,10 @@ border-radius: 50%;
 border: solid rgb(118, 162, 214);
 display: inline-block;
 margin: 0px 20px 20px 20px;
+}
+
+.overlay:hover{
+opacity: 0.5;
 }
 
 #profilepic{
@@ -447,6 +464,27 @@ margin: auto;
 display: block;
 }
 
+.pianolink_img{
+width: 70%;
+padding: 10px 0px 10px 0px;
+margin: auto;
+display: block;
+}
+
+.decisionaid_img_small{
+width: 50%;
+padding: 10px 0px 10px 0px;
+margin: auto;
+display: block;
+}
+
+.decisionaid_img{
+width: 80%;
+padding: 20px 0px 20px 0px;
+margin: auto;
+display: block;
+}
+
 #PFtasks{
 width: 80%;
 }
@@ -462,51 +500,53 @@ width: 640px;
 height: 360px;
 display: block;
 margin: auto;
+padding: 10px 0px 10px 0px;
 }
 
 /*Footer*/
 footer {
 clear: both;
 /*background-color: rgb(118, 162, 214);*/
-background-color: rgb(218, 234, 248);
-padding: 20px 0px;
+background: rgb(218, 234, 248);
+height: 80px;
 margin: auto;
 }
 
-footer a{
-margin-left: 20px;
-margin-right: 20px;
+footer p{
+margin: 20px;
 display: inline-block;
+color: rgb(62,62,62);
+}
+
+#aboutwebsite{
+float: right;
+margin: 30px;
+display: inline-block;
+text-decoration: none;
+color: rgb(62,62,62);
+font-family: "Calibri Light", "Calibri";
+}
+
+/*footer a{
+/*margin-left: 20px;
+margin-right: 20px;*/
+/*display: inline-block;
 text-align: right;
 text-decoration: none;
 color: rgb(62,62,62);
 font-family: "Calibri Light";
-}
+}*/
 
-footer a:hover{
+#aboutwebsite:hover{
 text-decoration: underline;
 }
 
-#Github{
+.socialicons{
 float: left;
 width: 40px;
-margin-right: 10px;
-margin-left: 10px;
+margin: 20px;
 }
 
-#LinkedIn{
-float: left;
-width: 40px;
-margin-right: 10px;
-margin-left: 10px;
-}
-
-footer p{
-margin-left: 20px;
-margin-right: 20px;
-display: inline-block;
-color: rgb(62,62,62);
-}
 
 @media screen and (max-width: 768px){
     h1, [class*="col-"]{
@@ -582,6 +622,10 @@ color: rgb(62,62,62);
     margin: 0px 20px 50px 60px;
     }
 
+    .overlay:hover{
+    opacity: 0.5;
+    }
+
     .projecttitles h1{
     font-size: 200%;
     }
@@ -609,11 +653,18 @@ color: rgb(62,62,62);
     width: 100%;
     }
 
-    footer a{
-    margin-left: 20px;
-    margin-right: 20px;
-    display: inline-block;
-    color: rgb(62,62,62);
+    footer{
+    height: 300px;
+    }
+
+    .socialicons{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    }
+
+    #aboutwebsite{
+    float: left;
     }
 
     footer p{

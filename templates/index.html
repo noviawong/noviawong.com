@@ -25,16 +25,16 @@
         <h2>Projects</h2>
         <form action="{{ url_for('UX') }}" method="get"><button class="button-light">View All</button></form>
         <a href="{{ url_for('techsmith') }}">
-            <img id="techsmith_logo" src="{{ url_for('static', filename='techsmith.png') }}" alt="Learn more about TechSmith internship.">
+            <img class="overlay" src="{{ url_for('static', filename='techsmith.png') }}" alt="Learn more about TechSmith internship.">
         </a>
-        <a href="{{ url_for('plateforward') }}">
-            <img src="{{ url_for('static', filename='plateforward.png') }}" alt="Learn more about PlateForward project.">
+        <a href="{{ url_for('pianolink') }}">
+            <img class="overlay" src="{{ url_for('static', filename='pianolink.png') }}" alt="Learn more about PianoLink project.">
         </a>
         <a href="{{ url_for('mealspace') }}">
-            <img src="{{ url_for('static', filename='mealspace.png') }}" alt="Learn more about MealSpace project.">
+            <img class="overlay" src="{{ url_for('static', filename='Decision_Aid.png') }}" alt="Learn more about my project on redesigning a bariatric decision aid.">
         </a>
         <a href="{{ url_for('thesis') }}">
-            <img src="{{ url_for('static', filename='thesis.png') }}" alt="Learn more about my honor thesis.">
+            <img class="overlay" src="{{ url_for('static', filename='thesis.png') }}" alt="Learn more about my honor thesis.">
         </a>
     </div>
 </section>

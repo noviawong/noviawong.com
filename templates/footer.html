@@ -5,14 +5,18 @@
             &copy; Copyright Novia Wong, November 2018
         </p>
         <a href="https://github.com/noviawong" target="_blank">
-            <img id="Github" src="{{ url_for('static', filename='GitHub.png') }}" alt="Click to go to my GitHub profile.">
+            <img class="socialicons" src="{{ url_for('static', filename='Github-logo.png') }}" alt="Go to my GitHub profile.">
         </a>
         <a href="https://www.linkedin.com/in/novia-wong" target="_blank">
-            <img id="LinkedIn" src="{{ url_for('static', filename='LinkedIn.png') }}" alt="Click to go to my LinkedIn profile.">
+            <img class="socialicons" src="{{ url_for('static', filename='LinkedIn-logo.png') }}" alt="Go to my LinkedIn profile.">
         </a>
-        <a id="aboutwebsite" href="{{ url_for('about')}}">About Website</a>
+        <a href="https://www.instagram.com/novia_artdesigns/" target="_blank">
+            <img class="socialicons" src="{{ url_for('static', filename='Instagram-logo.png') }}" alt="Go to my Instagram design profile.">
+        </a>
+         <a id="aboutwebsite" href="{{ url_for('about')}}">About Website</a>
     </div>
 </footer>
+
 
 <script>
 function myFunction() {

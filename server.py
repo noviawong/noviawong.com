@@ -84,6 +84,14 @@ def Cengage():
 def ARVR():
     return render_temp('ARVR')
 
+@app.route('/UX/class/pianolink')
+def pianolink():
+    return render_temp('pianolink')
+
+@app.route('/UX/independent/decision_aid')
+def decision_aid():
+    return render_temp('decision_aid')
+
 @app.route('/UX/independent/plateforward')
 def plateforward():
     return render_temp('plateforward')
