@@ -1,0 +1,92 @@
+{% include "header.html" %}
+
+<section class="projecttitles">
+    <div class="max">
+        <h1>Transforming Patient Decision Making Experiences</h1>
+    </div>
+</section>
+
+
+<div class="max">
+    <section class="projectcontent">
+        <div>
+            <button class="accordion">Overview</button>
+                <div class="panel">
+                     <p><b class="lightblue">Role:</b> Lead UX Designer and UX Researcher</p>
+                     <p><b class="lightblue">Skills Used:</b><br>Competitive Analysis<br>Secondary Research<br>Personas<br>Interaction Map<br>Choice Map<br>Literature Review<br>Figma<br>Adobe Illustrator<br>Agile Product Development<br>Public Speaking/Presentation</p>
+                    <p><b class="lightblue">Duration:</b>4 months, 2018</p>
+                    <p><b class="lightblue">Summary:</b><br><b>Goal</b><br>Our goal for this project was to create a patient-friendly bariatric decision aid that would both educate and assist patients to understand their surgical options and their potential outcomes and risks of each option. A local health informatics company gave us this project on redesigning their web-based bariatric surgery outcomes calculator. At first, my team and I had the goal of simply redesigning the web-page to make it more user-friendly for the patients. But then, after our research, we decided on a new goal instead.<br><br><b>Process</b><br>Multiple research methodologies were either attempted or used to collect user experiences and preferences. First, we conducted stakeholder interviews and received a demonstration of the outcomes calculator. Then, we attempted to schedule interviews with physicians and bariatric patients. Our attempt in trying to recruit our primary users failed, largely because of the sensitivity of the topic. As a result, we took a different approach and focused on completing our competitive analysis and turned to literature reviews on patients’ decision making process, as well as existing user experience from former bariatric patients. I led the UX research effort in finding blog posts and news articles about bariatric patients’ experiences in making a decision regarding which surgical option to choose from. From there onward, I created a persona that fit the model, and the persona had guided the design and our presentation ever since. Once the research stage was completed, I led the design phase and mentored a junior UX designer to create wireframes and high fidelity click-through prototypes with Figma. My team and I validated with 8 different people using our high fidelity prototype, and we presented to our colleagues at University of Michigan, our client, and even the VP of Technology at Snapchat.
+<br><br><b>Solution</b><br>We took statistical components from the original outcomes calculator and embedded them into a patient-facing online decision aid. Patients would be able to use this decision aid independently, while learning about potential surgical options. Several differences between the original calculator and our decision aid include: (1) decision aid spans across different web pages, easing patients into the process instead of the one-page calculator, (2) decision aid takes into account patients’ lifestyle choices and gives a more holistic view of each surgical option than the original calculator, (3) decision aid offers a general route or a personalized route, taking patient privacy and resistance into account, (4) decision aid presents surgery risks and outcomes in a more visual form compared to the statistical and number-driven calculator, and (5) there are more visual information and media to aid patients in understanding their options, risks, and outcomes.</p>
+
+
+         </div>
+            <h2>Process Overview</h2>
+            <img class="process_img" src="{{ url_for('static', filename='decisionaid_process.png') }}" alt="Image describing project process.">
+            <!--Beginning of first stage of research process-->
+
+            <h2>Before starting any research...</h2>
+            <img class="decisionaid_img_small" src="{{ url_for('static', filename='decisionaid_Problem_Statement.jpg') }}" alt="First step was to identify problem statement and scope down the problem.">
+
+            <br>
+
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_sprint_schedule.png') }}" alt="Five stages of sprint: problem scoping, research, design, validate, revise.">
+
+            <h2>Attempted User Research -- Trying to understand our users and their problems...[did not go as expected]</h2>
+
+
+            <!--<img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_data_analysis.jpg') }}" alt="Sketches of the data model we attempted to follow.">-->
+
+            <h3>Interview [turned down and ghosted]</h3>
+
+            <h3>Competitive Analysis -- Are there similar tools out there that help people make decisions?</h3>
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_sample_competitive.png') }}" alt="A glimpse of the competitive analysis that we did.">
+
+
+            <h3>Interaction Map -- Let's take a look at the current design. Well, it's a one-pager.</h3>
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_interaction_map.png') }}" alt="Interaction map of the current outcomes calculator.">
+
+            <h3>Choice Map -- What are the choices and options our users would have to fill out to get the results? How do they get there?</h3>
+            <img class="decisionaid_img_small" src="{{ url_for('static', filename='decisionaid_choicemap_sketch.jpeg') }}" alt="A sketch before finalizing the choice map digitally.">
+            <div>
+               <form action="https://drive.google.com/file/d/1rJS1dNtukQAC5w9uv7OKjUxM_eujLrMn/view?usp=sharing" target="_blank"><button class="button-accordion">View Full Choice Map</button></form>
+            </div>
+
+            <h2>Supplemental User Research -- Second attempt in understanding our users and their decision making process</h2>
+
+
+            <h3>Literature Review -- What do the professionals say?</h3>
+
+
+            <h3>YouTube Videos and Blogs -- Where and how else can we learn abour our users?</h3>
+
+            <h3>Persona: Meet Martha, a potential bariatric patient</h3>
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_persona.png') }}" alt="Persona showing Martha, a fictional character who is a potential bariatric patient.">
+
+
+            <h2>Digital Prototype</h2>
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_user_flow1.png') }}" alt="We mapped out the user flow for our decision aid.">
+
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_user_flow_2.jpg') }}" alt="We mapped out the entire user flow, from scheduling an appointment to post-operation.">
+
+            <img class="decisionaid_img_small" src="{{ url_for('static', filename='decisionaid_user_control.png') }}" alt="I explored various ways for user control on a website besides radio buttons.">
+
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_hi-fi-1.jpg') }}" alt="Hi-fi mockup1.">
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_hi-fi-2.jpg') }}" alt="Hi-fi mockup2.">
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_hi-fi3.jpg') }}" alt="Hi-fi mockup3.">
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_hi-fi4.jpg') }}" alt="Hi-fi mockup4.">
+
+
+            <h2>Validation -- How do we know our new design will work?</h2>
+
+            <video class="demo" controls>
+                <source src="{{ url_for('static', filename='decisionaid_demo.mov') }}" alt="Video demo of our decision aid final prototype.">
+            </video>
+
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_poster.jpg') }}" alt="We presented a poster at our school Exposition.">
+            <img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_poster_session.jpg') }}" alt="We presented a poster at our school Exposition.">
+            <p>Bonus: we presented our poster and a lightning talk in front of our entire school at a school-wide exposition. We also had the pleasure of receiving feedback and validation from the <b>VP of Technology at Snapchat.</b></p>
+
+   </section>
+</div>
+
+{% include "footer.html" %}
