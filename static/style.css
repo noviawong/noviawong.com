@@ -25,14 +25,19 @@ clear:both;
 }
 
 a, p, ul, li{
-font-family: "Calibri Light", "Calibri";
+font-family: 'Lato', sans-serif;
+font-weight: 400;
 text-decoration: none;
 color: rgb(62,62,62);
 font-size: 100%;
 }
 
 .lightblue{
-color: rgb(118,162,214);
+color: rgb(5,44,80);
+}
+
+.navyblue{
+color: rgb(9,68,125);
 }
 
 .button-light{
@@ -43,7 +48,6 @@ color: rgb(62, 62, 62);
 border: 2px solid rgb(118, 162, 214);
 border-radius: 5px;
 font-size: 100%;
-font-family: "Calibri Light", "Calibri";
 display: block;
 }
 
@@ -51,13 +55,13 @@ display: block;
 padding: 10px 20px;
 margin: auto;
 background-color: rgb(255,255,255);
-color: rgb(62,62,62);
 border: 2px solid rgb(9,68,125);
 border-radius: 5px;
 font-size: 100%;
-font-family: "Calibri Light", "Calibri";
 display: block;
 width: 70%;
+font-family: 'Lato', sans-serif;
+font-weight: 400;
 }
 
 .button-dark{
@@ -69,7 +73,6 @@ color: rgb(255,255,255);
 border: 2px solid rgb(255,255,255);
 border-radius: 5px;
 font-size: 100%;
-font-family: "Calibri-Light", "Calibri";
 display: block;
 }
 
@@ -81,7 +84,6 @@ cursor: pointer;
 
 .button-dark:hover{
 background-color: rgb(255,255,255);
-color: rgb(62,62,62);
 cursor: pointer;
 }
 
@@ -106,10 +108,8 @@ nav {
     float: left;
     text-decoration: none;
     text-align: center;
-    color: rgb(62,62,62);
     padding: 15px 40px;
     font-size: 100%;
-    font-family: "Calibri Light", "Calibri";
     margin: 0px;
     }
 
@@ -205,23 +205,23 @@ nav {
 
 /*Home Page*/
 .tagline{
-/*background-color: rgb(118, 162, 214);*/
-background-color: rgb(218, 234, 248);
-padding: 10px 0px 20px 0px;
+/*background-color: rgb(118, 162, 214);
+background-color: rgb(218, 234, 248);*/
+padding: 50px 0px 20px 0px;
 width: 100%;
-margin: 0px;
+margin: auto;
 }
 
 .tagline img{
-width: 25%;
-display: inline-block;
-margin-left: 100px;
+width: 20%;
+display: block;
+margin: auto;
 padding:0px;
 }
 
 #experiences{
 background-color: rgb(255,255,255);
-padding: 10px 0px 25px 0px;
+padding: 50px 0px 100px 0px;
 margin: 0px;
 }
 
@@ -233,49 +233,59 @@ margin-right: 100px;
 
 #projecthighlights{
 background-color: rgb(255,255,255);
-padding: 10px 0px 25px 0px;
+padding: 0px 0px 100px 0px;
 margin: 0px;
 }
 
 #aboutme{
 background-color: rgb(255,255,255);
-padding: 10px 0px 25px 0px;
+padding: 0px 0px 100px 0px;
 margin: 0px;
 }
 
 h1 {
 text-align: left;
 font-size: 300%;
-font-family: "Avenir", "Calibri Light", "Calibri", "Arial";
+font-family: 'Handlee', cursive;
 color: rgb(62,62,62);
 padding-top: 30px;
+}
+
+.tagline h1{
+font-size: 350%;
+text-align: center;
 }
 
 h2 {
 text-align: left;
 color: rgb(118,162,214);
 font-size: 200%;
-font-family: "Calibri Light", "Calibri";
+font-family: 'Lato', sans-serif;
 padding: 30px 20px 20px 20px;
 margin: 0px;
 display: block;
+font-weight: 400;
 }
 
 h3 {
 text-align: left;
 color: rgb(118,162,214);
 font-size: 120%;
-font-family: "Calibri Light", "Calibri";
+font-family: 'Lato', sans-serif;
 padding: 30px 0px 20px 0px;
 margin: 0px;
 display: block;
+font-weight: 400;
 }
 
 .tagline h2{
+font-size: 150%;
 color: rgb(62,62,62);
-display: inline-block;
-margin: 0px;
-float: left;
+display: block;
+margin: auto;
+text-align: center;
+font-weight: 400;
+padding: 0px;
 }
 
 #projecthighlights img{
@@ -307,7 +317,7 @@ margin: 0px;
 .pagetitles{
 /*background-color: rgb(118, 162, 214);*/
 background-color: rgb(218, 234, 248);
-padding: 10px 0px 20px 0px;
+padding: 30px 0px 20px 0px;
 margin: 0px;
 }
 
@@ -322,9 +332,7 @@ width: 30%;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    font-family: "Calibri Light", "Calibri";
     color: gray;
-    font-size: 110%;
 }
 
 .accordion {
@@ -338,8 +346,9 @@ width: 30%;
     border: none;
     outline: none;
     transition: 0.4s;
-    font-family: "Calibri Light", "Calibri";
-    font-size: 120%;
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 .active, .accordion:hover {
@@ -394,12 +403,13 @@ font-style: italic;
 
 .outcome{
 color: rgb(118,162,214);
+font-weight: 700;
 }
 
 .projecttitles{
 /*background-color: rgb(118, 162, 214);*/
 background-color: rgb(218, 234, 248);
-padding: 10px 0px 20px 0px;
+padding: 30px 0px 20px 0px;
 margin: 0px;
 }
 
@@ -420,73 +430,33 @@ display: block;
 margin: auto;
 }
 
-.plateforward_img{
-max-width: 1000px;
+/*Images sizing*/
+.img50{
 width: 50%;
-margin: auto;
-display: block;
-}
-
-.somethingblue_img{
-max-width: 1000px;
-width: 80%;
 display: block;
 margin: auto;
+padding: 10px 0px 10px 0px;
 }
 
-.MealSpace_img{
-width: 70%;
-margin: auto;
-display: block;
-}
-
-.thesis_img{
-width: 70%;
-margin: auto;
-display: block;
-}
-
-.TechSmith_img{
-width: 70%;
-margin: auto;
-display: block;
-}
-
-.RHCA_img{
-width: 70%;
-margin: auto;
-display: block;
-}
-
-.ARVR_img{
+.img60{
 width: 60%;
-margin: auto;
 display: block;
+margin: auto;
+padding: 10px 0px 10px 0px;
 }
 
-.pianolink_img{
+.img70{
 width: 70%;
+display: block;
+margin: auto;
 padding: 10px 0px 10px 0px;
-margin: auto;
-display: block;
 }
 
-.decisionaid_img_small{
-width: 50%;
+.img80{
+width: 80%;
+display: block;
+margin: auto;
 padding: 10px 0px 10px 0px;
-margin: auto;
-display: block;
-}
-
-.decisionaid_img{
-width: 80%;
-padding: 20px 0px 20px 0px;
-margin: auto;
-display: block;
-}
-
-#PFtasks{
-width: 80%;
 }
 
 .RHCA_prototype{
@@ -515,7 +485,6 @@ margin: auto;
 footer p{
 margin: 20px;
 display: inline-block;
-color: rgb(62,62,62);
 }
 
 #aboutwebsite{
@@ -523,8 +492,6 @@ float: right;
 margin: 30px;
 display: inline-block;
 text-decoration: none;
-color: rgb(62,62,62);
-font-family: "Calibri Light", "Calibri";
 }
 
 /*footer a{
@@ -547,6 +514,9 @@ width: 40px;
 margin: 20px;
 }
 
+.visible-mobile {
+   display: none !important;
+}
 
 @media screen and (max-width: 768px){
     h1, [class*="col-"]{
@@ -561,10 +531,8 @@ margin: 20px;
     float: left;
     text-decoration: none;
     text-align: center;
-    color: rgb(62,62,62);
     padding: 15px 40px;
     font-size: 100%;
-    font-family: "Calibri Light", "Calibri";
     margin: 0px;
     }
 
@@ -604,8 +572,8 @@ margin: 20px;
 
     .tagline img{
     width: 50%;
-    display: inline-block;
-    margin-left: 20px;
+    display: block;
+    margin: auto;
     padding:0px;
     }
 
@@ -671,6 +639,13 @@ margin: 20px;
     margin-left: 20px;
     margin-right: 20px;
     display: inline-block;
-    color: rgb(62,62,62);
+    }
+
+    .visible-mobile {
+    display: block !important;
+    }
+
+    .hidden-mobile {
+    display: none !important;
     }
 }

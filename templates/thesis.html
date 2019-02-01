@@ -11,11 +11,11 @@
         <div>
              <button class="accordion">Overview</button>
             <div class="panel">
-                 <p><b class="lightblue">Role:</b> Primary Investigator and Researcher </p>
+                 <p><b class="navyblue">Role:</b><br> Primary Investigator and Researcher </p>
                 <p>
-                    <b class="lightblue">Skills Used:</b><br>Experiment Design<br>Survey Design and Analysis<br>Implicit Memory Test Design<br>Literature Review<br>Qualtrics<br>SPSS<br>Excel</p>
-                <p><b class="lightblue">Duration:</b> 5 months, 01/2017-05/2017</p>
-                <p><b class="lightblue">Summary:</b><br><b>Goal</b><br>Investigate the effect of password composition requirements on users’ recall ability, attitudes, self-predicted memorability, and perceived security for such requirements.<br><br><b>Process</b><br>I first conducted literature review to assess the critical issues in the domain and explore past studies that looked at similar topics. Moving onwards, I worked with my advisor to narrow down the problem statement and hypotheses for this thesis. After I created my hypotheses for this project, I began to reference past studies and created my own experiment. My advisor and I agreed that an implicit memory test would be the most beneficial for my goal. As a result, I created an implicit memory test that was embedded in the survey I sent to my participants at San Jose State University. After 2 to 3 weeks of data collection, I used Excel and SPSS to analyze the survey data and looked at statistical differences that either supported or rejected my hypotheses. My final thesis went through several versions of iteration before passing through the thesis review committee.<br><br><b>Article Abstract</b><br>Today, passwords are a commonly used strategy for protecting online accounts. These
+                    <b class="navyblue">Skills Used:</b><br>Experiment Design<br>Survey Design and Analysis<br>Implicit Memory Test Design<br>Literature Review<br>Qualtrics<br>SPSS<br>Excel</p>
+                <p><b class="navyblue">Duration:</b><br> 5 months, 01/2017-05/2017</p>
+                <p><b class="navyblue">Summary:</b><br><b>Goal</b><br>Investigate the effect of password composition requirements on users’ recall ability, attitudes, self-predicted memorability, and perceived security for such requirements.<br><br><b>Process</b><br>I first conducted literature review to assess the critical issues in the domain and explore past studies that looked at similar topics. Moving onwards, I worked with my advisor to narrow down the problem statement and hypotheses for this thesis. After I created my hypotheses for this project, I began to reference past studies and created my own experiment. My advisor and I agreed that an implicit memory test would be the most beneficial for my goal. As a result, I created an implicit memory test that was embedded in the survey I sent to my participants at San Jose State University. After 2 to 3 weeks of data collection, I used Excel and SPSS to analyze the survey data and looked at statistical differences that either supported or rejected my hypotheses. My final thesis went through several versions of iteration before passing through the thesis review committee.<br><br><b>Article Abstract</b><br>Today, passwords are a commonly used strategy for protecting online accounts. These
                 accounts may include sensitive personal information such as financial statements in a
                 bank account, or may include nearly no identifying information such as that in a gaming
                 application on a phone. Yet, to increase the security of such accounts, users are often
@@ -35,11 +35,12 @@
         </div>
 
         <h2>Research Process</h2>
-        <img class="process_img" src="{{ url_for('static', filename='thesis_researchprocess.png') }}" alt="Image Unavailable">
+        <img class="process_img hidden-mobile" src="{{ url_for('static', filename='thesis_researchprocess.png') }}" alt="Image Unavailable">
+        <img class="process_img visible-mobile" src="{{ url_for('static', filename='thesis_process2.png') }}" alt="Mobile friendly version of process.">
 
         <!--Background research starts-->
         <h2>Background Research</h2>
-        <img class="thesis_img" src="{{ url_for('static', filename='thesis_litbucket.png') }}" alt="Image Unavailable">
+        <img class="img70" src="{{ url_for('static', filename='thesis_litbucket.png') }}" alt="Image Unavailable">
         <br>
         <p>
            I was interested in exploring users' general attitudes toward different password generation requirements that current exist. Specifically, I noticed that many people I knew were constantly experiencing frustration with login failures in everyday life. And yet, they believe that a complex password with special characters would better protect their personal information, even when they fail to remember the passwords.</p>
@@ -54,10 +55,10 @@
 
         <!--Data collection starts-->
         <h2>Data Collection</h2>
-        <img class="thesis_img" src="{{ url_for('static', filename='thesis_questionnaire.png') }}" alt="Image Unavailable">
+        <img class="img70" src="{{ url_for('static', filename='thesis_questionnaire.png') }}" alt="Image Unavailable">
         <p>After literature review, it was time to develop my own research methods. I identified three major variables that I wanted to measure: <b>(1) password generation strategy</b>, <b>(2) password management strategy,</b> and <b>(3) attitudes toward different password generation requirements</b>.I had originally chose to use a questionnaire using both new questions I developed and questions borrowed from past studies. Using Likert Scale, I was able to assess students' attitudes toward different authentication generation requirement. To measure survey respondent fatigue, I included three attention checks in the questionnaire, such as one that asked the respondents to calculate "2+3".</p>
-        <img class="thesis_img" src="{{ url_for('static', filename='thesis_implicitmemory.png') }}" alt="Image Unavailable">
-        <img class="thesis_img" src="{{ url_for('static', filename='thesis_implicitmemory2.png') }}" alt="Image Unavailable">
+        <img class="img70" src="{{ url_for('static', filename='thesis_implicitmemory.png') }}" alt="Image Unavailable">
+        <img class="img70" src="{{ url_for('static', filename='thesis_implicitmemory2.png') }}" alt="Image Unavailable">
         <p>However, after conducting two pilot testing and discussing with my advisor, I decided to add in an extra variable:<b> (4) ability to recall password for different password generation requirement</b>. The reason for this change is to use a more objective measurement to draw connections between users' memory and the complexity of password generation requirements. Specifically, I identified three major common password generation requirements based on research conducted in the cyber security field:</p><br>
                 <ul>
                     <li>Complex character constraints with short length requirement</li>
@@ -68,7 +69,7 @@
                 original questionnaire. The memory test asked users to create three <i>unique</i> passwords under each password generation
                 requirement and recall the three passwords at the end of the testing session.</p>
         <p>The process for a testing session typically involved the following steps:</p><br>
-        <img class="thesis_img" src="{{ url_for('static', filename='thesis_testing.png') }}" alt="Image Unavailable"><br>
+        <img class="img70" src="{{ url_for('static', filename='thesis_testing.png') }}" alt="Image Unavailable"><br>
         <p>First, users sign a consent and release form to protect their rights of privacy and confidentiaility. Then, they complete the first part of the implicit memory test. After that, users complete the questionnaire by either answering multiple choice questions or selecting a rating on Likert Scales. Upon their completion of the questionnaires, they are then asked to recall the three passwords they create at the beginning of the testing. This concludes the second part of the memory test.</p>
         <p>All participation was voluntary and recruitment was done through the university's psychological research system. Participants were undergraduate and graduate students at San Jose State University, and their identities were kept anonymous.</p>
         <p class="outcome">Outcome: In the span of 2 to 3 weeks, I collected overe 180 repsonses. Iterations of the questionnaire and the addition of a new variable to the study allowed me to develop a better questionnaire and validate the measurements in my study.</p>
@@ -89,7 +90,7 @@
                     <li>Passwords with special character requirements will be rated as more secure than passwords without such requirements.</li>
                 </ul><br>
                 <p>Unfortunately, the first three hypotheses that focused on memorability were not found to be statistically significant. In contrast, the three hypotheses that focused on self-report measurements were found to be statistically significant. which aligned with past research's findings. Particularly, users found complex passwords to be more secure but also more annoying and difficult to remember.</p><br>
-        <img class="thesis_img" src="{{ url_for('static', filename='thesis_sampleresult.png') }}" alt="Image Unavailable"><br>
+        <img class="img70" src="{{ url_for('static', filename='thesis_sampleresult.png') }}" alt="Image Unavailable"><br>
         <p>The image above shows an example of the data analysis. It calculated the self-perceived memorability of each password based on different password generation requirements.</p>
         <p>However, an interesting observation was between the perceived memorability and the actual memorability. It seemed that although users believed a simpler but longer password would be more difficult to remember, the majority of users in this study successfully and accurately recalled all three passwords they generated at the beginning of the study. Currently, research in the cyber security industry claims that a simple and long password would be more secure, but many users, including major companies, believe the otherwise. This finding suggested that perhaps it would be worthwhile to look into <i>why</i> we have not listened to the research conducted in cyber security.</p>
 
