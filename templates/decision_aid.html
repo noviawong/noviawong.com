@@ -12,80 +12,163 @@
         <div>
             <button class="accordion">Overview</button>
                 <div class="panel">
-                     <p><b class="navyblue">Role:</b> Lead UX Designer and UX Researcher</p>
+                     <p><b class="navyblue">Role:</b><br> Lead UX Designer and UX Researcher</p>
                      <p><b class="navyblue">Skills Used:</b><br>Competitive Analysis<br>Secondary Research<br>Personas<br>Interaction Map<br>Choice Map<br>Literature Review<br>Figma<br>Adobe Illustrator<br>Agile Product Development<br>Public Speaking/Presentation</p>
-                    <p><b class="navyblue">Duration:</b>4 months, 2018</p>
-                    <p><b class="navyblue">Summary:</b><br><b>Goal</b><br>Our goal for this project was to create a patient-friendly bariatric decision aid that would both educate and assist patients to understand their surgical options and their potential outcomes and risks of each option. A local health informatics company gave us this project on redesigning their web-based bariatric surgery outcomes calculator. At first, my team and I had the goal of simply redesigning the web-page to make it more user-friendly for the patients. But then, after our research, we decided on a new goal instead.<br><br><b>Process</b><br>Multiple research methodologies were either attempted or used to collect user experiences and preferences. First, we conducted stakeholder interviews and received a demonstration of the outcomes calculator. Then, we attempted to schedule interviews with physicians and bariatric patients. Our attempt in trying to recruit our primary users failed, largely because of the sensitivity of the topic. As a result, we took a different approach and focused on completing our competitive analysis and turned to literature reviews on patients’ decision making process, as well as existing user experience from former bariatric patients. I led the UX research effort in finding blog posts and news articles about bariatric patients’ experiences in making a decision regarding which surgical option to choose from. From there onward, I created a persona that fit the model, and the persona had guided the design and our presentation ever since. Once the research stage was completed, I led the design phase and mentored a junior UX designer to create wireframes and high fidelity click-through prototypes with Figma. My team and I validated with 8 different people using our high fidelity prototype, and we presented to our colleagues at University of Michigan, our client, and even the VP of Technology at Snapchat.
-<br><br><b>Solution</b><br>We took statistical components from the original outcomes calculator and embedded them into a patient-facing online decision aid. Patients would be able to use this decision aid independently, while learning about potential surgical options. Several differences between the original calculator and our decision aid include: (1) decision aid spans across different web pages, easing patients into the process instead of the one-page calculator, (2) decision aid takes into account patients’ lifestyle choices and gives a more holistic view of each surgical option than the original calculator, (3) decision aid offers a general route or a personalized route, taking patient privacy and resistance into account, (4) decision aid presents surgery risks and outcomes in a more visual form compared to the statistical and number-driven calculator, and (5) there are more visual information and media to aid patients in understanding their options, risks, and outcomes.</p>
-
-
+                    <p><b class="navyblue">Duration:</b><br>4 months (2018)</p>
+                    <p><b class="navyblue">Summary:</b><br><b>Goal</b><br>At first, my team and I simply were told to redesign the web-based surgery outcomes calculator to make it more user-friendly for the patients. After our initial user research, our goal then became creating a patient-friendly bariatric decision aid that would both educate and assist patients to understand their surgical options and their potential outcomes, along with risks of each option. <br><br><b>Process</b><br>First, we conducted stakeholder interviews and received a demonstration of the outcomes calculator. Then, we attempted to schedule interviews with physicians and bariatric patients. Our attempt in trying to recruit our primary users failed, largely because of the sensitivity of the topic. As a result, we focused on completing our competitive analysis and turned to literature reviews on patients’ decision making process, as well as existing user experience from former bariatric patients. I led the UX research effort in finding blog posts and news articles about patients’ experiences and the creation of persona. I also led the design phase and mentored a junior UX designer to create wireframes and high fidelity click-through prototypes with Figma. My team and I validated with 8 different people using our prototype, and presented to our colleagues, our client, and even the VP of Technology at Snapchat.
+<br><br><b>Solution</b><br>We took statistical components from the original outcomes calculator and embedded them into a patient-facing online decision aid. Patients would be able to use this decision aid independently, while learning about potential surgical options. <br><br>Several differences between the original calculator and our decision aid include:<br><br>01 | decision aid spans across different web pages, easing patients into the process instead of the one-page calculator<br><br>02 | decision aid takes into account patients’ lifestyle choices and gives a more holistic view of each surgical option than the original calculator<br><br>03 | decision aid offers a general route or a personalized route, taking patient privacy and resistance into account<br><br>04 | decision aid presents surgery risks and outcomes in a more visual form compared to the statistical and number-driven calculator, and <br><br>05 | there are more visual information and media to aid patients in understanding their options, risks, and outcomes.</p>
          </div>
+
+
+          <!--beginning of content-->
             <h2>Process Overview</h2>
             <img class="process_img hidden-mobile" src="{{ url_for('static', filename='decisionaid_process.png') }}" alt="Image describing project process.">
             <img class="process_img visible-mobile" src="{{ url_for('static', filename='decisionaid_process2.png') }}" alt="Image describing project process-mobile friendly version.">
             <!--Beginning of first stage of research process-->
 
             <h2>Before starting any research...</h2>
+            <p class="navyblue"><i>Bariatric: surgical procedures related to obesity and weight-loss, often through the removal or reduction of the size of one’s stomach.</i></p>
+            <p>In a doctor’s appointment, bariatric patients go through all 5 different common surgical procedures with their doctors. They are asked about their comorbidities (i.e., other medical conditions such as diabetes) and other personal information. Together, the physician and the patient fill out what we call an “outcomes calculator”. Then, the physician discusses 20-30 different numbers (depending on the number of procedures they are interested in) with the patients regarding their possible surgical outcomes and risks. For example, there is a 5% chance of severe risks that may be a result of surgery A. Then, that marks the end of the appointment.</p>
+            <p>This is a typical appointment for patients seeking bariatric surgery, and they often come out of the appointment with information overload, and no reference to the numbers and percentages talked about during the appointment. While the current outcomes calculator is robust with regards to its data model, the presentation itself is <b>very difficult for patients to understand on their own.</b></p>
+            <p>Together as a team, we created our first draft of the problem statement for this project: </p>
+            <p class="outcome">The current outcomes calculator requires physician to be present for a complete analysis and is intimidating for patients to use independently.</p>
             <img class="img50" src="{{ url_for('static', filename='decisionaid_Problem_Statement.jpg') }}" alt="First step was to identify problem statement and scope down the problem.">
-
-            <br>
-
+            <p class="caption">We used post-its to formulate our problem statements by identifying users, client's problems, our own wording of the problems, etc.</p>
+            <p>To ensure that our project would be completed on time and would meet our stakeholders’ expectations, we used agile development and created the following sprint schedules for us to follow:</p>
+            <p>We hoped to go through at least one revision after validating our prototype with our users and our stakeholders. At the same time, we hoped to keep our stakeholders involved in our research and design process. As a result, our client and we had weekly scrum calls and a midpoint check-in.</p><br>
             <img class="img80" src="{{ url_for('static', filename='decisionaid_sprint_schedule.png') }}" alt="Five stages of sprint: problem scoping, research, design, validate, revise.">
 
             <h2>Attempted User Research -- Trying to understand our users and their problems...[did not go as expected]</h2>
-
+            <p>As the lead UX researcher on the team, I recommended several first steps to understanding the problem and our users more. Together, we established several research questions that would guide our research:</p>
+            <ul>
+                <li>What is the relationship between physicians and bariatric patients?</li>
+                <li>What emotional state are people experiencing when choosing bariatric surgical options for themselves?</li>
+                <li>What factors influence people’s decision-making in receiving elective procedures like bariatric surgeries?</li>
+                <li>What other resources do physicians use besides the outcomes calculator to assist patients in decision-making?</li>
+            </ul>
 
             <!--<img class="decisionaid_img" src="{{ url_for('static', filename='decisionaid_data_analysis.jpg') }}" alt="Sketches of the data model we attempted to follow.">-->
 
             <h3>Interview [turned down and ghosted]</h3>
+            <p>One of our first steps was interview. I created an interview protocol with the help of my team, and we attempted to schedule contextual inquiries with physicians and usability testing with potential bariatric patients on the current outcomes calculator.</p>
+            <p>Together as a team, we spent approximately 3.5 weeks trying to recruit and find users who would be willing to talk to us. However, it may be because of bad timing, or lack of incentives, or simply because of the sensitivity of the topic, <b>we failed to recruit any participant for our interview or usability testing.</b></p>
+            <p>While waiting for potential participants to respond to our recruitment messages, we tried a few other research methodologies that only required our own time and efforts.</p>
+
 
             <h3>Competitive Analysis -- Are there similar tools out there that help people make decisions?</h3>
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_sample_competitive.png') }}" alt="A glimpse of the competitive analysis that we did.">
+            <p>We wanted to understand whether there are existing tools that serve similar purposes, so we conducted a competitive analysis. I recommended that we looked beyond the medical field because other domains also may have tools that help their customers or users to choose an option. One immediate example that came to my mind was Microsoft’s web-based decision aid on choosing laptops. These tools often tackled the independency aspect that we wanted to focus on.</p>
 
+            <img class="img50" src="{{ url_for('static', filename='decisionaid_sample_competitive.png') }}" alt="A glimpse of the competitive analysis that we did.">
+
+            <p>Through competitive analysis, we found that other tools relied heavily on visual cues and information, and they broke down the entire user flow into several pages to reduce users’ fatigue.</p>
 
             <h3>Interaction Map -- Let's take a look at the current design. Well, it's a one-pager.</h3>
+            <p>Our mentor recommended that we complete an interaction map to further understand the current outcomes calculator. Given that the calculator is a one-pager, I personally was rather reluctant to complete an interaction map since I wasn’t sure what values it would’ve added. Instead, I brought up the idea of a <b>choice map</b> instead (see below).</p>
+
+            <p>However, given that our mentors insisted that an interaction map would be helpful for us to learn more about the calculator, I went ahead and put together an interaction map. Turned out he was right and I did find new information about the site that I didn’t know before:</p>
+            <ul>
+                <li>Only a certain selection of comorbidities would trigger “comorbidity resolution” on the results screen, but this was not made clear to the users.</li>
+                <li>The current site required the users to complete all questions on the calculator before moving on to the results screen, which some users might be reluctant to do so.</li>
+                <li>It was not clear how to update the form on the calculator if the users wished to do so.</li>
+            </ul>
             <img class="img80" src="{{ url_for('static', filename='decisionaid_interaction_map.png') }}" alt="Interaction map of the current outcomes calculator.">
 
             <h3>Choice Map -- What are the choices and options our users would have to fill out to get the results? How do they get there?</h3>
+            <p>As mentioned earlier, I personally felt that a choice map would be valuable for us to understand the number of choices and the flow of choices a user would have to make before landing on the result page.</p>
+
             <img class="img50" src="{{ url_for('static', filename='decisionaid_choicemap_sketch.jpeg') }}" alt="A sketch before finalizing the choice map digitally.">
             <div>
                <form action="https://drive.google.com/file/d/1rJS1dNtukQAC5w9uv7OKjUxM_eujLrMn/view?usp=sharing" target="_blank"><button class="button-accordion">View Full Choice Map</button></form>
             </div>
+            <p>All of the research above suggested that the current outcomes calculator was very fitting for a knowledgeable physician in understanding how to read the results, but not for a patient. After our heuristic research on the current outcomes calculator, we revised our initial problem statement to the following:</p>
+            <p class="outcome">The outcomes calculator requires physician guidance and misses an opportunity to educate patients and help them select a “best fit” surgical choice.</p>
+
 
             <h2>Supplemental User Research -- Second attempt in understanding our users and their decision making process</h2>
 
-
             <h3>Literature Review -- What do the professionals say?</h3>
+            <p>To better understand how patients typically make decisions and problems that they may have while making decisions regarding surgery options, we turned to literature review. Literature review was selected because the articles that we reviewed would have been peer-reviewed in the medical field, and we could draw conclusions from theoretical models that have been validated. Additionally, literature review could expand our ideation, as it might suggest solutions that we hadn’t thought of but were commonly found in the medical field. After reviewing different articles on elective surgery and patients’ decision making models, along with the national guidelines for medical decision tools, we found the following insights:</p>
+            <ul>
+                <li>Decision aids are well received by patients and significantly increase patient knowledge.</li>
+                <li>Physicians reported decision aids facilitated communication with patients.</li>
+                <li>Informational tools need to describe the standard treatments, risks and benefits of each treatment, and lifestyle implications.</li>
+                <li>Pictorial information is an important component in a decision-making tool.</li>
+            </ul>
 
+            <p>Based on how common a “decision aid” is found in the medical field, we decided that a decision aid would be a better fit for bariatric patients rather than a prettified outcomes calculator.</p>
 
             <h3>YouTube Videos and Blogs -- Where and how else can we learn abour our users?</h3>
 
             <h3>Persona: Meet Martha, a potential bariatric patient</h3>
             <img class="img80" src="{{ url_for('static', filename='decisionaid_persona.png') }}" alt="Persona showing Martha, a fictional character who is a potential bariatric patient.">
-
+            <p>Finally, after our research on bariatric surgery, patients, and their experiences, we met Martha. Martha is the persona that we created as a representation of our primary users: people who have obesity and surgery is the only option for weight reduction.</p>
+            <p>The persona guided our design in the following stages, and allowed us to establish a common ground with our audience, including our clients, in presentation and usability testing.</p>
+            <p>According to our client, our persona made them feel like they have known “Martha” for a long time and made them really want to help Martha to get what she wanted.</p>
 
             <h2>Digital Prototype</h2>
+            <p>Our goal for this new design was to transform the originally physician facing tool to a patient facing tool that they could use independently. More specifically, we wanted to</p>
+            <p class="outcome">Create a multi-screen, patient-facing decision aid to help individuals make their best personal choice by providing insights on surgical options, lifestyle considerations, post-surgery realities, and a reflection on their values.</p>
+
+            <h3>User Flow</h3>
+            <p>Before digitally designing or sketching anything, we wanted to ensure we have an initial user flow to follow. We were cautious in deciding the user flow, because we didn’t want to fall into the trap of “user flow by screen”. As a result, we wrote down the tasks a user would need to go through from the very beginning till the very end of their interaction with our decision aid.</p>
             <img class="img80" src="{{ url_for('static', filename='decisionaid_user_flow1.png') }}" alt="We mapped out the user flow for our decision aid.">
 
             <img class="img80" src="{{ url_for('static', filename='decisionaid_user_flow_2.jpg') }}" alt="We mapped out the entire user flow, from scheduling an appointment to post-operation.">
-
+            <p>Following that, another designer and I sat down and discussed one of the more mundane design decision: user control for a list of nested options.</p>
+            <p>The current nested list utilizes radio buttons, which have several disadvantages: (1) nested options are not shown until users select one of the preset options, (2) radio buttons can be small and difficult to click on for users (Fitts Law), and (3) with over 30 radio buttons on a page, it makes the website look very crowded and overwhelming.</p>
+            <img class="img80" src="{{ url_for('static', filename='decisionaid_currentnestedlist.png') }}" alt="Current nested list on the outcomes calculator.">
+            <p>As a result, we explored other options for this particular user control. Below shows an image of the other user controls we sketched.</p>
             <img class="img50" src="{{ url_for('static', filename='decisionaid_user_control.png') }}" alt="I explored various ways for user control on a website besides radio buttons.">
+            <p>Ultimately, we settled on having each condition as its own button, eliminating the needs for radio buttons. At the same time, we revealed all nested options, to ensure that users have full transparency. We made this decision based on hallway testing; the other designer and I took these controls and tested it with different people and selected the one that received that most positive comments.</p>
 
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_hi-fi-1.jpg') }}" alt="Hi-fi mockup1.">
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_hi-fi-2.jpg') }}" alt="Hi-fi mockup2.">
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_hi-fi3.jpg') }}" alt="Hi-fi mockup3.">
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_hi-fi4.jpg') }}" alt="Hi-fi mockup4.">
+            <h3>Wireframes: 2 Iterations</h3>
+            <p>We had 2 iterations of wireframes. The major turning point between the 2 iterations was feedback from our stakeholders and our project mentor, as well as 3 quick usability testings to validate our intended user flow. Changes that were made include:</p>
+            <ul>
+                <li><b>Navigation bar</b>: the navigation bar took up less space, allowing more content to be displayed.</li>
+                <li><b>Amount of visual clues</b>: we included more visual images based on user feedback.</li>
+                <li><b>Indicators for users about their current status</b>: more text indications were included in the wireframes to inform users where their current steps are as well as the steps prior and after.</li>
+            </ul>
+
+            <img class="img80" src="{{ url_for('static', filename='decisionaid_wireframe1.png') }}" alt="first iteration of wireframe.">
+            <p class="caption">first iteration of the wireframe.</p><br><br>
+            <img class="img80" src="{{ url_for('static', filename='decisionaid_wireframe2.png') }}" alt="second iteration of wireframe.">
+            <p class="caption">second iteration of the wireframe.</p>
+
+            <h3>High Fideltiy Prototype</h3>
+            <p>After creating our wireframes and conducted a few more usability testing sessions, we proceeded to high fidelity prototypes. The primary differences between the wireframes and the prototype were:</p>
+            <ul>
+                <li><b>Text</b>: the prototype had more detailed and accurate text information about bariatric surgeries.</li>
+                <li><b>Graphs</b>: the prototype had more graphs created by our data scientists on the team.</li>
+                <li><b>Colors</b>: the prototype had colors that aligned with our stakeholders’ company style guide and the colors created more indication on possible interactions users could have.</li>
+                <li><b>Interactions</b>: when stakeholders and users went through the prototype, our high fidelity prototype included interactions where they could click through to experience the entire user flow.</li>
+            </ul>
+            <p>Below is a demo video of the high fidelity prototype.</p>
+           <video class="demo" controls>
+                <source src="{{ url_for('static', filename='decisionaid_demo.mov') }}" alt="Video demo of our decision aid final prototype.">
+            </video><br>
+            <img class="img50 col-5" src="{{ url_for('static', filename='decisionaid_hi-fi-1.jpg') }}" alt="Hi-fi mockup1.">
+            <img class="img50 col-5" src="{{ url_for('static', filename='decisionaid_hi-fi-2.jpg') }}" alt="Hi-fi mockup2.">
+            <img class="img50 col-5" src="{{ url_for('static', filename='decisionaid_hi-fi3.jpg') }}" alt="Hi-fi mockup3.">
 
 
             <h2>Validation -- How do we know our new design will work?</h2>
+            <h3>Usability Testing</h3>
+            <p>Our prototype was not perfect, particularly because we couldn’t design it based on direct research with our primary users. As a result, we wanted to at least validate our design with someone who has never used the system before. To do so, we took our prototype to our school and tested the system with 8 people who had never interacted with the original outcomes calculator before. Our usability testing revealed 3 major areas where we could use improvements on:</p>
+            <ul>
+                <li><b>Text</b>: the prototype was text-heavy and could include more videos and graphics. At the same time, it needed to strike a balance between medical accuracy and approachable language.</li>
+                <li><b>General vs. Personalized</b>: positive feedback on the ability to toggle between general and personalized, but we needed another way to toggle between the two, a clearer navigation, and clearer language to differentiate between the two.</li>
+                <li><b>“I want it to be more about me”</b>: Many participants wanted an even more personalized experience.</li>
+            </ul>
 
-            <video class="demo" controls>
-                <source src="{{ url_for('static', filename='decisionaid_demo.mov') }}" alt="Video demo of our decision aid final prototype.">
-            </video>
+            <h3>Exposition</h3>
+            <p>Another quick way for us to receive feedback and design validation was to participate in the exposition. At the exposition, we presented our project to over 200 people through the format of a lightning talk and a poster presentation. Some quick feedback that we got from the VP of Technology at Snapchat was on the <b>toggle between general and personal comparison</b>. This critique aligned with our usability testing findings, and we shared this feedback with our client as well.</p>
 
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_poster.jpg') }}" alt="We presented a poster at our school Exposition.">
             <img class="img80" src="{{ url_for('static', filename='decisionaid_poster_session.jpg') }}" alt="We presented a poster at our school Exposition.">
-            <p>Bonus: we presented our poster and a lightning talk in front of our entire school at a school-wide exposition. We also had the pleasure of receiving feedback and validation from the <b>VP of Technology at Snapchat.</b></p>
+            <p class="caption">My team and I presenting our poster at the school exposition.</p>
+
+            <h3>Client Presentation</h3>
+            <p>At the end of the project, we presented our research process and the final prototype along with our usability test findings to our client. The audience included the project manager, the sales team for the product, the Chief Medical Officer, and the partnership manager with local hospitals.</p>
+            <p class="outcome">Our design and solution received extremely positive feedback and our client stated that they have begun to pitch the design to local hospitals, with the hope that they would share with their bariatric patients. The Chief Medical Officer said that he would be taking the concept and extend it to spine surgery to create a spine surgery decision aid as well.</p>
 
    </section>
 </div>

@@ -24,6 +24,13 @@ color: rgb(218, 234, 248)
 clear:both;
 }
 
+.caption{
+text-align: center;
+padding: 0px 0px 10px 0px;
+color: rgb(124,124,124);
+font-size: 80%;
+}
+
 a, p, ul, li{
 font-family: 'Lato', sans-serif;
 font-weight: 400;
