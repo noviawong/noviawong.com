@@ -27,24 +27,38 @@
     <div class="max">
         <h2>Projects</h2>
         <form action="{{ url_for('UX') }}" method="get"><button class="button-light">View All</button></form>
-        <a href="{{ url_for('techsmith') }}">
-            <img class="overlay" src="{{ url_for('static', filename='techsmith.png') }}" alt="Learn more about TechSmith internship.">
-        </a>
-        <a href="{{ url_for('pianolink') }}">
-            <img class="overlay" src="{{ url_for('static', filename='pianolink.png') }}" alt="Learn more about PianoLink project.">
-        </a>
-        <a href="{{ url_for('decision_aid') }}">
-            <img class="overlay" src="{{ url_for('static', filename='Decision_Aid.png') }}" alt="Learn more about my project on redesigning a bariatric decision aid.">
-        </a>
-        <a href="{{ url_for('thesis') }}">
-            <img class="overlay" src="{{ url_for('static', filename='thesis.png') }}" alt="Learn more about my honor thesis.">
-        </a>
+        <div>
+            <a href="{{ url_for('techsmith') }}">
+                <img class="overlay col-4" src="{{ url_for('static', filename='techsmith.png') }}" alt="Learn more about TechSmith internship.">
+            </a>
+            <p class="col-8">UX design internship at TechSmith, where I worked on two different product teams as a UX designer. Experiences with user research, web-based dashboard design, and desktop application design.</p>
+        </div>
+        <br class="clear"><br>
+        <div>
+           <a href="{{ url_for('pianolink') }}">
+            <img class="overlay col-4" src="{{ url_for('static', filename='pianolink.png') }}" alt="Learn more about PianoLink project.">
+           </a>
+            <p class="col-8">Researched problems adult college piano learners faced and ideated solutions for them. PianoLink is a portal device that piano learners could take with them as they practice outside of their homes.</p>
+        </div>
+        <br class="clear"><br>
+        <div>
+            <a href="{{ url_for('decision_aid') }}">
+                <img class="overlay col-4" src="{{ url_for('static', filename='Decision_Aid.png') }}" alt="Learn more about my project on redesigning a bariatric decision aid.">
+            </a>
+            <p class="col-8">Consultant for a local health informatics comapny on user research and web-based decision aid design for bariatric surgery. Decision aid improves the current surgical outcomes calculator by including education and potential lifestyle changes for the users.</p>
+        </div>
+        <br class="clear"><br>
+        <div>
+            <a href="{{ url_for('thesis') }}">
+                <img class="overlay col-4" src="{{ url_for('static', filename='thesis.png') }}" alt="Learn more about my honor thesis.">
+            </a>
+            <p class="col-8">A quantitative research project that looked at how users stored, managed, and created their passwords. Tested on password memorability and users' attitudes and habits toward their existing passwords.</p>
+        </div>
     </div>
 </section>
 
 
-
-<section id="aboutme">
+<section id="aboutme" class="clear">
     <div class="max">
         <h2>About</h2>
         <figure class="col-4">

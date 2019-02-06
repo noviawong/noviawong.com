@@ -246,7 +246,7 @@ margin: 0px;
 
 #aboutme{
 background-color: rgb(255,255,255);
-padding: 0px 0px 100px 0px;
+padding: 80px 0px 100px 0px;
 margin: 0px;
 }
 
@@ -302,6 +302,11 @@ border-radius: 50%;
 border: solid rgb(118, 162, 214);
 display: inline-block;
 margin: 0px 20px 20px 20px;
+transition: transform 0.2s;
+}
+
+#projecthighlights img:hover{
+transform: scale(1.1);
 }
 
 .overlay:hover{
@@ -595,6 +600,7 @@ margin: 20px;
     border: solid rgb(118, 162, 214);
     display: block;
     margin: 0px 20px 50px 60px;
+    transition: none;
     }
 
     .overlay:hover{
