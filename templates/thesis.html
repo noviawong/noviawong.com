@@ -39,26 +39,42 @@
         <img class="process_img visible-mobile" src="{{ url_for('static', filename='thesis_process2.png') }}" alt="Mobile friendly version of process.">
 
         <!--Background research starts-->
+        <hr class="max">
         <h2>Background Research</h2>
-        <img class="img70" src="{{ url_for('static', filename='thesis_litbucket.png') }}" alt="Image Unavailable">
-        <br>
-        <p>
-           I was interested in exploring users' general attitudes toward different password generation requirements that current exist. Specifically, I noticed that many people I knew were constantly experiencing frustration with login failures in everyday life. And yet, they believe that a complex password with special characters would better protect their personal information, even when they fail to remember the passwords.</p>
-        <p>Before deciding on a specific research question, the first step was to conduct literature review. The purpose was the literature review was to explore studies and research that had already been conducted in the past regarding passwords. To begin, I created a literature bucket using Microsoft Excel to organize all the findings from my literature review. Throughout the process, i reviewed empirical articles that compared college students' habits and routines during password generation and management. Although I had presumptions of what the problem might be, conducting literature review allowed me to narrow down the research question to college students and various common password management methods (e.g., writing down a password, sharing password, reusing password).</p>
+        <p>I was interested in exploring users' general attitudes toward different password generation requirements that current exist. I noticed that...</p>
+        <p class="outcome"> Many people I knew were constantly experiencing frustration with login failures in everyday life. And yet, they believe that a complex password with special characters would better protect their personal information, even when they fail to remember the passwords.</p>
+
+        <h3>Literature Review</h3>
+            <p>Before deciding on a specific research question, the first step was to conduct <b>literature review</b>. The purpose was the literature review was to explore studies and research that had already been conducted in the past regarding passwords. To begin, I created a literature bucket using Microsoft Excel to organize all the findings from my literature review. Throughout the process, i reviewed empirical articles that compared college students' habits and routines during password generation and management. Although I had presumptions of what the problem might be, conducting literature review allowed me to narrow down the research question to college students and various common password management methods (e.g., writing down a password, sharing password, reusing password).</p>
+             <figure>
+                <img class="img70" src="{{ url_for('static', filename='thesis_litbucket.png') }}" alt="Image Unavailable">
+                <p class="caption">screenshot of my literature review bucket on Excel.</p>
+            </figure>
+
         <p>Questions I borrowed from past studies include:</p>
         <ul>
             <li>Select all that apply. What do you do to store a newly created password?</li>
             <li>Do you have a set of passwords you reuse in different places?</li>
             <li>Select all that apply. What strategy do you usually use when you are asked to create a password?</li>
         </ul>
-        <p class="outcome">Outcome: I understood prior and current research on password generation and management. Surveys that had already been validated by other researchers allowed me to develop my own questionnaire more thoroughly and accurately. Also, these surveys provided the opportunity for data comparison between my study and theirs.</p>
+        <p class="outcome">I understood prior and current research on password generation and management. Surveys that had already been validated by other researchers allowed me to develop my own questionnaire more thoroughly and accurately. Also, these surveys provided the opportunity for data comparison between my study and theirs.</p>
 
         <!--Data collection starts-->
+        <hr class="max">
         <h2>Data Collection</h2>
-        <img class="img70" src="{{ url_for('static', filename='thesis_questionnaire.png') }}" alt="Image Unavailable">
-        <p>After literature review, it was time to develop my own research methods. I identified three major variables that I wanted to measure: <b>(1) password generation strategy</b>, <b>(2) password management strategy,</b> and <b>(3) attitudes toward different password generation requirements</b>.I had originally chose to use a questionnaire using both new questions I developed and questions borrowed from past studies. Using Likert Scale, I was able to assess students' attitudes toward different authentication generation requirement. To measure survey respondent fatigue, I included three attention checks in the questionnaire, such as one that asked the respondents to calculate "2+3".</p>
-        <img class="img70" src="{{ url_for('static', filename='thesis_implicitmemory.png') }}" alt="Image Unavailable">
-        <img class="img70" src="{{ url_for('static', filename='thesis_implicitmemory2.png') }}" alt="Image Unavailable">
+        <figure>
+            <img class="img70" src="{{ url_for('static', filename='thesis_questionnaire.png') }}" alt="Screenshot of a rating question: Please give a rating for the extent to which you agree or disagree with the following statements, based on these password requirements.">
+            <p class="caption">Example rating question on the survey I sent out.</p>
+        </figure>
+            <p>After literature review, it was time to develop my own research methods. I identified three major variables that I wanted to measure:</p>
+            <p class="outcome">(1) password generation strategy<br>(2) password management strategy, and <br>(3) attitudes toward different password generation requirements</p>
+            <p>I had originally chose to use a questionnaire using both new questions I developed and questions borrowed from past studies. Using Likert Scale, I was able to assess students' attitudes toward different authentication generation requirement. To measure survey respondent fatigue, I included three attention checks in the questionnaire, such as one that asked the respondents to calculate "2+3".</p>
+        <figure>
+            <img class="img80" src="{{ url_for('static', filename='thesis_implicitmemory.png') }}" alt="Implicity memory test 1">
+        </figure>
+        <figure>
+            <img class="img80" src="{{ url_for('static', filename='thesis_implicitmemory2.png') }}" alt="Implicity memory test 2">
+        </figure>
         <p>However, after conducting two pilot testing and discussing with my advisor, I decided to add in an extra variable:<b> (4) ability to recall password for different password generation requirement</b>. The reason for this change is to use a more objective measurement to draw connections between users' memory and the complexity of password generation requirements. Specifically, I identified three major common password generation requirements based on research conducted in the cyber security field:</p><br>
                 <ul>
                     <li>Complex character constraints with short length requirement</li>
@@ -67,27 +83,28 @@
                 </ul><br>
         <p>With the creation of this new variable, I moved on to develop an implicit memory test that was incorporated into the
                 original questionnaire. The memory test asked users to create three <i>unique</i> passwords under each password generation
-                requirement and recall the three passwords at the end of the testing session.</p>
+                requirement and recall the three passwords at the end of the testing session.</p><br>
         <p>The process for a testing session typically involved the following steps:</p><br>
         <img class="img70" src="{{ url_for('static', filename='thesis_testing.png') }}" alt="Image Unavailable"><br>
-        <p>First, users sign a consent and release form to protect their rights of privacy and confidentiaility. Then, they complete the first part of the implicit memory test. After that, users complete the questionnaire by either answering multiple choice questions or selecting a rating on Likert Scales. Upon their completion of the questionnaires, they are then asked to recall the three passwords they create at the beginning of the testing. This concludes the second part of the memory test.</p>
-        <p>All participation was voluntary and recruitment was done through the university's psychological research system. Participants were undergraduate and graduate students at San Jose State University, and their identities were kept anonymous.</p>
-        <p class="outcome">Outcome: In the span of 2 to 3 weeks, I collected overe 180 repsonses. Iterations of the questionnaire and the addition of a new variable to the study allowed me to develop a better questionnaire and validate the measurements in my study.</p>
+        <p><b>STEP 1</b>:  Sign a consent and release form to protect their rights of privacy and confidentiaility. <br> <b>STEP 2</b>:  Complete the first part of the implicit memory test. <br> <b>STEP 3</b>:  Complete the questionnaire through multiple choice questions and Likert Scales. <br> <b>STEP 4</b>:  Recall the 3 passwords they create at the beginning of the testing. This concludes the second part of the memory test.</p><br>
+        <p>All participation was voluntary and anonymous. Recruitment was through the university's psychological research system. Participants were undergraduate and graduate students at San Jose State University.</p>
+        <p class="outcome">In the span of 2 to 3 weeks, I collected overe 180 repsonses. Iterations of the questionnaire and the addition of a new variable to the study allowed me to develop a better questionnaire and validate the measurements in my study.</p>
 
 
         <!--Data analysis starts-->
+        <hr class="max">
         <h2>Data Analysis</h2>
-        <p>To analyze the data I collected, I used hypothesis testing on SPSS and generated charts and graphs using Excel. I also performed additional statistical analysis using Excel to verify the results. There were six hypotheses in total:</p><br>
+        <p>To analyze the data I collected, I used hypothesis testing on SPSS and generated charts and graphs using Excel. I also performed additional statistical analysis using Excel to verify the results. There were 6 hypotheses in total:</p><br>
                 <ul>
-                    <li>When the only composition requirement is a minimum length, shorter passwords will be better remembered than
+                    <li class="card">01 | When the only composition requirement is a minimum length, shorter passwords will be better remembered than
                     longer passwords.</li>
-                    <li>When the minimum lengths between two passwords are the same, passwords without special character requirements
+                    <li class="card">02 | When the minimum lengths between two passwords are the same, passwords without special character requirements
                     will be better remembered than passwords with the requirements.</li>
-                    <li>Long passwords without special composition requirements will be better remembered than short passwords with such
+                    <li class="card">03 | Long passwords without special composition requirements will be better remembered than short passwords with such
                     composition requirements.</li>
-                    <li>Passwords with special character requirements will be rated as more annoying to generate than passwords without such requirements.</li>
-                    <li>Passwords with special character requirements will be rated as more difficult to remember than passwords without such requirements.</li>
-                    <li>Passwords with special character requirements will be rated as more secure than passwords without such requirements.</li>
+                    <li class="card">04 | Passwords with special character requirements will be rated as more annoying to generate than passwords without such requirements.</li>
+                    <li class="card">05 | Passwords with special character requirements will be rated as more difficult to remember than passwords without such requirements.</li>
+                    <li class="card">06 | Passwords with special character requirements will be rated as more secure than passwords without such requirements.</li>
                 </ul><br>
                 <p>Unfortunately, the first three hypotheses that focused on memorability were not found to be statistically significant. In contrast, the three hypotheses that focused on self-report measurements were found to be statistically significant. which aligned with past research's findings. Particularly, users found complex passwords to be more secure but also more annoying and difficult to remember.</p><br>
         <img class="img70" src="{{ url_for('static', filename='thesis_sampleresult.png') }}" alt="Image Unavailable"><br>
@@ -95,9 +112,10 @@
         <p>However, an interesting observation was between the perceived memorability and the actual memorability. It seemed that although users believed a simpler but longer password would be more difficult to remember, the majority of users in this study successfully and accurately recalled all three passwords they generated at the beginning of the study. Currently, research in the cyber security industry claims that a simple and long password would be more secure, but many users, including major companies, believe the otherwise. This finding suggested that perhaps it would be worthwhile to look into <i>why</i> we have not listened to the research conducted in cyber security.</p>
 
         <!--Report starts-->
+        <hr class="max">
         <h2>Report</h2>
         <p>The last phase of this study was to document my background research, process, and results. The written report went through at least five different iterations before the thesis committee reviewed the draft.</p>
-        <h2>If you would like to look at the written report, please contact me via email!</h2>
+        <h3>If you would like to look at the written report, please contact me via email!</h3>
 
     </section>
 </div>

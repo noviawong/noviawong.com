@@ -26,18 +26,26 @@
             <img class="process_img visible-mobile" src="{{ url_for('static', filename='decisionaid_process2.png') }}" alt="Image describing project process-mobile friendly version.">
             <!--Beginning of first stage of research process-->
 
+            <hr class="max">
             <h2>Before starting any research...</h2>
             <p class="navyblue"><i>Bariatric: surgical procedures related to obesity and weight-loss, often through the removal or reduction of the size of one’s stomach.</i></p>
             <p>In a doctor’s appointment, bariatric patients go through all 5 different common surgical procedures with their doctors. They are asked about their comorbidities (i.e., other medical conditions such as diabetes) and other personal information. Together, the physician and the patient fill out what we call an “outcomes calculator”. Then, the physician discusses 20-30 different numbers (depending on the number of procedures they are interested in) with the patients regarding their possible surgical outcomes and risks. For example, there is a 5% chance of severe risks that may be a result of surgery A. Then, that marks the end of the appointment.</p>
             <p>This is a typical appointment for patients seeking bariatric surgery, and they often come out of the appointment with information overload, and no reference to the numbers and percentages talked about during the appointment. While the current outcomes calculator is robust with regards to its data model, the presentation itself is <b>very difficult for patients to understand on their own.</b></p>
             <p>Together as a team, we created our first draft of the problem statement for this project: </p>
             <p class="outcome">The current outcomes calculator requires physician to be present for a complete analysis and is intimidating for patients to use independently.</p>
-            <img class="img50" src="{{ url_for('static', filename='decisionaid_Problem_Statement.jpg') }}" alt="First step was to identify problem statement and scope down the problem.">
-            <p class="caption">We used post-its to formulate our problem statements by identifying users, client's problems, our own wording of the problems, etc.</p>
+            <figure>
+                <img class="img50" src="{{ url_for('static', filename='decisionaid_Problem_Statement.jpg') }}" alt="First step was to identify problem statement and scope down the problem.">
+                <p class="caption">We used post-its to formulate our problem statements by identifying users, client's problems, our own wording of the problems, etc.</p>
+            </figure>
+
             <p>To ensure that our project would be completed on time and would meet our stakeholders’ expectations, we used agile development and created the following sprint schedules for us to follow:</p>
             <p>We hoped to go through at least one revision after validating our prototype with our users and our stakeholders. At the same time, we hoped to keep our stakeholders involved in our research and design process. As a result, our client and we had weekly scrum calls and a midpoint check-in.</p><br>
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_sprint_schedule.png') }}" alt="Five stages of sprint: problem scoping, research, design, validate, revise.">
+            <figure>
+                <img class="img80" src="{{ url_for('static', filename='decisionaid_sprint_schedule.png') }}" alt="Five stages of sprint: problem scoping, research, design, validate, revise.">
+                <p class="caption">Our initial sprint schedule.</p>
+            </figure>
 
+            <hr class="max">
             <h2>Attempted User Research -- Trying to understand our users and their problems...[did not go as expected]</h2>
             <p>As the lead UX researcher on the team, I recommended several first steps to understanding the problem and our users more. Together, we established several research questions that would guide our research:</p>
             <ul>
@@ -56,34 +64,46 @@
 
 
             <h3>Competitive Analysis -- Are there similar tools out there that help people make decisions?</h3>
-            <p>We wanted to understand whether there are existing tools that serve similar purposes, so we conducted a competitive analysis. I recommended that we looked beyond the medical field because other domains also may have tools that help their customers or users to choose an option. One immediate example that came to my mind was Microsoft’s web-based decision aid on choosing laptops. These tools often tackled the independency aspect that we wanted to focus on.</p>
+            <p>We wanted to understand whether there are existing tools that serve similar purposes, so we conducted a competitive analysis. I recommended that we looked beyond the medical field, because other domains may have tools that help their customers or users to choose an option. One immediate example that came up was Microsoft’s web-based decision aid on choosing laptops. These tools often tackled the independency aspect that we wanted to focus on.</p>
 
-            <img class="img50" src="{{ url_for('static', filename='decisionaid_sample_competitive.png') }}" alt="A glimpse of the competitive analysis that we did.">
+            <figure>
+                <img class="img50" src="{{ url_for('static', filename='decisionaid_sample_competitive.png') }}" alt="A glimpse of the competitive analysis that we did.">
+            </figure>
 
-            <p>Through competitive analysis, we found that other tools relied heavily on visual cues and information, and they broke down the entire user flow into several pages to reduce users’ fatigue.</p>
+            <p class="outcome">Through competitive analysis, we found that other tools relied heavily on visual cues and information, and they broke down the entire user flow into several pages to reduce users’ fatigue.</p>
 
             <h3>Interaction Map -- Let's take a look at the current design. Well, it's a one-pager.</h3>
             <p>Our mentor recommended that we complete an interaction map to further understand the current outcomes calculator. Given that the calculator is a one-pager, I personally was rather reluctant to complete an interaction map since I wasn’t sure what values it would’ve added. Instead, I brought up the idea of a <b>choice map</b> instead (see below).</p>
 
-            <p>However, given that our mentors insisted that an interaction map would be helpful for us to learn more about the calculator, I went ahead and put together an interaction map. Turned out he was right and I did find new information about the site that I didn’t know before:</p>
+            <p>However, given that our mentors insisted that an interaction map would be helpful for us to learn more about the calculator, I went ahead and put together an interaction map. </p>
+             <figure>
+                <img class="img80" src="{{ url_for('static', filename='decisionaid_interaction_map.png') }}" alt="Interaction map of the current outcomes calculator.">
+            </figure>
+            <div>
+                <p>Turned out he was right and I did find new information about the site that I didn’t know before:</p>
             <ul>
                 <li>Only a certain selection of comorbidities would trigger “comorbidity resolution” on the results screen, but this was not made clear to the users.</li>
                 <li>The current site required the users to complete all questions on the calculator before moving on to the results screen, which some users might be reluctant to do so.</li>
                 <li>It was not clear how to update the form on the calculator if the users wished to do so.</li>
             </ul>
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_interaction_map.png') }}" alt="Interaction map of the current outcomes calculator.">
+            </div>
+
+
 
             <h3>Choice Map -- What are the choices and options our users would have to fill out to get the results? How do they get there?</h3>
             <p>As mentioned earlier, I personally felt that a choice map would be valuable for us to understand the number of choices and the flow of choices a user would have to make before landing on the result page.</p>
 
-            <img class="img50" src="{{ url_for('static', filename='decisionaid_choicemap_sketch.jpeg') }}" alt="A sketch before finalizing the choice map digitally.">
+            <figure>
+                <img class="img50" src="{{ url_for('static', filename='decisionaid_choicemap_sketch.jpeg') }}" alt="A sketch before finalizing the choice map digitally.">
+            </figure>
             <div>
                <form action="https://drive.google.com/file/d/1rJS1dNtukQAC5w9uv7OKjUxM_eujLrMn/view?usp=sharing" target="_blank"><button class="button-accordion">View Full Choice Map</button></form>
             </div>
+            <br>
             <p>All of the research above suggested that the current outcomes calculator was very fitting for a knowledgeable physician in understanding how to read the results, but not for a patient. After our heuristic research on the current outcomes calculator, we revised our initial problem statement to the following:</p>
             <p class="outcome">The outcomes calculator requires physician guidance and misses an opportunity to educate patients and help them select a “best fit” surgical choice.</p>
 
-
+            <hr class="max">
             <h2>Supplemental User Research -- Second attempt in understanding our users and their decision making process</h2>
 
             <h3>Literature Review -- What do the professionals say?</h3>
@@ -95,31 +115,45 @@
                 <li>Pictorial information is an important component in a decision-making tool.</li>
             </ul>
 
-            <p>Based on how common a “decision aid” is found in the medical field, we decided that a decision aid would be a better fit for bariatric patients rather than a prettified outcomes calculator.</p>
+            <p class="outcome">Based on how common a “decision aid” is found in the medical field, we decided that a decision aid would be a better fit for bariatric patients rather than a prettified outcomes calculator.</p>
 
             <h3>YouTube Videos and Blogs -- Where and how else can we learn abour our users?</h3>
 
             <h3>Persona: Meet Martha, a potential bariatric patient</h3>
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_persona.png') }}" alt="Persona showing Martha, a fictional character who is a potential bariatric patient.">
+            <figure>
+                <img class="img80" src="{{ url_for('static', filename='decisionaid_persona.png') }}" alt="Persona showing Martha, a fictional character who is a potential bariatric patient.">
+            </figure>
             <p>Finally, after our research on bariatric surgery, patients, and their experiences, we met Martha. Martha is the persona that we created as a representation of our primary users: people who have obesity and surgery is the only option for weight reduction.</p>
             <p>The persona guided our design in the following stages, and allowed us to establish a common ground with our audience, including our clients, in presentation and usability testing.</p>
             <p>According to our client, our persona made them feel like they have known “Martha” for a long time and made them really want to help Martha to get what she wanted.</p>
 
+
+            <hr class="max">
             <h2>Digital Prototype</h2>
-            <p>Our goal for this new design was to transform the originally physician facing tool to a patient facing tool that they could use independently. More specifically, we wanted to</p>
+            <p>Our goal for this new design was to transform the originally physician facing tool to a patient facing tool that they could use independently. More specifically, we wanted to...</p>
             <p class="outcome">Create a multi-screen, patient-facing decision aid to help individuals make their best personal choice by providing insights on surgical options, lifestyle considerations, post-surgery realities, and a reflection on their values.</p>
 
             <h3>User Flow</h3>
             <p>Before digitally designing or sketching anything, we wanted to ensure we have an initial user flow to follow. We were cautious in deciding the user flow, because we didn’t want to fall into the trap of “user flow by screen”. As a result, we wrote down the tasks a user would need to go through from the very beginning till the very end of their interaction with our decision aid.</p>
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_user_flow1.png') }}" alt="We mapped out the user flow for our decision aid.">
+            <figure>
+                <img class="img80" src="{{ url_for('static', filename='decisionaid_user_flow1.png') }}" alt="We mapped out the user flow for our decision aid.">
+            </figure>
 
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_user_flow_2.jpg') }}" alt="We mapped out the entire user flow, from scheduling an appointment to post-operation.">
+            <figure>
+                <img class="img80" src="{{ url_for('static', filename='decisionaid_user_flow_2.jpg') }}" alt="We mapped out the entire user flow, from scheduling an appointment to post-operation.">
+            </figure>
             <p>Following that, another designer and I sat down and discussed one of the more mundane design decision: user control for a list of nested options.</p>
             <p>The current nested list utilizes radio buttons, which have several disadvantages: (1) nested options are not shown until users select one of the preset options, (2) radio buttons can be small and difficult to click on for users (Fitts Law), and (3) with over 30 radio buttons on a page, it makes the website look very crowded and overwhelming.</p>
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_currentnestedlist.png') }}" alt="Current nested list on the outcomes calculator.">
-            <p>As a result, we explored other options for this particular user control. Below shows an image of the other user controls we sketched.</p>
-            <img class="img50" src="{{ url_for('static', filename='decisionaid_user_control.png') }}" alt="I explored various ways for user control on a website besides radio buttons.">
-            <p>Ultimately, we settled on having each condition as its own button, eliminating the needs for radio buttons. At the same time, we revealed all nested options, to ensure that users have full transparency. We made this decision based on hallway testing; the other designer and I took these controls and tested it with different people and selected the one that received that most positive comments.</p>
+            <figure>
+                <img class="img80" src="{{ url_for('static', filename='decisionaid_currentnestedlist.png') }}" alt="Current nested list on the outcomes calculator.">
+                <p class="caption">Current outcomes calculator design with radio buttons.</p>
+            </figure>
+            <p>As a result, we explored other options for this particular user control and sought feedback from quick hallway testings.</p>
+            <figure>
+                <img class="img50" src="{{ url_for('static', filename='decisionaid_user_control.png') }}" alt="I explored various ways for user control on a website besides radio buttons.">
+                <p class="caption">Quick mockup of different user controls.</p>
+            </figure>
+            <p>Ultimately, we settled on having each condition as its own button, eliminating the needs for radio buttons. At the same time, we revealed all nested options, to ensure that users have full transparency.</p>
 
             <h3>Wireframes: 2 Iterations</h3>
             <p>We had 2 iterations of wireframes. The major turning point between the 2 iterations was feedback from our stakeholders and our project mentor, as well as 3 quick usability testings to validate our intended user flow. Changes that were made include:</p>
@@ -129,10 +163,14 @@
                 <li><b>Indicators for users about their current status</b>: more text indications were included in the wireframes to inform users where their current steps are as well as the steps prior and after.</li>
             </ul>
 
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_wireframe1.png') }}" alt="first iteration of wireframe.">
-            <p class="caption">first iteration of the wireframe.</p><br><br>
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_wireframe2.png') }}" alt="second iteration of wireframe.">
-            <p class="caption">second iteration of the wireframe.</p>
+            <figure>
+                <img class="img80" src="{{ url_for('static', filename='decisionaid_wireframe1.png') }}" alt="first iteration of wireframe.">
+                 <p class="caption">first iteration of the wireframe.</p><br><br>
+            </figure>
+            <figure>
+                <img class="img80" src="{{ url_for('static', filename='decisionaid_wireframe2.png') }}" alt="second iteration of wireframe.">
+                <p class="caption">second iteration of the wireframe.</p>
+            </figure>
 
             <h3>High Fideltiy Prototype</h3>
             <p>After creating our wireframes and conducted a few more usability testing sessions, we proceeded to high fidelity prototypes. The primary differences between the wireframes and the prototype were:</p>
@@ -146,11 +184,18 @@
            <video class="demo" controls>
                 <source src="{{ url_for('static', filename='decisionaid_demo.mov') }}" alt="Video demo of our decision aid final prototype.">
             </video><br>
-            <img class="img50 col-5" src="{{ url_for('static', filename='decisionaid_hi-fi-1.jpg') }}" alt="Hi-fi mockup1.">
-            <img class="img50 col-5" src="{{ url_for('static', filename='decisionaid_hi-fi-2.jpg') }}" alt="Hi-fi mockup2.">
-            <img class="img50 col-5" src="{{ url_for('static', filename='decisionaid_hi-fi3.jpg') }}" alt="Hi-fi mockup3.">
+            <figure>
+                <img class="img50 col-5" src="{{ url_for('static', filename='decisionaid_hi-fi-1.jpg') }}" alt="Hi-fi mockup1.">
+                <img class="img50 col-5" src="{{ url_for('static', filename='decisionaid_hi-fi-2.jpg') }}" alt="Hi-fi mockup2.">
+            </figure>
+            <figure>
+                <img class="img50" src="{{ url_for('static', filename='decisionaid_hi-fi3.jpg') }}" alt="Hi-fi mockup3.">
+            </figure>
 
 
+
+            <br class="clear">
+            <hr class="max">
             <h2>Validation -- How do we know our new design will work?</h2>
             <h3>Usability Testing</h3>
             <p>Our prototype was not perfect, particularly because we couldn’t design it based on direct research with our primary users. As a result, we wanted to at least validate our design with someone who has never used the system before. To do so, we took our prototype to our school and tested the system with 8 people who had never interacted with the original outcomes calculator before. Our usability testing revealed 3 major areas where we could use improvements on:</p>
@@ -163,8 +208,10 @@
             <h3>Exposition</h3>
             <p>Another quick way for us to receive feedback and design validation was to participate in the exposition. At the exposition, we presented our project to over 200 people through the format of a lightning talk and a poster presentation. Some quick feedback that we got from the VP of Technology at Snapchat was on the <b>toggle between general and personal comparison</b>. This critique aligned with our usability testing findings, and we shared this feedback with our client as well.</p>
 
-            <img class="img80" src="{{ url_for('static', filename='decisionaid_poster_session.jpg') }}" alt="We presented a poster at our school Exposition.">
-            <p class="caption">My team and I presenting our poster at the school exposition.</p>
+            <figure>
+                <img class="img80" src="{{ url_for('static', filename='decisionaid_poster_session.jpg') }}" alt="We presented a poster at our school Exposition.">
+                <p class="caption">My team and I presenting our poster at the school exposition.</p>
+            </figure>
 
             <h3>Client Presentation</h3>
             <p>At the end of the project, we presented our research process and the final prototype along with our usability test findings to our client. The audience included the project manager, the sales team for the product, the Chief Medical Officer, and the partnership manager with local hospitals.</p>

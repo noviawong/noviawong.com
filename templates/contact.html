@@ -1,5 +1,24 @@
 {% include "header.html" %}
-<form a="/novia0925@gmail.com" method="post">
 
-</form>
+<section class="pagetitles">
+    <div class="max">
+        <h1>Contact</h1>
+    </div>
+</section>
+
+<div class="max" id="contactme">
+    <br>
+    <figure>
+        <img class="img30 col-3" src="{{ url_for('static', filename='novia_avatar.png') }}" alt="Novia as avatar. Drawn with Illustrator.">
+    </figure>
+    <div class="col-8">
+        <h2>If you are interested in chatting with me, <br>please email me:</h2>
+        <br>
+        <form action="mailto:noviaw@umich.edu" method="post"><button class="button-accordion">noviaw@umich.edu</button></form>
+    </div>
+
+</div>
+
+
+
 {% include "footer.html" %}

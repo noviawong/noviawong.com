@@ -18,25 +18,42 @@
                     <p><b class="navyblue">Summary:</b><br><b>Goal</b><br>Based on our observation and initial interviews with music school students and instructors, we found that college students (non-music major) and adult learners are more motivated to learn music than younger music students. As a result, we wanted to use technology to further improve their experiences in learning music, particularly piano. Our goal was to move past beyond a mobile application to something more physical and tangible, and use pervasive design methodologies to identify our users’ pain points and what they really needed.<br><br><b>Process</b><br>Prior to setting our goal, my team and I went through long hours of discussion of what domain to focus on. To finally settle on one specific area, we assessed our own abilities, expertise in the domain in question, along with existing solutions. Then, we utilized methods such as cultural probe to understand the users: adult piano learners We found that the main problems students face when they first learn piano are (1) unable to identify their own mistakes, and (2) lack of communication between instructor and students. We then proceeded to rapid prototyping and user enactment, where users helped us to validate and critique our designs. Finally, we prototyped our project using Arduino to further simulate the experience, and recorded a video to show the full experience of what our users could potentially have. Using both our physical prototype and video, we were able to validate our solution with piano instructors and students.
 <br><br><b>Solution</b><br>Our solution, PianoLink, is an interactive system that supplements piano instructors’ absence during a practice session. It is aimed to assist adult piano beginners to identify their own mistakes while playing, and track their progress in a measurable way. Also, it is equipped with an amazing rainbow pattern to encourage piano learners to keep practicing, along with a mobile application that allows them to share their progress with other people, including their instructors and friends. This strip also comes with lights that project directly onto the piano keys as well as a touchscreen control panel for additional controls and settings. With this solution, users will be able to identify their own mistakes with the help of 3 different modes: learning, practice, and free play mode, helping users to learn to play with gradually increasing difficulties.</p>
          </div>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_productpic.jpg') }}" alt="Final product mockup.">
+            <figure>
+                 <img class="img70" src="{{ url_for('static', filename='pianolink_productpic.jpg') }}" alt="Final product mockup.">
+            </figure>
+
             <h2>Process Overview</h2>
             <img class="process_img hidden-mobile" src="{{ url_for('static', filename='pianolink_process.png') }}" alt="The process that I took for this project: (1) problem scoping, (2) user research, (3) digital and physical prototyping, (4) feedback and reflection.">
             <img class="process_img visible-mobile" src="{{ url_for('static', filename='pianolink_process2.png') }}" alt="Mobile-friendly version. The process that I took for this project: (1) problem scoping, (2) user research, (3) digital and physical prototyping, (4) feedback and reflection.">
             <!--Beginning of first stage of research process-->
+
+            <hr class="max">
+
             <h2> Problem Scoping </h2>
             <p>Choosing a problem space to work with is not an easy task. My team and I went through 4 hours of brainstorming and discussions, along with 2 iterations before settling on “music” as a problem domain. The image below shows a glimpse of our brainstorming session.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_problemscoping.png') }}" alt="Image showing the brainstorming session we had for problem scoping.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_problemscoping.png') }}" alt="Image showing the brainstorming session we had for problem scoping.">
+            </figure>
             <p>To better understand this domain and some of the problems current music students may have, we interviewed 5 music school students. We identified the following key issues: (1) practice room availability, (2) lack of immediate feedback from professors, and (3) lack of motivation for practicing.</p>
             <p>We soon became interested in exploring the early relationship between piano instructors and students at the early stages of learning. Since piano students range from children to adults, we had to narrow down our target user group. We had easier access to sampling adult students, so we started with this group of users. As a result, we are interested in learning about what frustrations they have even though they are highly motivated to learn.</p>
             <p>We found that when students practice piano without the instructors’ presence, they often play the music over and over again to figure out finger placement and note accuracy on their own. This process involves an extremely high level of self-reflection and self-teaching skills without direct and immediate feedback from their instructors. That said, our question became:</p>
             <p class="navyblue">How can we help adult beginner piano students to practice efficiently on their own?<p>
             <p>While we began our user research phase, we also took the time to brainstorm possible solutions. We first sketched individually among the 4 of us, then came back together to discuss the concepts that we came up with. After reviewing all the sketches, we settled on the following:</p>
             <h3>01 | Projection on keyboard</h3>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_storyboard1.png') }}" alt="Storyboard for concept 1: projection on keyboard.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_storyboard1.png') }}" alt="Storyboard for concept 1: projection on keyboard.">
+            </figure>
             <h3>02 | Haptic sound wave feedback for hands position</h3>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_storyboard2.png') }}" alt="Storyboard for concept 2.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_storyboard2.png') }}" alt="Storyboard for concept 2.">
+            </figure>
             <h3>03 | Real-time visualization play accuracy feedback</h3>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_storyboard3.png') }}" alt="Storyboard for concept 3.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_storyboard3.png') }}" alt="Storyboard for concept 3.">
+            </figure>
+
+
+            <hr class="max">
 
             <h2> User Research </h2>
             <p>We needed to understand our users more before settling on one specific solution. To do so, the following methodologies were used: interviews, cultural probes, and competitive analysis. Interviews and cultural probes will allow us to understand our users’ current relationships with practicing piano, while competitive analysis would provide us with insight on other types of tools that are used by piano players right now.</p>
@@ -63,8 +80,12 @@
                 <li>Rate the difficulty of various activities</li>
                 <li>Circle your current communications</li>
             </ul>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_culturalprobe1.png') }}" alt="Empty board for cultural probe activity 2.">
-            <img class="img70" src="{{ url_for('static', filename='pianolink_culturalprobe2.png') }}" alt="A completed version of the cultural probe activity 2.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_culturalprobe1.png') }}" alt="Empty board for cultural probe activity 2.">
+            </figure>
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_culturalprobe2.png') }}" alt="A completed version of the cultural probe activity 2.">
+            </figure>
             <p><b>02 | Communication</b><br>We found that piano students have positive opinions regarding piano instructors. They viewed their instructors as very positive, patient, and encouraging. Yet, we also found that communication typically doesn’t happen outside of the in-person piano lessons, which means students and instructors don’t have a chance to talk to each other regarding the practice progress until lesson the next week.</p>
             <p><b>03 | Physical Resources</b><br>Although piano instructors constantly try to incorporate technology into their teaching, physical resources are still extremely important Learning piano often require physical resources such as books and worksheets. Through our cultural probe, we found that when students think of resources they use when they learn and practice piano, they often think of their physical sheet music and a metronome.</p>
             <p><b>04 | Emotion Roller-Coaster</b><br>Piano students found learning piano to be rewarding, but upon looking closely at their practice sessions, we found that it’s pretty much an emotion roller-coaster for them. They start out excited to practice a new piece of music, then run into frustration when they make a mistake or don’t seem to be making much of a progress, and finish the practice session off with excitement and joy if they meet their goals.</p>
@@ -72,6 +93,9 @@
             <p>An informal competitive analysis was conducted, in which we assessed other technological products participants mentioned that help with their learning. A few products that piano instructors and students currently use are: (1) Synthesia, (2) Simply Piano, and (3) YouTube tutorials. Other than products that students and instructors are currently using, we also identified some pervasive design we noticed before: (4)The ONE Smart Piano. These digital tools all act as tutorials for piano learners and all are either IPad applications or browser products. The ONE Smart Piano is a physical electric piano with keys that light up to guide learners in playing the right notes.>
             <p><b>05 | Current Technology Is Limited</b><br>Upon looking at the technology some of our interviewees and participants mentioned, we found that they are fairly limited to iPad or phone applications. Another competitor that we found requires the purchase of a physical electronic piano, which many of our target users can’t afford or commit into purchasing.</p>
             <p>Following user research, we had our second iteration of the solutions. We took an approach similar to the first round of sketching earlier.</p>
+
+
+            <hr class="max">
 
             <h2>Digital and Physical Prototyping</h2>
             <p>Now that we had more understanding of our users and the problems they were facing. We wanted to select one concept from earlier stages and test it with our users. Prior to designing our physical prototype for our first round of testing, my team and I set up a list of criteria to follow. Examples include:</p>
@@ -88,47 +112,73 @@
                 <li>Does this tool help to combat the main challenges that students face when they first start learning piano?</li>
             </ul>
             <p>To develop the protocol for our user enactment, we followed the Speed-dating Matrix protocol and wrote scenarios that fit along the 3 design dimensions we deemed important: (1) Players’ relationship with the piece (New vs. In Progress), (2) Goal of the practice session, and (3) Reactivity of the system.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_speeddating.png') }}" alt="A table showing speeddating matrix that my team and I fixed out. Cells contained possible scenarios for us to show participants.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_speeddating.png') }}" alt="A table showing speeddating matrix that my team and I fixed out. Cells contained possible scenarios for us to show participants.">
+            </figure>
             <p>Some of the cells were left empty on purpose, because the scenarios were highly unlikely to occur.<br>We tested the study with 6 different users. Five of our participants had some experiences with playing piano, while 1 had absolutely no experiences with playing piano or any other musical instrument. This participant was able to provide us with perspective that we had never thought of, as a true piano beginner. Here is a breakdown of our participants:</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_UEparticipant.png') }}" alt="A visual breakdown of who our participants were.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_UEparticipant.png') }}" alt="A visual breakdown of who our participants were.">
+            </figure>
             <p>In most of our UE sessions, our setup included a cardboard piano, paper screens for a mobile app, Q-tips as replacement for LED lights, and a cardboard LED strip. In situations when we could not secure a physical piano, we used a cardboard piano with matching piano key dimensions to simulate the experiences.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_physicalprototype.jpg') }}" alt="A picture of the setup for our user enactment.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_physicalprototype.jpg') }}" alt="A picture of the setup for our user enactment.">
+            </figure>
             <p>After each scenario, the user went through a debriefing for that particular scenario regarding their experiences with the prototype and scenario. Debriefing questions included questions such as “how did you feel about that particular experience” and “if you could change something in that scenario, what would you change”, along with other follow-up questions regarding the observations we made during the session.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_UE1.jpg') }}" alt="Images from our user enactment sessions.">
-            <img class="img70" src="{{ url_for('static', filename='pianolink_UE2.jpg') }}" alt="Image nuber 2 from our user enactment sessions.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_UE1.jpg') }}" alt="Images from our user enactment sessions.">
+            </figure>
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_UE2.jpg') }}" alt="Image nuber 2 from our user enactment sessions.">
+            </figure>
             <p>We did a small affinity wall after our user enactment and found the following insight:</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_analysis.png') }}" alt="Analysis of the user enactment sessions. Post-its on the whiteboard.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_analysis.png') }}" alt="Analysis of the user enactment sessions. Post-its on the whiteboard.">
+            </figure>
             <p><b>01 | Expertise level differences</b><br>A true beginner who doesn’t know how to read the notes on a sheet music would need significantly more guidance than someone who has been practicing piano for a while, or those who play another music instrument. Their differences in expertise level greatly influenced how they reacted to the LED light guidance.</p>
             <p><b>02 | Analysis and comparison are helpful</b><br>All our participants found that being able to compare their own performance across different practice sessions -- or even within one practice session -- to be helpful in their piano learning journey. One of them even expressed the interest in seeing more types of analysis in addition to note accuracy, tempo consistency, and overall performance. Examples of additional analyses include dynamics, pedal usage, and finger positions.</p>
             <p><b>03 | Automation is frowned upon</b><br>None of our participants appreciated the full automation when we had our experience prototyping. They hated and found the idea of automatic sharing distasteful, and deemed it as an act of privacy violation. Many of them showed confusion when the system automatically adjusted the difficulty level for them (e.g., tempo). All of them preferred to have more control over what they could do with the LED strip as well as the accompanying mobile application.</p>
             <p><b>04 | LED lights alone can be distracting</b><br>When we prototyped the LED lights with Q-tips, our participants found them to be distracting and they focused on the lights instead of reading the sheet music. They reasoned that this is because the lights were “installed” directly above the keys, and way below the sheet music, so they weren’t sure if they were supposed to follow the lights or the notes on the sheet music.</p>
             <p>We wanted to explore how we could subsidize for the absence of an instructor during practice session as much as possible. During the next phases of ideation and design, whenever we were stuck, we would ask ourselves a question: </p><p class="navyblue">What would a piano instructor do?</p>
             <p>After the first round of testing, my team and I got together and scored each variation of certain features using the criteria we previously established. The image below shows the scoring we did as a team.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_designmatrix.png') }}" alt="A table of scores and features after our user enactment sessions.">
+           <figure>
+               <img class="img70" src="{{ url_for('static', filename='pianolink_designmatrix.png') }}" alt="A table of scores and features after our user enactment sessions.">
 
+           </figure>
+
+            <hr class="max">
             <h2>Final Solution</h2>
             <p><b>01 | Portable add-on product with smart guidance</b><br>PianoLink features a foldable strip which can be easily attached to an existing piano and put into a backpack. It’s equipped with LED mini projectors and a touchscreen control panel and can be connected to the user’s smart phone, which allows piano students to have a more effective and engaging practice session. This will be especially useful for students who have to go to shared practice rooms or those who cannot afford a smart piano with augmented assistance.</p>
             <p><b>02 | Different modes for piano students with different levels of expertise</b><br>Based on the dynamic nature of piano learning, PianoLink brings flexibility in terms of guidance by having 3 modes for users: (1) learning mode, (2) practice mode, and (3) free-play mode.<br>Learning mode will guide the students through the song one note at a time, through LED lights being projected onto the piano keys. The wrong note will light up in red color and the correct note will light up in green. Also, before they start playing the notes, the users will be told what fingers to be placed on which keys by looking at 5 different lights lighting up.<br>The practice mode will show the students which is the right note to play only when they play a wrong note. There will also be clapping sounds appearing only when the users aren’t following the tempo they set, to let them get a sense of how fast they’re supposed to play the music with.<br>In the free-play mode, the student will be able to continue to track progress without PiankLink’s guidance.</p>
             <p><b>03 | Track progress and provide analytics insights on teaching with the instructor</b><br>PianoLink enables the student user to record the practice and track the learning process, with the user’s consent. As the physical product is synced with the mobile app, the user will be able to see how they’re making progress through the mobile app. They could decide to share the information, which would help the instructor to understand the student’s strengths and weaknesses and adjust the curriculum accordingly.</p>
             <p><b>04 | Delightful learning experience with Positive Reinforcement</b><br>Students can set a goal for the practice session on their mobile app (ex. Finish the song without making any mistake). The LED strip will display in a sequence of rainbow colors to cheer them up. The positive reinforcement can help with motivating adult students who’re practicing on their own and possibly struggling with some hurdles before mastering the instrument.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_finalstoryboard.png') }}" alt="Storyboard for our final solution.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_finalstoryboard.png') }}" alt="Storyboard for our final solution.">
+            </figure>
             <p>Here is a video detailing our prototype and solution:</p>
             <iframe class="demo" src="https://www.youtube.com/embed/1FbgO9Zja1U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <h2> Physical Prototype</h2>
             <p>My team and I used Arduino to create a physical prototype of our solution. The prototype was used and tested by our classmates, piano instructors, and piano students. We also used Sketch and InVision to create the mockups for the control panel as well as the mobile app for our solution.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_controlpanel.png') }}" alt="Control panel mockup example.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_controlpanel.png') }}" alt="Control panel mockup example.">
+            </figure>
             <p>The image above shows how the control panel might look like.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_errortesting.jpg') }}" alt="Error-testing in action.">
-            <p>This is an image of error testing our physical solution using Arduino and LED strip.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_systemmap.png') }}" alt="System map for our solution.">
-            <p>This is a system map for our proposed solution. Unfortunately, not all components were prototyped using Arduino.</p>
-
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_errortesting.jpg') }}" alt="Error-testing in action.">
+                <p class="caption">This is an image of error testing our physical solution using Arduino and LED strip.</p>
+            </figure>
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_systemmap.png') }}" alt="System map for our solution.">
+                <p class="caption">This is a system map for our proposed solution. Unfortunately, not all components were prototyped using Arduino.</p>
+            </figure>
+            <hr class="max">
             <h2> Feedback and Reflection </h2>
             <p><b>Limitation of the design</b><br>Some of the limitation of our current design has to deal with the level of control from the instructor’s side. As of right now, instructors still don’t have control over students’ goals at their practice sessions. Communication between instructors and students will still be minimal even with PianoLink.<br>The design is also too futuristic, and some parts cannot be realized immediately with current technology. (e.g., recognizing the notes, comparing the performance, data collected from practices)</p>
             <p><b>Insights after prototyping</b><br>We started to ask ourselves the question" How might we provide feedback to address users' emotional needs?" After prototyping and our demo, we realized that we aren't doing enough to address this part of the research findings. We’ve incorporated rainbow LED lighting up to indicate achievements. But, this is just a smaller reminder that they are doing well and letting the beautiful display be something to works towards as well as a symbol of achievement. We considered an audio feedback to encourage the users. This would indicate feedback and encouragement such as “good job,” “keep it up,” or “almost there!” Throughout research, we were able to find that learning is a pretty personal and emotional process. It can be frustrating yet very rewarding. Our goal is to make sure that the user keeps making progress feels that rewarding feeling more often. As a result, this will be a future step we want to focus on.</p>
             <p><b>Feedback</b><br>The design received positive feedback from piano instructors. One piano instructor was excited to see where this project may head to in the future, and is willing to contribute in any way she could.</p>
-            <img class="img70" src="{{ url_for('static', filename='pianolink_testing.png') }}" alt="Classmates and users intearcting with our prototype.">
+            <figure>
+                <img class="img70" src="{{ url_for('static', filename='pianolink_testing.png') }}" alt="Classmates and users intearcting with our prototype.">
+            </figure>
         </div>
     </section>
 </div>

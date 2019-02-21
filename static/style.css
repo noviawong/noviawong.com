@@ -17,7 +17,11 @@ box-sizing: border-box;
 }
 
 hr {
-color: rgb(218, 234, 248)
+background-color: rgb(218, 234, 248);
+width: 20%;
+margin: 10px;
+padding: 2px;
+border: none;
 }
 
 .clear{
@@ -50,7 +54,7 @@ color: rgb(9,68,125);
 
 .button-light{
 padding: 10px 20px;
-margin: 0px 0px 50px 20px;
+margin: auto;
 background-color: rgb(255,255,255);
 color: rgb(62, 62, 62);
 border: 2px solid rgb(118, 162, 214);
@@ -101,24 +105,39 @@ color: rgb(255,255,255);
 cursor: pointer;
 }
 
-nav {
+
+@media screen and (min-width: 768px){
+    nav {
     /*background-color: rgb(118, 162, 214);*/
     background-color: rgb(218, 234, 248);
     width: 100%;
     overflow:hidden;
     position: fixed;
     top: 0;
+    padding: 0px;
+    margin: 0px;
     }
 
-@media screen and (min-width: 768px){
     nav a{
     display: inline-block;
-    float: left;
+    /*float: left;*/
     text-decoration: none;
     text-align: center;
     padding: 15px 40px;
     font-size: 100%;
     margin: 0px;
+    }
+
+    #navigation-id{
+    float: right;
+    margin: 10px 25px 0px 0px;
+    }
+
+    #nav-logo {
+    width: 6%;
+    display: inline-block;
+    float: left;
+    margin: 5px 25px 2px 25px;
     }
 
     nav a.current{
@@ -131,11 +150,17 @@ nav {
     text-decoration: underline rgb(118,162,214);
     }
 
-
-
     nav a.icon{
     display: none;
     }
+
+
+    nav > a:first-child{
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    }
+
 
     /*responsive columns*/
     .col-1 {
@@ -229,26 +254,41 @@ padding:0px;
 
 #experiences{
 background-color: rgb(255,255,255);
-padding: 50px 0px 100px 0px;
+padding: 40px 0px 100px 0px;
 margin: 0px;
+}
+
+#experiences h2{
+text-align: center;
 }
 
 #experiences img{
 width: 80%;
-margin-left: 100px;
-margin-right: 100px;
+margin: 50px 100px 0px 100px;
 }
 
 #projecthighlights{
 background-color: rgb(255,255,255);
-padding: 0px 0px 100px 0px;
+padding: 40px 0px 100px 0px;
 margin: 0px;
+}
+
+#projecthighlights h2{
+text-align: center;
 }
 
 #aboutme{
 background-color: rgb(255,255,255);
-padding: 80px 0px 100px 0px;
+padding: 40px 0px 100px 0px;
 margin: 0px;
+}
+
+#aboutme h2{
+text-align: center;
+}
+
+#aboutme p{
+margin: 0px 75px 0px 75px;
 }
 
 h1 {
@@ -294,31 +334,40 @@ margin: auto;
 text-align: center;
 font-weight: 400;
 padding: 0px;
+line-height: 1.6;
 }
 
-#projecthighlights img{
-width: 20%;
-border-radius: 50%;
-/*border: solid rgb(118, 162, 214);*/
-border: solid rgb(118, 162, 214);
+#allprojectcards{
+padding: 50px 0px 0px 50px;
+}
+
+.projectcard{
+width: 45%;
+height: 350px;
+padding: 25px;
+margin: 30px 30px 0px 10px;
 display: inline-block;
-margin: 0px 20px 20px 20px;
+box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
 transition: transform 0.2s;
 }
 
-#projecthighlights img:hover{
-transform: scale(1.1);
+#projecthighlights img{
+width: 40%;
+/*border-radius: 50%;
+border: solid rgb(118, 162, 214);*/
+display: block;
+margin: auto;
 }
 
 .overlay:hover{
 opacity: 0.5;
+transform: scale(1.05);
 }
 
 #profilepic{
-width:100%;
-display: inline-block;
-float: left;
-margin: 0px;
+width:30%;
+display: block;
+margin: auto;
 }
 
 #about p{
@@ -407,16 +456,48 @@ margin:0px;
 padding: 50px 0px 30px 0px;
 clear: both;
 display: block;
+font-size: 175%;
+text-transform: uppercase;
+font-weight: 300;
+}
+
+.projectcontent h3{
+font-weight: 300;
+padding-top: 50px;
+padding-bottom: 10px;
+}
+
+.projectcontent hr{
+margin-top: 50px;
+margin-bottom: 30px;
+width: 40%;
 }
 
 .description-text{
 color: rgb(118,162,214);
 font-style: italic;
+font-weight: 300;
+padding-top: 25px;
+padding-bottom: 25px;
 }
 
 .outcome{
-color: rgb(118,162,214);
-font-weight: 700;
+color: rgb(62,62,62);
+font-weight: 400;
+background-color: rgba(218, 234, 248, 0.2);
+padding: 50px;
+margin-top: 50px;
+margin-bottom: 50px;
+text-align: center;
+}
+
+.card{
+width: 100%;
+height: auto;
+padding: 20px;
+margin-bottom: 15px;
+display: block;
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .projecttitles{
@@ -430,13 +511,6 @@ margin: 0px;
 font-size: 300%;
 }
 
-/*.projectcontent img{
-max-width: 1000px;
-width: 80%;
-margin: auto;
-display: block;
-}*/
-
 .process_img{
 width: 100%;
 display: block;
@@ -444,6 +518,13 @@ margin: auto;
 }
 
 /*Images sizing*/
+.img30{
+width: 30%;
+display: block;
+margin: auto;
+padding: 10px 0px 10px 0px;
+}
+
 .img50{
 width: 50%;
 display: block;
@@ -484,6 +565,14 @@ height: 360px;
 display: block;
 margin: auto;
 padding: 10px 0px 10px 0px;
+}
+
+.projectcontent figure{
+padding: 50px 0px 40px 0px;
+}
+
+#contactme h2{
+font-weight: 300;
 }
 
 /*Footer*/
@@ -539,14 +628,34 @@ margin: 20px;
     margin: 20px;
     }
 
+    nav {
+    background-color: rgb(218, 234, 248);
+    width: 100%;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+    }
+
     nav a{
-    display: inline-block;
-    float: left;
+    display: none;
+    padding: 15px 40px;
+    /*float: left;
     text-decoration: none;
     text-align: center;
     padding: 15px 40px;
     font-size: 100%;
-    margin: 0px;
+    margin: 0px;*/
+    }
+
+    #nav-logo {
+    width: 15%;
+    float: left;
+    margin: auto;
+    }
+
+    #nav-logo-link{
+    display: inline-block;
+    float: left;
     }
 
     nav a.current{
@@ -558,13 +667,12 @@ margin: 20px;
     color: rgb(118, 162, 214);
     }
 
-    nav a:not(:first-child){
-    display: none;
-    }
-
     nav a.icon{
     float: right;
-    display: block;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    position: absolute;
     }
 
     nav.responsive{
@@ -590,18 +698,37 @@ margin: 20px;
     padding:0px;
     }
 
+    .projectcard{
+    width: 80%;
+    height: auto;
+    padding: 25px;
+    margin: 25px 0px 0px 15px;
+    display: block;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    }
+
     #experiences img{
     width: 100%;
     margin: auto;
+    margin-top: 50px;
+    }
+
+    #aboutme img{
+    width: 80%;
+    margin: auto;
+    }
+
+    #aboutme p{
+    margin: 25px;
     }
 
     #projecthighlights img{
-    width: 60%;
-    border-radius: 50%;
-    border: solid rgb(118, 162, 214);
+    width: 50%;
+    /*border-radius: 50%;
+    border: solid rgb(118, 162, 214);*/
     display: block;
-    margin: 0px 20px 50px 60px;
-    transition: none;
+    margin: auto;
     }
 
     .overlay:hover{

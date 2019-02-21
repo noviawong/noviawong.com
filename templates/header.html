@@ -20,15 +20,21 @@
     <!-- Navigation menu -->
     <header>
         <nav id="MyNav">
-            <a href="{{ url_for('index') }}" class="{{pageclass('index')}}">Home</a>
-            <a href="{{ url_for('UX') }}" class="{{pageclass('UX')}}">UX Projects</a>
+           <a href="{{ url_for('index') }}" id="nav-logo-link">
+                <img id="nav-logo" src="{{ url_for('static', filename='logo-colored.png') }}" alt="Home">
+            </a>
+            <div id="navigation-id">
+                <!--<a href="{{ url_for('index') }}" class="{{pageclass('index')}}">Home</a>-->
+                <a href="{{ url_for('UX') }}" class="{{pageclass('UX')}}">UX Projects</a>
                         <!--<ul>
                             <li><a href="{{ url_for('classprojects') }}">Class</a></li>
                             <li><a href="{{ url_for('independent') }}">Independent</a></li>
                         </ul>-->
-            <a href="{{ url_for('design') }}" class="{{pageclass('design')}}">Graphic Design</a>
-            <a href="{{ url_for('resume') }}" class="{{pageclass('resume')}}">Resume</a>
-            <a href="mailto:novia0925@gmail.com" class="{{pageclass('contact')}}">Contact</a>
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                <a href="{{ url_for('design') }}" class="{{pageclass('design')}}">Graphic Design</a>
+                <a href="{{ url_for('resume') }}" class="{{pageclass('resume')}}">Resume</a>
+                <a href="{{ url_for('contact') }}" class="{{pageclass('contact')}}">Contact</a>
+                <!--<a href="mailto:novia0925@gmail.com" class="{{pageclass('contact')}}">Contact</a>-->
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
         </nav>
     </header>
